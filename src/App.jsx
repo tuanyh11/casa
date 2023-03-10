@@ -3,7 +3,7 @@ import "./App.css";
 import { Link, Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { Header } from "./Components";
 import { About } from "./Pages";
-
+import 'reactjs-popup/dist/index.css';
 
 
 function App() {

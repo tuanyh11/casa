@@ -171,3 +171,19 @@
     transition: all 0.35s ease-out 0s;
     -webkit-transition: all 0.35s ease-out 0s;
 }
+
+.item-search-pro {
+    border-bottom: 2px dotted #eee;
+    display: table;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.item-search-pro > div.search-ajax-price {
+    text-align: right;
+}
+
+
+.product-price {
+    margin: 0 -6px 7px;
+}

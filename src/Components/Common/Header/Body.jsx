@@ -1,5 +1,11 @@
-import React, { useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
+import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
+import { useClickInsideOutside, useDebounce } from "../../../hooks";
+import { useQuery } from "@tanstack/react-query";
+import { searchProduct } from "../../../api";
+import CardlistSmall from "../../Ui/Product/CardlistSmall";
+import LoginForm from "../../Ui/Form/LoginForm";
 
 const socialMedia = [
   {
@@ -25,9 +31,47 @@ const socialMedia = [
 ];
 
 const Body = () => {
+  const resultRef = useRef(null);
+
   const [openSearch, setOpenSearch] = useState(false);
 
-  const [text, setText] = useState("Type search text here...");
+  const [openResultSearch, setOpenResultSearch] = useState(false);
+
+  const [text, setText] = useState(null);
+
+  const { value: debounceValue, isDebounced } = useDebounce(text, 3000);
+
+  const { data, isFetching } = useQuery({
+    queryKey: ["search-product", debounceValue],
+    queryFn: () => searchProduct(debounceValue),
+    refetchOnWindowFocus: false,
+    enabled: Boolean(debounceValue),
+  });
+
+  // console.log(data);
+
+  const handleOnBlur = (e) => {
+    setText(text || null);
+  };
+
+  const handleOnFocus = () => {
+    setOpenResultSearch(true);
+    setText(text || "");
+  };
+
+  function handleClickOutside() {
+    setOpenResultSearch(false);
+  }
+
+  useClickInsideOutside(resultRef, () => {}, handleClickOutside);
+
+  // console.log(isDebounced , isFetching);
+
+  const listProduct = useMemo(() => {
+    return data?.map((item) => {
+      return <CardlistSmall key={item.id} {...item} />;
+    });
+  }, [data]);
 
   return (
     <div>
@@ -71,92 +115,66 @@ const Body = () => {
                   )}
                 </div>
                 <div
-                  class={`search-form-wrap ${
+                  className={`search-form-wrap ${
                     openSearch ? "!mt-0 !opacity-100 !visible" : ""
                   }`}
                 >
-                  <div class="overlay-fixed"></div>
+                  <div className="overlay-fixed"></div>
                   <form
-                    class="search-form live-search-on"
-                    action="https://casa.7uptheme.net/"
+                    ref={resultRef}
+                    className={`search-form live-search-on ${
+                      openResultSearch ? "active" : ""
+                    }`}
                   >
                     <input
-                      value={text}
+                      value={text === null ? "Type search text here..." : text}
                       type="text"
                       onChange={(e) => setText(e.target.value)}
-                      onFocus={() => setText("")}
+                      onFocus={handleOnFocus}
+                      onBlur={handleOnBlur}
                       className="text-[14px] !text-black-#303030"
                     />
-                    <div class="submit-form">
+                    <div className="submit-form">
                       <button
                         type="button"
-                        value=""
                         className="fa-light fa-magnifying-glass !text-xl !text-black-#303030"
                       />
                     </div>
-                    <div class="list-product-search ">
-                      {/* <p class="text-center">
-                        Please enter key search to display results.
-                      </p> */}
-                      <div class="item-search-pro">
-                        <div class="search-ajax-thumb product-thumb">
-                          <a
-                            href="https://casa.7uptheme.net/product/berlage-guest-chair/"
-                            class="product-thumb-link"
-                          >
-                            <img
-                              width="50"
-                              height="50"
-                              src="https://casa.7uptheme.net/wp-content/uploads/2019/05//product-7-50x50.jpg"
-                              class="attachment-50x50 size-50x50 wp-post-image"
-                              alt=""
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </a>
+                    <div className="list-product-search ">
+                      {isDebounced || isFetching ? (
+                        <div className="text-center">
+                          <i className="fa-solid fa-spinner animate-spin"></i>
                         </div>
-                        <div class="search-ajax-title">
-                          <h3 class="title14">
-                            <a
-                              class="black"
-                              href="https://casa.7uptheme.net/product/berlage-guest-chair/"
-                            >
-                              Berlage Guest Chair
-                            </a>
-                          </h3>
-                        </div>
-                        <div class="search-ajax-price">
-                          <div class="product-price price simple">
-                            <del aria-hidden="true">
-                              <span class="woocommerce-Price-amount amount">
-                                <bdi>
-                                  <span class="woocommerce-Price-currencySymbol">
-                                    $
-                                  </span>
-                                  44.00
-                                </bdi>
-                              </span>
-                            </del>{" "}
-                            <ins>
-                              <span class="woocommerce-Price-amount amount">
-                                <bdi>
-                                  <span class="woocommerce-Price-currencySymbol">
-                                    $
-                                  </span>
-                                  42.00
-                                </bdi>
-                              </span>
-                            </ins>
-                          </div>
-                        </div>
-                      </div>
+                      ) : data?.length > 0 ? (
+                        listProduct
+                      ) : (
+                        <p className="text-center">
+                          {data?.length === 0
+                            ? "No any results with this keyword."
+                            : "Please enter key search to display results."}
+                        </p>
+                      )}
                     </div>
                   </form>
                 </div>
               </div>
-              <button className=" text-[18px] px-4 pt-5 pb-[15px] text-black">
-                <i className="fa-light transition-main hover:text-main  fa-user"></i>
-              </button>
+              <div className=" text-[18px] px-4 pt-5 pb-[15px] text-black">
+                <Popup
+                  trigger={
+                    <button>
+                      {" "}
+                      <i className="fa-light transition-main hover:text-main  fa-user"></i>
+                    </button>
+                  }
+                  position="right center"
+                  contentStyle={{ width: 'auto', maxWidth: '600px', height: 'auto', padding: '2rem' }}
+                  overlayStyle={{
+                    background: "rgba(0, 0, 0, 0.3)",
+                  }}
+                >
+                  <LoginForm/>
+                </Popup>
+              </div>
 
               <button className=" text-[18px] px-4 pt-5 pb-[15px]  text-black  mini-cart-box  mini-cart1 dropdown-box  relative">
                 <p className=" relative">
@@ -166,7 +184,7 @@ const Body = () => {
                 <div className="mini-cart-content dropdown-list">
                   <div className="cart-header hidden">
                     <h4 className="cart-heading ">Shopping Cart</h4>
-                    <a href="javascript:;" className="close-aside">
+                    <a className="close-aside">
                       <i className="la la-close"></i>
                     </a>
                   </div>
@@ -215,10 +233,10 @@ const Body = () => {
                         </div>
                       </div>
                       <div className="ps__rail-x">
-                        <div className="ps__thumb-x" tabindex="0"></div>
+                        <div className="ps__thumb-x" tabIndex={0}></div>
                       </div>
                       <div className="ps__rail-y">
-                        <div className="ps__thumb-y" tabindex="0"></div>
+                        <div className="ps__thumb-y" tabIndex={0}></div>
                       </div>
                     </div>
 

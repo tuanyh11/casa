@@ -1,0 +1,760 @@
+{
+    "product":{
+        "data": {
+          "products": {
+            "nodes": [
+              {
+                "id": "cHJvZHVjdDoyMDQ=",
+                "name": "White leaf plate",
+                "slug": "white-leaf-plate",
+                "productId": 204,
+                "price": "$38.00",
+                "salePrice": "$38.00",
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxMjY=",
+                      "databaseId": 126,
+                      "slug": "accessories",
+                      "name": "Accessories"
+                    },
+                    {
+                      "id": "dGVybToxMjk=",
+                      "databaseId": 129,
+                      "slug": "plates",
+                      "name": "Plates"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToyMDk=",
+                      "databaseId": 209,
+                      "name": "Creative",
+                      "slug": "creative",
+                      "productTagId": 209
+                    },
+                    {
+                      "id": "dGVybTo4OQ==",
+                      "databaseId": 89,
+                      "name": "Modern",
+                      "slug": "modern",
+                      "productTagId": 89
+                    },
+                    {
+                      "id": "dGVybToxNzU=",
+                      "databaseId": 175,
+                      "name": "Style",
+                      "slug": "style",
+                      "productTagId": 175
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-22.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-22.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-5.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-7-768x768-2.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-16-768x768-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-21-768x768-2.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-12.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoyMDI=",
+                "name": "Turquoise Plate",
+                "slug": "turquoise-plate",
+                "productId": 202,
+                "price": "$12.00",
+                "salePrice": "$12.00",
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxMjk=",
+                      "databaseId": 129,
+                      "slug": "plates",
+                      "name": "Plates"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybTo5OQ==",
+                      "databaseId": 99,
+                      "name": "Minimalistic",
+                      "slug": "minimalistic",
+                      "productTagId": 99
+                    },
+                    {
+                      "id": "dGVybTo4OQ==",
+                      "databaseId": 89,
+                      "name": "Modern",
+                      "slug": "modern",
+                      "productTagId": 89
+                    },
+                    {
+                      "id": "dGVybToxNzU=",
+                      "databaseId": 175,
+                      "name": "Style",
+                      "slug": "style",
+                      "productTagId": 175
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-35.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-35.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-17.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-30.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-28.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-5.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-10.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoxOTg=",
+                "name": "The Cup Blue",
+                "slug": "the-cup-blue",
+                "productId": 198,
+                "price": "$49.00",
+                "salePrice": null,
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxMjY=",
+                      "databaseId": 126,
+                      "slug": "accessories",
+                      "name": "Accessories"
+                    },
+                    {
+                      "id": "dGVybToxOTg=",
+                      "databaseId": 198,
+                      "slug": "bowls",
+                      "name": "Bowls"
+                    },
+                    {
+                      "id": "dGVybToxMjk=",
+                      "databaseId": 129,
+                      "slug": "plates",
+                      "name": "Plates"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToyMDk=",
+                      "databaseId": 209,
+                      "name": "Creative",
+                      "slug": "creative",
+                      "productTagId": 209
+                    },
+                    {
+                      "id": "dGVybTo4Ng==",
+                      "databaseId": 86,
+                      "name": "Minimal",
+                      "slug": "minimal",
+                      "productTagId": 86
+                    },
+                    {
+                      "id": "dGVybTo5OQ==",
+                      "databaseId": 99,
+                      "name": "Minimalistic",
+                      "slug": "minimalistic",
+                      "productTagId": 99
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-34.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-34.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-1-768x768-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-2.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-26.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-4.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoxOTY=",
+                "name": "Table Lantern",
+                "slug": "table-lantern",
+                "productId": 196,
+                "price": "$15.00",
+                "salePrice": null,
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxMjY=",
+                      "databaseId": 126,
+                      "slug": "accessories",
+                      "name": "Accessories"
+                    },
+                    {
+                      "id": "dGVybToxMjk=",
+                      "databaseId": 129,
+                      "slug": "plates",
+                      "name": "Plates"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybTo4Mg==",
+                      "databaseId": 82,
+                      "name": "Elegant",
+                      "slug": "elegant",
+                      "productTagId": 82
+                    },
+                    {
+                      "id": "dGVybToxMzI=",
+                      "databaseId": 132,
+                      "name": "Lifestyle",
+                      "slug": "lifestyle",
+                      "productTagId": 132
+                    },
+                    {
+                      "id": "dGVybTo4OQ==",
+                      "databaseId": 89,
+                      "name": "Modern",
+                      "slug": "modern",
+                      "productTagId": 89
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-12-1.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-12-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-10-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-9-768x768-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-8-768x768-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-29-768x768-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-30.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoxOTQ=",
+                "name": "Studio mugs",
+                "slug": "studio-mugs",
+                "productId": 194,
+                "price": "$30.00",
+                "salePrice": null,
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxNjk=",
+                      "databaseId": 169,
+                      "slug": "mugs-cups",
+                      "name": "Mugs & Cups"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxNzI=",
+                      "databaseId": 172,
+                      "name": "Casual",
+                      "slug": "casual",
+                      "productTagId": 172
+                    },
+                    {
+                      "id": "dGVybToxMzI=",
+                      "databaseId": 132,
+                      "name": "Lifestyle",
+                      "slug": "lifestyle",
+                      "productTagId": 132
+                    },
+                    {
+                      "id": "dGVybTo5OQ==",
+                      "databaseId": 99,
+                      "name": "Minimalistic",
+                      "slug": "minimalistic",
+                      "productTagId": 99
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-6.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-6.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-7-768x768-2.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-22.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Layer-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-26.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-3.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoxOTI=",
+                "name": "Small Teapot",
+                "slug": "small-teapot",
+                "productId": 192,
+                "price": null,
+                "salePrice": null,
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxMjY=",
+                      "databaseId": 126,
+                      "slug": "accessories",
+                      "name": "Accessories"
+                    },
+                    {
+                      "id": "dGVybToxOTg=",
+                      "databaseId": 198,
+                      "slug": "bowls",
+                      "name": "Bowls"
+                    },
+                    {
+                      "id": "dGVybToxMjk=",
+                      "databaseId": 129,
+                      "slug": "plates",
+                      "name": "Plates"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxNzI=",
+                      "databaseId": 172,
+                      "name": "Casual",
+                      "slug": "casual",
+                      "productTagId": 172
+                    },
+                    {
+                      "id": "dGVybToxODU=",
+                      "databaseId": 185,
+                      "name": "Classic",
+                      "slug": "classic",
+                      "productTagId": 185
+                    },
+                    {
+                      "id": "dGVybToxMzI=",
+                      "databaseId": 132,
+                      "name": "Lifestyle",
+                      "slug": "lifestyle",
+                      "productTagId": 132
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-5.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-5.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-28.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-10.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-12.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-17.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-13.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoxODE=",
+                "name": "Runner red galbraith",
+                "slug": "runner-red-galbraith",
+                "productId": 181,
+                "price": null,
+                "salePrice": null,
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybTozMw==",
+                      "databaseId": 33,
+                      "slug": "explore-dinnerware",
+                      "name": "Explore Dinnerware"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToyMDk=",
+                      "databaseId": 209,
+                      "name": "Creative",
+                      "slug": "creative",
+                      "productTagId": 209
+                    },
+                    {
+                      "id": "dGVybTo4Mg==",
+                      "databaseId": 82,
+                      "name": "Elegant",
+                      "slug": "elegant",
+                      "productTagId": 82
+                    },
+                    {
+                      "id": "dGVybTo4OQ==",
+                      "databaseId": 89,
+                      "name": "Modern",
+                      "slug": "modern",
+                      "productTagId": 89
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-36.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-22.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-31.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-35.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-36.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-3.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-4.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoxNzc=",
+                "name": "Pok Classicle",
+                "slug": "pok-classicle",
+                "productId": 177,
+                "price": "$34.00",
+                "salePrice": null,
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybTozMw==",
+                      "databaseId": 33,
+                      "slug": "explore-dinnerware",
+                      "name": "Explore Dinnerware"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybTo4Mg==",
+                      "databaseId": 82,
+                      "name": "Elegant",
+                      "slug": "elegant",
+                      "productTagId": 82
+                    },
+                    {
+                      "id": "dGVybToxMzk=",
+                      "databaseId": 139,
+                      "name": "Gadgets",
+                      "slug": "gadgets",
+                      "productTagId": 139
+                    },
+                    {
+                      "id": "dGVybTo5OQ==",
+                      "databaseId": 99,
+                      "name": "Minimalistic",
+                      "slug": "minimalistic",
+                      "productTagId": 99
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Layer-1.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Layer-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-21.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-3.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-4.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-2.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoxNzU=",
+                "name": "Pok Chair",
+                "slug": "pok-chair",
+                "productId": 175,
+                "price": "$32.00",
+                "salePrice": null,
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxNzg=",
+                      "databaseId": 178,
+                      "slug": "dinnerware-sets",
+                      "name": "Dinnerware Sets"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxNzI=",
+                      "databaseId": 172,
+                      "name": "Casual",
+                      "slug": "casual",
+                      "productTagId": 172
+                    },
+                    {
+                      "id": "dGVybToxODU=",
+                      "databaseId": 185,
+                      "name": "Classic",
+                      "slug": "classic",
+                      "productTagId": 185
+                    },
+                    {
+                      "id": "dGVybTo4Ng==",
+                      "databaseId": 86,
+                      "name": "Minimal",
+                      "slug": "minimal",
+                      "productTagId": 86
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-10-1.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-10-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-12-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-17-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-24-768x768-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-2.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-23.jpg"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "cHJvZHVjdDoxNzM=",
+                "name": "Pastel vase",
+                "slug": "pastel-vase",
+                "productId": 173,
+                "price": "$15.00",
+                "salePrice": "$15.00",
+                "productCategories": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxMjY=",
+                      "databaseId": 126,
+                      "slug": "accessories",
+                      "name": "Accessories"
+                    },
+                    {
+                      "id": "dGVybToxOTg=",
+                      "databaseId": 198,
+                      "slug": "bowls",
+                      "name": "Bowls"
+                    },
+                    {
+                      "id": "dGVybToxMjk=",
+                      "databaseId": 129,
+                      "slug": "plates",
+                      "name": "Plates"
+                    }
+                  ]
+                },
+                "productTags": {
+                  "nodes": [
+                    {
+                      "id": "dGVybToxNzI=",
+                      "databaseId": 172,
+                      "name": "Casual",
+                      "slug": "casual",
+                      "productTagId": 172
+                    },
+                    {
+                      "id": "dGVybTo4Mg==",
+                      "databaseId": 82,
+                      "name": "Elegant",
+                      "slug": "elegant",
+                      "productTagId": 82
+                    },
+                    {
+                      "id": "dGVybTo4Ng==",
+                      "databaseId": 86,
+                      "name": "Minimal",
+                      "slug": "minimal",
+                      "productTagId": 86
+                    }
+                  ]
+                },
+                "featuredImage": {
+                  "node": {
+                    "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-8-768x768-1.jpg"
+                  }
+                },
+                "galleryImages": {
+                  "nodes": [
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-8-768x768-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-9-768x768-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-10-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-7-768x768-2.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-12-1.jpg"
+                    },
+                    {
+                      "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/product-23.jpg"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "extensions": {
+          "debug": [
+            {
+              "type": "DEBUG_LOGS_INACTIVE",
+              "message": "GraphQL Debug logging is not active. To see debug logs, GRAPHQL_DEBUG must be enabled."
+            }
+          ]
+        }
+      }
+}

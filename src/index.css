@@ -39,6 +39,13 @@ body {
   -webkit-transition: all 0.4s ease-out 0s;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
 .desc {
   color: #303030;
   margin: 0;
@@ -114,4 +121,61 @@ a.button {
   right: 0;
   margin: -1px;
   font-size: 26px;
+}
+
+.live-search-on.active .list-product-search {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 1px;
+}
+
+.item-search-pro {
+  border-bottom: 2px dotted #eee;
+  display: table;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.item-search-pro > div.search-ajax-thumb {
+  width: 50px;
+}
+
+.item-search-pro > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-out 0s;
+  -webkit-transition: all 0.4s ease-out 0s;
+}
+
+.product-thumb-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-thumb img:first-child {
+  opacity: 1;
+  visibility: visible;
+  position: static;
+  transform: none;
+}
+
+
+.product-thumb-link img {
+  width: 100%;
+  transition: all 0.6s ease-out 0s;
+  -webkit-transition: all 0.6s ease-out 0s;
+}
+
+.item-search-pro > div.search-ajax-title {
+  padding: 0 10px;
+}
+
+.login-popup [data-popup=tooltip].popup-overlay  {
+  background: rgba(0, 0, 0, 0.3);
 }

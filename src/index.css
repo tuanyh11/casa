@@ -176,6 +176,11 @@ a.button {
   padding: 0 10px;
 }
 
-.login-popup [data-popup=tooltip].popup-overlay  {
-  background: rgba(0, 0, 0, 0.3);
+.popup-content {
+  top: 30% !important;
+  left: 50% !important;
+  transform: translate(-50%, -40%);
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border: none !important;
 }

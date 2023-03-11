@@ -158,7 +158,7 @@ const Body = () => {
                   </form>
                 </div>
               </div>
-              <div className=" text-[18px] px-4 pt-5 pb-[15px] text-black">
+              <div className=" text-[18px] px-4 pt-5 pb-[15px] text-black ">
                 <Popup
                   trigger={
                     <button>
@@ -166,13 +166,21 @@ const Body = () => {
                       <i className="fa-light transition-main hover:text-main  fa-user"></i>
                     </button>
                   }
-                  position="right center"
-                  contentStyle={{ width: 'auto', maxWidth: '600px', height: 'auto', padding: '2rem' }}
+                  position="center center"
+                  contentStyle={{
+                    width: "100%",
+                    maxWidth: "400px",
+                    height: "auto",
+                    top: 50,
+                    // position: "relative",
+                    
+                  }}
+                  arrow={false}
                   overlayStyle={{
                     background: "rgba(0, 0, 0, 0.3)",
                   }}
                 >
-                  <LoginForm/>
+                  {(close) => <LoginForm onClose={close}/>}
                 </Popup>
               </div>
 

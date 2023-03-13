@@ -1,8 +1,8 @@
 import React from "react";
-import Body from "./Body";
-import Top from "./Top";
+import Body from "./Components/Body";
+import Top from "./Components/Top";
 import './style.css';
-import NavMenu from "./NavMenu";
+import NavMenu from "./Components/NavMenu";
 
 const Header = () => {
   return (

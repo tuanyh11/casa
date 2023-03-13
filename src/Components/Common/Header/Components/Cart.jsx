@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Cart = () => {
   return (
     <>
-      <div className="mini-cart-content dropdown-list">
+      <div className="mini-cart-content z-[999999999] dropdown-list">
         <div className="cart-header hidden">
           <h4 className="cart-heading ">Shopping Cart</h4>
           <a className="close-aside">

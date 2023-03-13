@@ -1,0 +1,116 @@
+.footer-newsletter2 {
+    padding: 117px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 -15px;
+    justify-content: space-between;
+}
+
+.bg-overlay::before {
+    content: "";
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #211f1f;
+    opacity: 0.8;
+}
+
+.footer-newsletter2 .title-box .title-block {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.footer-newsletter2 .form-newsletter input[type="email"] {
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    padding: 0 30px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    max-width: 440px;
+    outline: none;
+    flex: 1 1 auto;
+    background: transparent;
+}
+
+
+.footer-newsletter2 .form-newsletter .submit-form {
+    padding-left: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer-newsletter2 .form-newsletter .submit-form button[type="submit"] {
+    position: static;
+    background: #f598a4;
+    color: #ffffff;
+    height: 60px;
+    letter-spacing: 1px;
+    padding: 0 6px;
+    font-weight: 500;
+    width: 100%;
+    -webkit-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    -ms-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+}
+
+.footer-newsletter2 .form-newsletter .submit-form button[type="submit"]:hover {
+    background: #fff;
+    color: #303030;
+}
+
+@keyframes hvr-wobble-skew {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg)
+    }
+
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg)
+    }
+
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg)
+    }
+
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg)
+    }
+
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg)
+    }
+
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0)
+    }
+}
+
+
+.hvr-wobble-skew:active,.hvr-wobble-skew:focus,.hvr-wobble-skew:hover {
+    animation-name: hvr-wobble-skew;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1
+}

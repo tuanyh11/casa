@@ -46,6 +46,11 @@ body {
   color: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #222222;
+  font-family: 'Poppins', sans-serif;
+}
+
 .desc {
   color: #303030;
   margin: 0;
@@ -179,7 +184,7 @@ a.button {
 .popup-content {
   top: 30% !important;
   left: 50% !important;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -34%);
   box-shadow: none !important;
   border-radius: 0 !important;
   border: none !important;

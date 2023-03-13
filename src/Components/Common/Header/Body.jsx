@@ -6,6 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import { searchProduct } from "../../../api";
 import CardlistSmall from "../../Ui/Product/CardlistSmall";
 import LoginForm from "../../Ui/Form/LoginForm";
+import { useTransition, animated } from "react-spring";
 
 const socialMedia = [
   {
@@ -30,6 +31,29 @@ const socialMedia = [
   },
 ];
 
+const instagramImg = [
+  {
+    image:
+      "https://casa.7uptheme.net/wp-content/uploads/2019/05//Untitled-1-175x175.jpg",
+    link: "https://www.instagram.com/",
+  },
+  {
+    image:
+      "https://casa.7uptheme.net/wp-content/uploads/2019/05//Untitled-3-175x175.jpg",
+    link: "https://www.instagram.com/",
+  },
+  {
+    image:
+      "https://casa.7uptheme.net/wp-content/uploads/2019/05//Untitled-4-175x175.jpg",
+    link: "https://www.instagram.com/",
+  },
+  {
+    image:
+      "https://casa.7uptheme.net/wp-content/uploads/2019/05//Untitled-2-175x175.jpg",
+    link: "https://www.instagram.com/",
+  },
+];
+
 const Body = () => {
   const resultRef = useRef(null);
 
@@ -38,6 +62,8 @@ const Body = () => {
   const [openResultSearch, setOpenResultSearch] = useState(false);
 
   const [text, setText] = useState(null);
+
+  const [openSidebar, setOpenSidebar] = useState(false);
 
   const { value: debounceValue, isDebounced } = useDebounce(text, 3000);
 
@@ -65,7 +91,12 @@ const Body = () => {
 
   useClickInsideOutside(resultRef, () => {}, handleClickOutside);
 
-  // console.log(isDebounced , isFetching);
+  const transition = useTransition(openSidebar, {
+                         
+    from: { opacity: 0, transform: "translate(100%)"},
+    enter: { opacity: 1, transform: "translate(0)" },
+    leave: { opacity: 1, x: 580 },
+  });
 
   const listProduct = useMemo(() => {
     return data?.map((item) => {
@@ -75,18 +106,18 @@ const Body = () => {
 
   return (
     <div>
-      <div className="pt-[30px] px-[50px]">
-        <div className="grid grid-cols-12">
-          <div className="pt-[21px] pb-[19px] col-span-4 ">
+      <div className="px-[15px] screen-1200:pt-[30px] screen-1200:px-[50px]">
+        <div className="grid grid-cols-12 items-center">
+          <div className="pt-[21px] pb-[19px] col-span-4 hidden screen-567:block">
             {socialMedia.map((item, index) => (
               <a
                 key={index}
                 href={item.link}
-                className={`${item.icon} text-lg leading-6 px-[13px] first:pl-0`}
+                className={`${item.icon} text-lg leading-6 px-2 screen-1200:px-[13px] first:pl-0 `}
               ></a>
             ))}
           </div>
-          <div className="py-[10px] col-span-4 flex justify-center ">
+          <div className="py-[10px] col-span-6 screen-567:col-span-4 flex justify-center ">
             <div className="">
               <img
                 src="https://casa.7uptheme.net/wp-content/uploads/2019/10/logo2.jpg"
@@ -98,7 +129,7 @@ const Body = () => {
               </span>
             </div>
           </div>
-          <div className="col-span-4 ">
+          <div className=" col-span-6 screen-567:col-span-4 ">
             <div className="flex justify-end">
               <div className="relative text-[18px] px-4 pt-5 pb-[15px] text-black">
                 <div>
@@ -173,21 +204,20 @@ const Body = () => {
                     height: "auto",
                     top: 50,
                     // position: "relative",
-                    
                   }}
                   arrow={false}
                   overlayStyle={{
                     background: "rgba(0, 0, 0, 0.3)",
                   }}
                 >
-                  {(close) => <LoginForm onClose={close}/>}
+                  {(close) => <LoginForm onClose={close} />}
                 </Popup>
               </div>
 
               <button className=" text-[18px] px-4 pt-5 pb-[15px]  text-black  mini-cart-box  mini-cart1 dropdown-box  relative">
-                <p className=" relative">
+                <p className=" relative  ">
                   <i className="fa-light transition-main hover:text-main  fa-cart-shopping"></i>
-                  <span className="mini-cart-number">1</span>
+                  <span className="mini-cart-number screen-567:block hidden">1</span>
                 </p>
                 <div className="mini-cart-content dropdown-list">
                   <div className="cart-header hidden">
@@ -280,9 +310,133 @@ const Body = () => {
                   </div>
                 </div>
               </button>
-              <button className=" text-[18px] px-4 pt-5 pb-[15px]  text-black">
-                <i className="fa-regular fa-bars transition-main hover:text-main "></i>
-              </button>
+              <div className=" text-[18px] px-4 pt-5 pb-[15px]  text-black">
+                <button
+                  onClick={() => setOpenSidebar(!openSidebar)}
+                  className="fa-regular fa-bars transition-main hover:text-main cursor-pointer"
+                ></button>
+
+                {/* sidebar header */}
+                {transition((style, item) =>
+                  item ? (
+                    <animated.div>
+                      <animated.div
+                        style={{ ...style.opacity, transitionDuration: "0.6s" }}
+                        className=" absolute inset-0 z-[999999] bg-[rgba(0,0,0,0.3)] "
+                      ></animated.div>
+
+                      <animated.div
+                        style={{
+                          ...style,
+                          transitionTimingFunction:
+                            "cubic-bezier(0.77, 0, 0.175, 1)",
+                          transitionDuration: "0.4s"
+                        }}
+                        className={`aside-box-content z-[999999999999] `}
+                      >
+                        <button
+                          onClick={() => setOpenSidebar(false)}
+                          className="close-login-form transition-main  font-light text-black-#303030 w-[30px] h-[30px] transition-main hover:text-main "
+                        >
+                          ×
+                        </button>
+                        <div className="-mx-[17px]">
+                          <div className="mb-[54px]">
+                            <div className="mt-[74px] text-[14px] text-black-#303030 mb-[18px]">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua.
+                            </div>
+
+                            <div className="">
+                              <div className="mb-[2px] text-[14px] text-black-#303030">
+                                <i className="mr-[10px] fa-light fa-phone text-main"></i>
+                                +1123456789
+                              </div>
+
+                              <div className="mb-[2px] text-[14px] text-black-#303030">
+                                <i className="mr-[10px] fa-light fa-location-dot text-main"></i>
+                                433-447 San Pedro St, Los Angeles, CA 90013
+                              </div>
+
+                              <div className="mb-[2px] text-[14px] text-black-#303030">
+                                <i className="mr-[10px] fa-light fa-envelope text-main"></i>
+                                Support@obachan.com
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="mb-[54px]">
+                            <div className="mb-[27px]">
+                              <h3 className=" font-medium text-[14px] font-poppins leading-[1.1] text-black-#222222">
+                                NEWSLETTER
+                              </h3>
+                            </div>
+
+                            <form className="mt-5 mb-[15px] relative">
+                              <input
+                                required
+                                placeholder="Email"
+                                className=" placeholder-white  block h-[46px] leading-[46px] text-white px-5 border-none  bg-main  outline-none text-[14px] w-full font-poppins"
+                              />
+                              <button
+                                type="submit"
+                                className="fa-regular fa-arrow-right w-[46px] px-[6px] absolute top-0 right-0 bottom-0 leading-[46px] text-center text-white cursor-pointer"
+                              ></button>
+                            </form>
+                          </div>
+
+                          <div className="mb-[54px]">
+                            <div className="mb-[27px]">
+                              <h3 className=" font-medium text-[14px] font-poppins leading-[1.1] text-black-#222222">
+                                FOLLOW US
+                              </h3>
+                            </div>
+
+                            <div className="mt-5 mb-[15px] relative">
+                              {socialMedia.map((item, index) => (
+                                <a
+                                  key={index}
+                                  href={item.link}
+                                  className={`${item.icon} text-lg leading-6 px-[13px] first:pl-0`}
+                                ></a>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="mb-[54px]">
+                            <div className="mb-[27px]">
+                              <h3 className=" font-medium text-[14px] font-poppins leading-[1.1] text-black-#222222">
+                                INSTAGRAM
+                              </h3>
+                            </div>
+
+                            <ul className="mt-5 mb-[15px] flex flex-wrap relative">
+                              {instagramImg.map((item, index) => (
+                                <li key={index} className="w-1/2">
+                                  <a
+                                    className=" relative overflow-hidden group"
+                                    href={item.link}
+                                  >
+                                    <img
+                                      src={item.image}
+                                      alt=""
+                                      className="w-full object-cover"
+                                    />
+                                    <div className=" absolute z-[999] inset-0 flex justify-center items-center group-hover:opacity-100 group-hover:scale-100 opacity-0 transition-all duration-[0.4s] text-white bg-[rgba(0,0,0,0.4)] scale-[0.8] ">
+                                      <i className="fa-brands fa-instagram text-[44px] mx-[5px]"></i>
+                                    </div>
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </animated.div>
+                    </animated.div>
+                  ) : null
+                )}
+              </div>
             </div>
           </div>
         </div>

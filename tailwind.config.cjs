@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'screen-567': '567px',
+        'screen-991': '991px',
+        'screen-1200': '1200px'
+      },
       colors: {
         'black-800': '#303030',
         'blue-#2f316f': '#2f316f',

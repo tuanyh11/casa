@@ -56,6 +56,11 @@
     z-index: 0;
 }
 
+
+.popup-form .has-value input:not(.wp-submit) ~ label, .popup-form input:not(.wp-submit):valid ~ label {
+    font-size: 80%;
+    top: -15px;
+}
 .popup-form .has-value input:not(.wp-submit) ~ label, .popup-form input:not(.wp-submit):focus ~ label {
     font-size: 80%;
     top: -15px;

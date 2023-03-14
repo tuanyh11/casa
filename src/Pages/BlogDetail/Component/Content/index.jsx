@@ -108,15 +108,8 @@ console.log(blog, image)
             </p>
           </div> */}
 
-          <div className="mb-6">
-            <p>
-              Duo inermis repudiandae an, harum mandamus qui in. No quo mazim
-              doming facilisi, duo ea impetus suavitate interpretaris. No dictas
-              scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an
-              reque postea scriptorem, audiam conclusionemque per eu. An enim
-              oblique has, graecis deserunt has no. Soleat laoreet posidonium an
-              vel, delenit pertinax appellantur an est.
-            </p>
+          <div className="mb-6" dangerouslySetInnerHTML={{__html: secondContent}}>
+            
           </div>
         </div>
 

@@ -11,7 +11,6 @@ export const searchProduct = async (text) => {
 }
 
 export const getBlogById = async (id) => {
-   const blog =  await instanceAxios.get(`http://localhost:4000/blog/detail`)
-    
-   return blog.data?.data?.post
+   const blog =  await instanceAxios.get(`http://localhost:4000/blogs?id=${id}`)
+   return blog.data?.[0]
 }

@@ -2,22 +2,24 @@
 import "./App.css";
 import { Link, Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { Header } from "./Components";
-import { About } from "./Pages";
+import { About, BlogList, Contact } from "./Pages";
 
 
 
 function App() {
- 
 
-  
+
+
 
   return (
-    <div>
-      <Header/>
+    <>
+      <Header />
       <Routes>
-        <Route path="/about" element={<About/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<BlogList />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

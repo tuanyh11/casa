@@ -44,6 +44,26 @@ export const instagramImg = [
   },
 ];
 
+export const styleTags = [
+  { id: 1, name: 'Casual', slug: 'casual' },
+  { id: 2, name: 'Classic', slug: 'classic' },
+  { id: 3, name: 'Creative', slug: 'creative' },
+  { id: 4, name: 'Elegant', slug: 'elegant' },
+  { id: 5, name: 'Lifestyle', slug: 'lifestyle' },
+  { id: 6, name: 'Minimal', slug: 'minimal' },
+  { id: 7, name: 'Modern', slug: 'modern' },
+];
+
+export const categories = [
+  { id: 1, name: 'Accessories', slug: 'accessories' },
+  { id: 2, name: 'Art – Travel', slug: 'art-travel' },
+  { id: 3, name: 'Bowls', slug: 'bowls' },
+  { id: 4, name: 'Dinnerware Sets', slug: 'dinnerware-sets' },
+  { id: 5, name: 'Explore Dinnerware', slug: 'explore-dinnerware' },
+  { id: 6, name: 'Mugs & Cups', slug: 'mugs-cups' },
+  { id: 7, name: 'Plates', slug: 'plates' },
+  { id: 8, name: 'Uncategorized', slug: 'uncategorized' }
+];
 
 export const payments = [
   {

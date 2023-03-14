@@ -145,3 +145,19 @@ export function useWindowScroll() {
     handleScroll
   }
 }
+
+export const useDate = () => {
+  function getDate(
+    date = new Date(),
+    locales = "en-Us",
+    options = {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    }
+  ) {
+    return new Date(date).toLocaleDateString(locales, options);
+  }
+  return getDate;
+};
+

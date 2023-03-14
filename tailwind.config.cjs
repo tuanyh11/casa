@@ -20,6 +20,7 @@ module.exports = {
         'black-#303030': '#303030',
         'black-#333333': '#333333',
         'black-#222222': '#222222',
+        'gray-#999': '#999',
         'main': '#f598a4'
       },
       fontFamily: {

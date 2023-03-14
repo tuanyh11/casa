@@ -1,0 +1,109 @@
+/* -----Slider----- */
+.slider-home-main .item-slide-home {
+    position: relative;
+}
+
+.slider-home-main .item-slide-home .home-banner-thumb {
+
+    background-image: url(https://casa.7uptheme.net/wp-content/uploads/2019/06/slider43.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-height: 750px;
+}
+
+.slider-home-main .item-slide-home .home-banner-thumb a {
+    display: block;
+    transition: all 0.4s ease-out 0s;
+}
+
+.slider-home-main .item-slide-home .home-banner-thumb a img {
+    max-width: none;
+    opacity: 0;
+    width: auto;
+    height: auto;
+}
+
+.slider-home-main .item-slide-home .home-banner-info {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    height: 276px;
+}
+
+.slider-home-main .item-slide-home .home-banner-info .obc-title {
+    line-height: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 19px;
+    max-width: 520px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slider-home-main .item-slide-home .home-banner-info .banner-home-desc {
+    position: relative;
+    max-width: 535px;
+    padding-left: 65px;
+    color: #303030;
+    margin: 0;
+    line-height: 24px;
+}
+
+.slider-home-main .item-slide-home .home-banner-info .banner-home-desc::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    transform: rotate(45deg);
+    top: 50%;
+    left: -7px;
+    border-top: 1px solid;
+}
+
+.slider-home-main .item-slide-home .home-banner-info .slider-button {
+    margin-top: 53px;
+}
+
+.slider-home-main .item-slide-home .home-banner-info .slider-button a {
+    display: inline-block;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 45px;
+    height: 60px;
+    line-height: 60px;
+    border: none;
+    letter-spacing: 1.6px;
+    background-color: #f598a4;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0px;
+    transition: all 0.4s ease-out 0s;
+}
+
+/* --------- */
+
+/* ----category----- */
+.category-home {
+    display: flex;
+}
+
+.category-home .category-item {
+    margin-right: 30px;
+}
+
+.category-home .category-item:last-child {
+    margin-right: 0px;
+}
+
+.category-home .category-item a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+/*----- */

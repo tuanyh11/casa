@@ -222,7 +222,9 @@ const Content = ({ blog }) => {
           LEAVE A COMMENT
         </h2>
 
-        
+        <div className="">
+          
+        </div>
 
         <div className="">
           <p className=" mt-[13px] text-gray-#999 mb-[43px]">

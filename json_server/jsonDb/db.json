@@ -758,12 +758,124 @@
     }
   },
 
+  "categories-blog": [
+    {
+      "id": "dGVybTox",
+      "categoryId": 1,
+      "name": "Accessories",
+      "slug": "accessories"
+    },
+    {
+      "id": "dGVybToyOTQ=",
+      "categoryId": 294,
+      "name": "Art – Travel",
+      "slug": "art-travel"
+    },
+    {
+      "id": "dGVybToyOTc=",
+      "categoryId": 297,
+      "name": "Bowls",
+      "slug": "bowls"
+    },
+    {
+      "id": "dGVybTozMDA=",
+      "categoryId": 300,
+      "name": "Dinnerware Sets",
+      "slug": "dinnerware-sets"
+    },
+    {
+      "id": "dGVybTozMDM=",
+      "categoryId": 303,
+      "name": "Explore Dinnerware",
+      "slug": "explore-dinnerware"
+    },
+    {
+      "id": "dGVybTozMDY=",
+      "categoryId": 306,
+      "name": "Mugs & Cups",
+      "slug": "mugs-cups"
+    },
+    {
+      "id": "dGVybTozMDk=",
+      "categoryId": 309,
+      "name": "Plates",
+      "slug": "plates"
+    },
+    {
+      "id": "dGVybTozMTI=",
+      "categoryId": 312,
+      "name": "Uncategorized",
+      "slug": "uncategorized"
+    }
+  ],
 
+  "tags-blog": [
+    {
+      "id": "dGVybTozMTU=",
+      "databaseId": 315,
+      "name": "Casual",
+      "slug": "casual",
+      "tagId": 315
+    },
+    {
+      "id": "dGVybTozMTk=",
+      "databaseId": 319,
+      "name": "Classic",
+      "slug": "classic",
+      "tagId": 319
+    },
+    {
+      "id": "dGVybTozMjI=",
+      "databaseId": 322,
+      "name": "Creative",
+      "slug": "creative",
+      "tagId": 322
+    },
+    {
+      "id": "dGVybTozMjU=",
+      "databaseId": 325,
+      "name": "Elegant",
+      "slug": "elegant",
+      "tagId": 325
+    },
+    {
+      "id": "dGVybTozMjg=",
+      "databaseId": 328,
+      "name": "Lifestyle",
+      "slug": "lifestyle",
+      "tagId": 328
+    },
+    {
+      "id": "dGVybTozMzE=",
+      "databaseId": 331,
+      "name": "Minimal",
+      "slug": "minimal",
+      "tagId": 331
+    },
+    {
+      "id": "dGVybTozMzQ=",
+      "databaseId": 334,
+      "name": "Modern",
+      "slug": "modern",
+      "tagId": 334
+    },
+    {
+      "id": "dGVybTozMzc=",
+      "databaseId": 337,
+      "name": "Style",
+      "slug": "style",
+      "tagId": 337
+    }
+  ],
 
-  "blogs":[
+  "blogs": [
     {
       "databaseId": 569,
       "id": "cG9zdDo1Njk=",
+      "title": "The new arrivals: spring  colors and shapes",
+      "slug": "the-new-arrivals-spring-colors-and-shapes",
+      "commentCount": 4,
+      
       "author": {
         "node": {
           "databaseId": 1,
@@ -798,7 +910,105 @@
         ]
       },
       "comments": {
-        "nodes": []
+        "nodes": [
+          {
+            "commentId": 8,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilis</p>\n",
+            "date": "2023-03-14 10:19:21",
+            "author": {
+              "node": {
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                },
+                "email": null,
+                "name": "casa"
+              }
+            },
+            "replies": {
+              "nodes": []
+            }
+          },
+          {
+            "commentId": 7,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. TEST</p>\n",
+            "date": "2023-03-14 10:19:01",
+            "author": {
+              "node": {
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                },
+                "email": null,
+                "name": "casa"
+              }
+            },
+            "replies": {
+              "nodes": []
+            }
+          },
+          {
+            "commentId": 6,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
+            "date": "2023-03-14 10:18:51",
+            "author": {
+              "node": {
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                },
+                "email": null,
+                "name": "casa"
+              }
+            },
+            "replies": {
+              "nodes": []
+            }
+          },
+          {
+            "commentId": 5,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
+            "date": "2023-03-14 10:18:41",
+            "author": {
+              "node": {
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                },
+                "email": null,
+                "name": "casa"
+              }
+            },
+            "replies": {
+              "nodes": [
+                {
+                  "commentId": 7,
+                  "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. TEST</p>\n",
+                  "date": "2023-03-14 10:19:01",
+                  "author": {
+                    "node": {
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      },
+                      "email": null,
+                      "name": "casa"
+                    }
+                  }
+                },
+                {
+                  "commentId": 6,
+                  "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
+                  "date": "2023-03-14 10:18:51",
+                  "author": {
+                    "node": {
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      },
+                      "email": null,
+                      "name": "casa"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
       },
       "tags": {
         "nodes": [
@@ -820,6 +1030,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-10-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -831,19 +1042,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -851,6 +1056,9 @@
     {
       "databaseId": 564,
       "id": "cG9zdDo1NjQ=",
+      "title": "Perfect home decoration is  all about details",
+      "slug": "perfect-home-decoration-is-all-about-details",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -906,6 +1114,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Post-Default-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -917,19 +1126,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -937,6 +1140,9 @@
     {
       "databaseId": 558,
       "id": "cG9zdDo1NTg=",
+      "title": "5 ideas to decor your table",
+      "slug": "5-ideas-to-decor-your-table",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -999,6 +1205,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-9-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -1010,19 +1217,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -1030,6 +1231,9 @@
     {
       "databaseId": 553,
       "id": "cG9zdDo1NTM=",
+      "title": "Furniture design basics",
+      "slug": "furniture-design-basics",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -1086,6 +1290,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-8-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -1097,19 +1302,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -1117,6 +1316,9 @@
     {
       "databaseId": 548,
       "id": "cG9zdDo1NDg=",
+      "title": "Designing a manager office",
+      "slug": "designing-a-manager-office",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -1184,6 +1386,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-7-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -1195,19 +1398,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -1215,6 +1412,9 @@
     {
       "databaseId": 543,
       "id": "cG9zdDo1NDM=",
+      "title": "The details are not the details.",
+      "slug": "the-details-are-not-the-details",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -1276,6 +1476,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-6-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -1287,19 +1488,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -1307,6 +1502,9 @@
     {
       "databaseId": 538,
       "id": "cG9zdDo1Mzg=",
+      "title": "A wooden cottage kitchen",
+      "slug": "a-wooden-cottage-kitchen",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -1363,6 +1561,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-5-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -1374,19 +1573,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -1394,6 +1587,9 @@
     {
       "databaseId": 532,
       "id": "cG9zdDo1MzI=",
+      "title": "Interview With Stephen Grudier",
+      "slug": "interview-with-stephen-grudier",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -1456,6 +1652,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-4-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -1467,19 +1664,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -1487,6 +1678,9 @@
     {
       "databaseId": 525,
       "id": "cG9zdDo1MjU=",
+      "title": "Expand Your Mind, Change Everything",
+      "slug": "expand-your-mind-change-everything",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -1543,6 +1737,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-3-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -1554,19 +1749,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }
@@ -1574,6 +1763,9 @@
     {
       "databaseId": 511,
       "id": "cG9zdDo1MTE=",
+      "title": "Modern house remodel is all about details",
+      "slug": "modern-house-remodel-is-all-about-details",
+      "commentCount": null,
       "author": {
         "node": {
           "databaseId": 1,
@@ -1636,6 +1828,7 @@
         ]
       },
       "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-2-900x490.jpg",
         "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
         "content": [
           {
@@ -1647,19 +1840,13 @@
         ],
         "image": [
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-01-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-02-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
           },
           {
-            "imageContent": {
-              "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Single-03-280x420-1.jpg"
-            }
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
           }
         ]
       }

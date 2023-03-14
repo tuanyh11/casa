@@ -1,7 +1,12 @@
 import React from "react";
 import { socialMedia } from "../../../../assets/data";
 
-const Author = () => {
+const Author = ({data}) => {
+
+  const avatar = data?.avatar?.url
+
+  const name = data?.name
+
   return (
     <div>
       <div
@@ -14,7 +19,7 @@ const Author = () => {
               <img
                 width="300"
                 height="300"
-                src="https://casa.7uptheme.net/wp-content/uploads/2019/06//team02-300x300.jpg"
+                src={avatar}
                 className="attachment-300x300 size-300x300"
                 alt=""
                 decoding="async"
@@ -24,8 +29,8 @@ const Author = () => {
           </div>
           <div className="author-info">
             <h3 className="title16 font-medium text-uppercase tracking-[1.6px] text-black-#333333 mb-[14px]">
-              <a href="#" className="black wobble-top">
-                ANIVIA LAURA{" "}
+              <a href="#" className="black wobble-top uppercase">
+                {name}{" "}
               </a>
             </h3>
             <div className="title14 email">

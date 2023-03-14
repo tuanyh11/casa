@@ -1,32 +1,36 @@
 
 import "./App.css";
-import { Link, Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import { About, BlogList, Contact } from "./Pages";
+
 import { Footer, Header } from "./Components";
-import { About } from "./Pages";
 import 'reactjs-popup/dist/index.css';
 import { useEffect, useState } from "react";
 import { useWindowScroll } from "./hooks";
 
 
 function App() {
- 
-  
-
- const {scrollToTop, showButton} =  useWindowScroll()
 
 
-  
+
+  const { scrollToTop, showButton } = useWindowScroll()
+
+
+
+
 
   return (
-    <div>
-      <Header/>
+    <>
+      <Header />
       <Routes>
-        <Route path="/about" element={<About/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<BlogList />} />
       </Routes>
-      <Footer/>
+      <Footer />
 
-      <button  onClick={() => scrollToTop()} className={`scroll-top dark  ${showButton ? 'active': ''}`}><i className="fa-solid fa-angle-up"></i></button>
-    </div>
+      <button onClick={() => scrollToTop()} className={`scroll-top dark  ${showButton ? 'active' : ''}`}><i className="fa-solid fa-angle-up"></i></button>
+    </>
   );
 }
 

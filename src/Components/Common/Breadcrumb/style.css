@@ -1,0 +1,54 @@
+.wrap-bread-crumb {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(https://casa.7uptheme.net/wp-content/uploads/2019/10/breacrumd.jpg);
+}
+
+.wrap-bread-crumb .bg-overlay::before {
+    background-color: rgba(0, 0, 51, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.wrap-bread-crumb .bread-crumb {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrap-bread-crumb .bread-crumb .bread-crunb-inner h2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.wrap-bread-crumb .bread-crumb .bread-crunb-inner a {
+    display: inline-block;
+}
+
+.wrap-bread-crumb .bread-crumb .bread-crunb-inner a:hover {
+    color: #f598a4;
+}
+
+.wrap-bread-crumb .bread-crumb .bread-crunb-inner a::after {
+    content: "/";
+    margin: 0 10px;
+    font-size: 14px;
+    color: #222;
+}

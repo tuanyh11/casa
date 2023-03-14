@@ -8,7 +8,6 @@ const __dirname = dirname(__filename);
 
 const server = jsonServer.create()
 const routerV1 = jsonServer.router(__dirname + '/jsonDb/db.json')
-const routerBlog = jsonServer.router(__dirname + '/jsonDb/blog.json')
 
 const middlewares = jsonServer.defaults()
 

@@ -41,7 +41,6 @@ export function useClickInsideOutside(targetRef, callbackInside = () => { }, cal
   }, [targetRef, callbackInside, callbackOutside]);
 }
 
-<<<<<<< HEAD
 //Pagination
 export const DOTS = '...';
 
@@ -112,7 +111,6 @@ export const usePagination = ({
   return paginationRange;
 };
 // --------
-=======
 
 export function useWindowScroll() {
 
@@ -147,4 +145,3 @@ export function useWindowScroll() {
     handleScroll
   }
 }
->>>>>>> bb89d09d91df2cdb2c91a72586a343d5643c6459

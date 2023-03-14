@@ -27,7 +27,7 @@ body {
   .container-custom {
     @apply min-[768px]:max-w-[750px] min-[992px]:max-w-[970px] min-[1200px]:max-w-[1170px]  min-[1323px]:max-w-[1323px] relative w-full px-[15px] mx-auto
   }
-
+  
 
 
   .px-15 {

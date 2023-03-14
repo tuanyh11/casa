@@ -40,3 +40,38 @@ export function useClickInsideOutside(targetRef, callbackInside = () => {}, call
     };
   }, [targetRef, callbackInside, callbackOutside]);
 }
+
+
+export function useWindowScroll() {
+
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 100) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  return {
+    scrollToTop,
+    showButton,
+    setShowButton,
+    handleScroll
+  }
+}

@@ -4,10 +4,16 @@ import { Link, Navigate, Route, Routes, useLocation, useNavigate } from "react-r
 import { Footer, Header } from "./Components";
 import { About } from "./Pages";
 import 'reactjs-popup/dist/index.css';
+import { useEffect, useState } from "react";
+import { useWindowScroll } from "./hooks";
 
 
 function App() {
  
+  
+
+ const {scrollToTop, showButton} =  useWindowScroll()
+
 
   
 
@@ -18,6 +24,8 @@ function App() {
         <Route path="/about" element={<About/>} />
       </Routes>
       <Footer/>
+
+      <button  onClick={() => scrollToTop()} className={`scroll-top dark  ${showButton ? 'active': ''}`}><i className="fa-solid fa-angle-up"></i></button>
     </div>
   );
 }

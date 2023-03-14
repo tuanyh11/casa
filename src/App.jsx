@@ -4,6 +4,9 @@ import { Link, Navigate, Route, Routes, useLocation, useNavigate } from "react-r
 import { Header } from "./Components";
 import { About, BlogList, Contact } from "./Pages";
 
+import { Footer, Header } from "./Components";
+import { About } from "./Pages";
+import 'reactjs-popup/dist/index.css';
 
 
 function App() {
@@ -19,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<BlogList />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -5,7 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'screens-520': '520px',
+        'screen-567': '567px',
+        'screen-991': '991px',
+        'screen-1200': '1200px',
+        'screen-1300': '1320px'
+      },
       colors: {
+        
         'black-800': '#303030',
         'blue-#2f316f': '#2f316f',
         'black-#303030': '#303030',
@@ -18,5 +26,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }

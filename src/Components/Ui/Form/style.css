@@ -1,0 +1,137 @@
+.close-login-form {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #333;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1001;
+}
+
+.popup-form .form-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.popup-form .form-header .desc, .popup-form > .desc {
+    text-align: center;
+    color: #898989;
+    margin-bottom: 10px;
+}
+
+.popup-form input:not(.button) {
+    border: 1px solid #cccccc;
+
+    border-width: 0 0 1px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    background: transparent;
+    border-radius: 0px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.popup-form label:not(.rememberme) {
+    text-align: left;
+    color: #898989;
+    position: absolute;
+    font-weight: normal;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    transition: all 0.4s ease-out 0s;
+    -webkit-transition: all 0.4s ease-out 0s;
+    z-index: 0;
+}
+
+
+.popup-form .has-value input:not(.wp-submit) ~ label, .popup-form input:not(.wp-submit):valid ~ label {
+    font-size: 80%;
+    top: -15px;
+}
+.popup-form .has-value input:not(.wp-submit) ~ label, .popup-form input:not(.wp-submit):focus ~ label {
+    font-size: 80%;
+    top: -15px;
+}
+
+.popup-form input:focus ~ .input-focus-line {
+    background-color: #f598a4;
+    left: 0;
+    width: 100%;
+}
+
+.input-focus-line {
+    background-color: transparent;
+    bottom: -1px;
+    height: 2px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 0;
+    z-index: 2;
+    transition: all 0.4s ease-out 0s;
+    -webkit-transition: all 0.4s ease-out 0s;
+}
+
+.popup-form input[type=checkbox] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    width: 22px;
+    min-width: 22px;
+    height: 22px;
+    line-height: 1;
+    background-color: #eee !important;
+    border: 0;
+    margin: -3px 8px 0 0 !important;
+    outline: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: 0.05s border-color ease-in-out;
+    transition: 0.05s border-color ease-in-out;
+}
+
+
+.popup-form input[type=checkbox]:checked:before {
+    content: "\2713";
+    color: mediumseagreen !important;
+    line-height: 22px;
+}
+
+
+.popup-form button.button {
+    padding: 0 30px;
+    height: 46px;
+    line-height: 46px;
+    display: block;
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 1.6px;
+    background-color: #f598a4;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0px;
+    transition: all 0.4s ease-out 0s;
+}

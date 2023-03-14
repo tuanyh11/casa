@@ -1,0 +1,38 @@
+.pagination-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: right !important;
+    font-size: 0px;
+    margin: 95px -3px 0px;
+}
+
+.pagination-container .pagination-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 3px;
+    color: #303030;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #e5e5e5;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.pagination-container .pagination-item:hover {
+    color: #f598a4;
+}
+
+.pagination-container .active::before {
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+    top: 11px;
+    left: 0px;
+    border-top: 1px solid #f598a4;
+    transform-origin: 0% 0%;
+    width: 20px;
+    right: -4px;
+    margin: auto;
+}

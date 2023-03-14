@@ -17,9 +17,14 @@
     top: -30px;
 }
 
-/* .blog-list-main .item-blog-list .col-md-8 .blog-zoom-image-right::before {
+.blog-list-main .item-blog-list .col-md-8-right .blog-zoom-image::before {
     left: 0;
-} */
+}
+
+.blog-list-main .item-blog-list .col-md-8-right .blog-zoom-image a {
+    margin-right: 0px !important;
+    margin-left: 50px;
+}
 
 .blog-list-main .item-blog-list .col-md-8 .blog-zoom-image a {
     margin-right: 50px;

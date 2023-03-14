@@ -13,7 +13,6 @@ const middlewares = jsonServer.defaults()
 
 const db = routerV1.db
 
-const dbBlog = routerBlog.db
 
 server.use(middlewares)
 
@@ -34,7 +33,7 @@ server.get('/products/search', (req, res) => {
     res.status(200).json(products);
 });
 
-// server.get('/blog/', (req, res) => {
+// server.get('/blog/:id', (req, res) => {
 
   
 

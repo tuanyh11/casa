@@ -345,3 +345,29 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+
+
+
+.fixed-header.active-menu {
+  position: fixed !important;
+  top: 0;
+  margin: 0;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9998 !important;
+  transition: top 0.5s ease-out 0s !important;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+  background: #fff;
+  animation: fadeInDown .35s;
+}
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 

@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
 import { useClickInsideOutside, useWindowScroll } from "../../../../hooks";
+import Action from "./Action";
+import Logo from "./Logo";
 import NavMobile from "./NavMobile";
 
 const menuItems = [
@@ -15,15 +17,30 @@ const menuItems = [
 const NavMenu = () => {
   const loc = useLocation();
 
-
-
-  const {showButton} = useWindowScroll()
-
+  const { showButton } = useWindowScroll();
 
   return (
     <div>
-      <div className=" px-[15px] py-[10px] screen-1200:px-[50px] border-t border-[#e5e5e5] screen-991:border-none">
-        <div className="  flex screen-991:justify-center">
+      <div
+        className={`px-[15px] ${
+          showButton ? "py-0" : " py-[10px]"
+        } screen-1200:px-[50px]  border-t border-[#e5e5e5] screen-991:border-none relative fixed-header ${
+          showButton ? "active-menu" : ""
+        }`}
+      >
+        <div
+          className={`flex  ${
+            showButton ? "justify-between" : "screen-991:justify-center"
+          }`}
+        >
+          <div className="  screen-991:hidden flex justify-center items-center ">
+            <NavMobile menuItems={menuItems} />
+          </div>
+          {showButton && (
+            <div className="py-[2px] hidden screen-991:block">
+              <Logo />
+            </div>
+          )}
           <ul className="w-8/12 text-center hidden  screen-991:block">
             {menuItems.map((item) => (
               <li className="inline-block" key={item.name}>
@@ -38,10 +55,11 @@ const NavMenu = () => {
               </li>
             ))}
           </ul>
-
-          <div className="  screen-991:hidden ">
-             <NavMobile menuItems={menuItems}/>
-          </div>
+          {showButton && (
+            <div className="">
+              <Action />
+            </div>
+          )}
         </div>
       </div>
     </div>

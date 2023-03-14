@@ -41,6 +41,7 @@ export function useClickInsideOutside(targetRef, callbackInside = () => { }, cal
   }, [targetRef, callbackInside, callbackOutside]);
 }
 
+<<<<<<< HEAD
 //Pagination
 export const DOTS = '...';
 
@@ -111,3 +112,39 @@ export const usePagination = ({
   return paginationRange;
 };
 // --------
+=======
+
+export function useWindowScroll() {
+
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 100) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  return {
+    scrollToTop,
+    showButton,
+    setShowButton,
+    handleScroll
+  }
+}
+>>>>>>> bb89d09d91df2cdb2c91a72586a343d5643c6459

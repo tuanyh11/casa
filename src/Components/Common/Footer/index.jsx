@@ -44,11 +44,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="pt-[112px] pb-[113px] bg-[#211f1f]">
+      <div className="pt-[45px] pb-[50px] md:pt-[65px] md:pb-[70px] screen-1200:pt-[112px] screen-1200:pb-[113px] bg-[#211f1f] ">
       
         <div className=" container-custom max-[1366px]:!max-w-[1200px]">
           <div className="flex flex-wrap mx-[-15px]">
-            <div className="lg:w-3/12 px-15">
+            <div className="w-full md:w-6/12 mb-10 lg:mb-0  lg:w-3/12 px-15">
               <div className="">
                 <Link to={"/"} className="mb-[27px] -mt-1 block">
                   <img
@@ -81,14 +81,14 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-3/12 px-15">
+            <div className="w-full screens-425:w-6/12  mb-10 lg:mb-0 lg:w-3/12 px-15">
               <div>
-                <h3 className=" uppercase text-white font-medium mb-[26px] leading-7 ">
+                <h3 className=" uppercase text-white font-medium mb-[26px] text-[16px] leading-7 ">
                   QUICK LINKS
                 </h3>
                 {quickLinks.map((link) => (
                   <Link
-                    className="block text-[#999] mb-[11px]"
+                    className="block text-[#999] mb-[11px] last:mb-0"
                     key={link.path}
                     to={link.path}
                   >
@@ -97,9 +97,9 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="lg:w-3/12 px-15">
+            <div className="w-full screens-425:w-6/12  mb-10 lg:mb-0 lg:w-3/12 px-15">
               <div>
-                <h3 className=" uppercase text-white font-medium mb-[26px] leading-7 ">
+                <h3 className=" uppercase text-white font-medium mb-[26px] leading-7 text-[16px] ">
                   FIND A STORE
                 </h3>
                 <div className="text-[#999]">
@@ -130,8 +130,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-3/12 px-15">
-              <div className="flex flex-wrap -mx-[0.5px] ">
+            <div className="w-full md:w-6/12  mb-10 lg:mb-0 lg:w-3/12 px-15">
+              <div className="flex flex-wrap -mx-[0.5px] max-w-[300px] ">
                 {instagramImg.concat(instagramImg.slice(0, 2)).map((item, index) => (
                   <div key={index} className="w-4/12 p-[0.5px]">
                     <ImageHover link={item.link} url={item.image} />
@@ -140,6 +140,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-[#2f316f]">
+
+        <div className="container-custom  text-center py-[25px] lg:py-[37px]">
+                  <p className="text-white">Copyright © 2019 7uptheme Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ const CardlistSmall = (props) => {
   const imageUrl = featuredImage.node?.featuredImage
 
   return (
-    <div className="item-search-pro font-poppins">
+    <div className="item-search-pro font-poppins row">
       <div className="search-ajax-thumb product-thumb">
         <Link to={`/product/${slug}`}>
           <img

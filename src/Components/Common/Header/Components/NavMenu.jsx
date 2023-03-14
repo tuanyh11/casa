@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
-import { useClickInsideOutside } from "../../../../hooks";
+import { useClickInsideOutside, useWindowScroll } from "../../../../hooks";
 import NavMobile from "./NavMobile";
 
 const menuItems = [
@@ -17,7 +17,7 @@ const NavMenu = () => {
 
 
 
-
+  const {showButton} = useWindowScroll()
 
 
   return (

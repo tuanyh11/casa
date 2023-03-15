@@ -32,10 +32,6 @@ const socialMediaIcons = [
   },
 ];
 
-// const categories = ["BOWLS", "EXPLORE DINNERWARE", "PLATES"];
-
-const tags = ["CASUAL", "ELEGANT", "STYLE"];
-
 const Content = ({ blog }) => {
   const getDate = useDate();
   // blog?.featuredImage?.node?.mediaItemUrl
@@ -54,9 +50,9 @@ const Content = ({ blog }) => {
 
   const commentCount = blog?.commentCount;
 
+  const tags = blog?.tags?.nodes;
+
   console.log(comments);
-
-
 
   return (
     <div>
@@ -116,13 +112,13 @@ const Content = ({ blog }) => {
       <div className="single_post_meta">
         <div className="row">
           <div className="md:w-6/12 px-15 sm-social">
-            {tags.map((tag, index) => (
+            {tags?.map((tag, index) => (
               <Link
-                key={tag}
-                to={`/blog?tag=${tag}`}
+                key={tag.databaseId}
+                to={`/blog?tag=${tag.slug}`}
                 className="mr-[6px] font-poppins"
               >
-                {tag} {tags.length - 1 === index ? "" : ","}
+                {tag.name} {tags.length - 1 === index ? "" : ","}
               </Link>
             ))}
           </div>
@@ -214,16 +210,26 @@ const Content = ({ blog }) => {
               : `${commentCount} COMMENT`)}
         </h2>
 
+        <div className="">
+          {comments?.map((comment, index) => (
+            <div key={comment?.commentId}>
+              <Comment
+                {...comment}
+                replies={comment?.replies?.nodes}
+                getDate={getDate}
+                hasReplies={comment?.replies}
+                isLastComment={comment.length - 1 === index}
+              />
+            </div>
+          ))}
+        </div>
         {/* end comment */}
       </div>
 
       <div className="mt-[90px]">
-        <h2 className=" font-bold  text-[24px] inline-block relative title-single-related-post mb-[45px]">
-          LEAVE A COMMENT
-        </h2>
 
         <div className="">
-          
+            <CommentForm/>
         </div>
 
         <div className="">
@@ -241,51 +247,85 @@ const Content = ({ blog }) => {
 };
 
 function Comment(props) {
-  <ul>
-    <li className="comment odd alt thread-odd thread-alt depth-1">
-      <div className={`item-comment table-custom`}>
-        <div className="comment-thumb vcard">
-          <img
-            alt=""
-            src="https://secure.gravatar.com/avatar/8bc4b83b69d7fd758c3066e131f65ea7?s=122&amp;d=mm&amp;r=g"
-            srcset="https://secure.gravatar.com/avatar/8bc4b83b69d7fd758c3066e131f65ea7?s=244&amp;d=mm&amp;r=g 2x"
-            className=" rounded-full"
-            height="122"
-            width="122"
-            loading="lazy"
-            decoding="async"
-          />{" "}
+  const authorAvatar = props?.author?.node?.avatar?.url;
+
+  const authorName = props?.author?.node?.name;
+
+  const replies = props?.replies;
+
+  const date = props?.getDate(props?.date);
+
+  const content = props?.content;
+
+  const hasReplies = props.hasReplies;
+
+  const isLastComment = props?.isLastComment && !hasReplies
+
+  return (
+    <ul>
+      <li className="comment odd alt thread-odd thread-alt depth-1">
+        <div className={`item-comment table-custom ${isLastComment ? '' : 'mb-[30px]'}`}>
+          <div className="comment-thumb vcard">
+            <img
+              alt=""
+              src={authorAvatar}
+              srcset="https://secure.gravatar.com/avatar/8bc4b83b69d7fd758c3066e131f65ea7?s=244&amp;d=mm&amp;r=g 2x"
+              className=" rounded-full"
+              height="122"
+              width="122"
+              loading="lazy"
+              decoding="async"
+            />{" "}
+          </div>
+          <div className="comment-info">
+            <div className="author-date mb-[15px]">
+              <cite className="fn">{authorName}</cite>{" "}
+              <span className="navi cmt-date">{date}</span>
+            </div>
+            <div
+              className="desc-comment-text clearfix"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+            <div
+              className={`  mt-[15px] ${
+                hasReplies ? " comment-time-reply" : ""
+              }`}
+            >
+              <Link
+                rel="nofollow"
+                className="comment-reply-login"
+                to={"/login"}
+              >
+                Log in to Reply
+              </Link>{" "}
+            </div>
+          </div>
         </div>
-        <div className="comment-info">
-          <div className="author-date mb-[15px]">
-            <cite className="fn">Louis Estevez</cite>{" "}
-            <span className="navi cmt-date">May 24, 2019</span>
-          </div>
-          <div className="desc-comment-text clearfix">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation
-            </p>
-          </div>
-          <div className="comment-time-reply  mt-[15px]">
-            <Link rel="nofollow" className="comment-reply-login" to={"/login"}>
-              Log in to Reply
-            </Link>{" "}
-          </div>
+
+        <div className="pl-[130px]">
+          {replies?.map((reply, index) => (
+            <div key={reply?.commentId} className="mb-[30px] last:mb-0">
+              <Comment
+                {...reply}
+                replies={[]}
+                getDate={props?.getDate}
+                hasReplies={true}
+              />
+            </div>
+          ))}
         </div>
-      </div>
-    </li>
-  </ul>;
+      </li>
+    </ul>
+  );
 }
 
-function CommentForm({ nameUser, onCancel = () => {} }) {
+function CommentForm({ nameUser, onCancel = () => {}, label = 'comment' }) {
   return (
     <div>
       {!nameUser ? (
-        <h3 className="mb-[5px] text-[24px]  font-poppins text-dark-color font-semibold">
-          Leave a Reply
-        </h3>
+           <h2 className=" font-bold  text-[24px] inline-block relative title-single-related-post mb-[45px]">
+           LEAVE A COMMENT
+         </h2>
       ) : (
         <div className="flex items-center font-poppins text-dark-color">
           <h3 className="mb-[5px] text-[24px]    font-semibold">

@@ -322,6 +322,11 @@ blockquote {
     top: -6px;
 }
 
+.item-comment .comment-info .comment-time-reply {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
 .comment-info .fn {
     color: #303030;
     font-family: Poppins;

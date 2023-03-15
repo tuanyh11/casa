@@ -29,7 +29,6 @@ const BlogDetail = () => {
         queryFn: getSidebarBlogData,
         staleTime: Infinity,
         refetchOnWindowFocus: false,
-
       },
     ],
   });

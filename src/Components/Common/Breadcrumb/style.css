@@ -52,3 +52,17 @@
     font-size: 14px;
     color: #222;
 }
+
+@media screen and (max-width: 1200px) {
+    .wrap-bread-crumb .bread-crumb .bread-crunb-inner h2 {
+        font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1199 - 320)));
+        line-height: calc(28px + (32 - 28) * ((100vw - 320px) / (1199 - 320)));
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .wrap-bread-crumb {
+        height: auto;
+        padding: 100px 30px;
+    }
+}

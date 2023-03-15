@@ -1,6 +1,6 @@
 import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { About, BlogDetail, BlogList, Contact } from "./Pages";
+import { About, BlogDetail, BlogList, Contact, Home } from "./Pages";
 
 import { Footer, Header } from "./Components";
 import "reactjs-popup/dist/index.css";
@@ -34,6 +34,15 @@ function App() {
   return (
     <>
       <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<BlogList />} />
+      </Routes>
+      <Footer />
+
+      <button onClick={() => scrollToTop()} className={`scroll-top dark  ${showButton ? 'active' : ''}`}><i className="fa-solid fa-angle-up"></i></button>
       {Children}
       <button
         onClick={() => scrollToTop()}

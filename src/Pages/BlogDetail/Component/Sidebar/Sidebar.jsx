@@ -5,15 +5,17 @@ import Instagram from './Instagram'
 import RelateProduct from './RelateProduct'
 import Tags from './Tags'
 
-const Sidebar = () => {
+const Sidebar = ({data}) => {
+
+  
   return (
     <div>
 
-      <Author/>
+      <Author data={data?.author}/>
 
-      <Category/>
+      <Category data={data?.cate}/>
 
-      <Tags/>
+      <Tags data={data?.tags}/>
 
       <RelateProduct/>
 

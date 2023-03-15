@@ -303,9 +303,11 @@ blockquote {
     padding-left: 20px;
 }
 
-.table-custom > div {
-    display: table-cell;
-    vertical-align: top;
+/* comment */
+
+.item-comment .comment-thumb {
+    padding-right: 30px;
+    width: 130px;
 }
 
 .widget-posts .post-info .post-title {
@@ -313,4 +315,34 @@ blockquote {
     line-height: 24px;
     max-height: 48px;
     overflow: hidden;
+}
+
+.item-comment .comment-info {
+    position: relative;
+    top: -6px;
+}
+
+.item-comment .comment-info .comment-time-reply {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment-info .fn {
+    color: #303030;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-right: 10px;
+}
+
+.comment-info .cmt-date {
+    margin: 20px 0 0;
+    font-size: 12px;
+}
+
+.navi {
+    color: #303030;
 }

@@ -1,40 +1,13 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import Slider from "react-slick";
 import { useDate } from "../../../../hooks";
+import BlogMeta from "./BlogMeta";
 import Image from "./Image";
-
-const socialMediaIcons = [
-  {
-    name: "Facebook",
-    link: "https://www.facebook.com/",
-    icon: "fa-brands fa-facebook-f",
-  },
-  {
-    name: "Twitter",
-    link: "https://twitter.com/",
-    icon: "fab fa-twitter",
-  },
-  {
-    name: "Google+",
-    link: "https://plus.google.com/",
-    icon: "fa-brands fa-google-plus-g",
-  },
-  {
-    name: "Pinterest",
-    link: "https://www.pinterest.com/",
-    icon: "fab fa-pinterest",
-  },
-  {
-    name: "Email",
-    link: "mailto:example@example.com",
-    icon: "fas fa-envelope",
-  },
-];
+import RelatedPost from "./RelatedBlog";
 
 const Content = ({ blog }) => {
   const getDate = useDate();
-  // blog?.featuredImage?.node?.mediaItemUrl
+
   const featureImage = blog?.post?.imagePost;
 
   const categories = blog?.categories?.nodes;
@@ -52,15 +25,13 @@ const Content = ({ blog }) => {
 
   const tags = blog?.tags?.nodes;
 
-  console.log(comments);
-
   return (
     <div>
       <div className="mb-[60px]">
         <Image url={featureImage} />
 
         {/* content  */}
-        <div className="">
+        <div>
           <div className="post-meta-data">
             <div className=" meta-cats silver  after:content-['/'] after:mx-2 after:text-gray-#999 after:inline-block font-poppins ">
               {categories?.map((category, index) => (
@@ -108,97 +79,16 @@ const Content = ({ blog }) => {
         ></div>
 
         {/* end content  */}
-      </div>
-      <div className="single_post_meta">
-        <div className="row">
-          <div className="md:w-6/12 px-15 sm-social">
-            {tags?.map((tag, index) => (
-              <Link
-                key={tag.databaseId}
-                to={`/blog?tag=${tag.slug}`}
-                className="mr-[6px] font-poppins"
-              >
-                {tag.name} {tags.length - 1 === index ? "" : ","}
-              </Link>
-            ))}
-          </div>
 
-          <div className="md:w-6/12 px-15 sm-social">
-            <div className="flex justify-end -mx-[14px] ">
-              {socialMediaIcons.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.link}
-                  title={item.name}
-                  className={`  leading-6  first:pl-0 `}
-                >
-                  <span className="share-icon">
-                    <i className={item.icon}></i>
-                  </span>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
+      {<BlogMeta tags={tags}/>}
 
-      {/* relate product */}
+      {/* relate post */}
       <div className="mb-20">
-        <h2 className=" font-bold  text-[24px] inline-block relative title-single-related-post mb-[45px]">
-          RELATED POTS
-        </h2>
-        <div className="-mx-[15px]">
-          <Slider slidesToShow={3}>
-            {new Array(3).fill(0).map((_, i) => (
-              <div key={i}>
-                <div className="mx-[15px] item-post item-post-style2">
-                  <div className="post-thumb banner-advs zoom-image overlay-image relative">
-                    <a
-                      href="https://casa.7uptheme.net/2019/05/15/the-key-to-victory-was-creating-routines/"
-                      className="adv-thumb-link after:inset-0 after:absolute"
-                    >
-                      <img
-                        width="280"
-                        height="155"
-                        src="https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-1-280x155.jpg"
-                        className="attachment-280x155 size-280x155 wp-post-image"
-                        alt=""
-                        decoding="async"
-                        loading="lazy"
-                      />{" "}
-                    </a>
-                  </div>
-                  <div className="post-info mt-3">
-                    <h3 className="title16 text-[16px] uppercase post-title font-medium text-uppercase">
-                      <Link to={`/blog/${123}`}>
-                        The key to victory was creating routines.
-                      </Link>
-                    </h3>
-                    <div className="meta-post text-capitalize">
-                      <ul className="list-inline-block capitalize">
-                        <li className="meta-author">
-                          <span>By</span>{" "}
-                          <Link
-                            className=" text-main"
-                            to={`/blog?author=${"tuanleo"}`}
-                          >
-                            admin
-                          </Link>
-                        </li>
-                        <li className="meta-date after:!hidden">
-                          May 15, 2019
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
+        <RelatedPost />
       </div>
 
-      {/* end relate product */}
+      {/* end relate post */}
 
       {/* comment */}
 
@@ -227,9 +117,8 @@ const Content = ({ blog }) => {
       </div>
 
       <div className="mt-[90px]">
-
         <div className="">
-            <CommentForm/>
+          <CommentForm />
         </div>
 
         <div className="">
@@ -246,6 +135,8 @@ const Content = ({ blog }) => {
   );
 };
 
+
+
 function Comment(props) {
   const authorAvatar = props?.author?.node?.avatar?.url;
 
@@ -259,12 +150,16 @@ function Comment(props) {
 
   const hasReplies = props.hasReplies;
 
-  const isLastComment = props?.isLastComment && !hasReplies
+  const isLastComment = props?.isLastComment && !hasReplies;
 
   return (
     <ul>
       <li className="comment odd alt thread-odd thread-alt depth-1">
-        <div className={`item-comment table-custom ${isLastComment ? '' : 'mb-[30px]'}`}>
+        <div
+          className={`item-comment table-custom ${
+            isLastComment ? "" : "mb-[30px]"
+          }`}
+        >
           <div className="comment-thumb vcard">
             <img
               alt=""
@@ -291,19 +186,26 @@ function Comment(props) {
                 hasReplies ? " comment-time-reply" : ""
               }`}
             >
-              <Link
+              {/* <Link
                 rel="nofollow"
                 className="comment-reply-login"
                 to={"/login"}
               >
                 Log in to Reply
-              </Link>{" "}
+              </Link>{" "} */}
+              <button
+                rel="nofollow"
+                className="comment-reply-login transition-main hover:text-main"
+                to={"/login"}
+              >
+                 Reply
+              </button>{" "}
             </div>
           </div>
         </div>
 
         <div className="pl-[130px]">
-          {replies?.map((reply, index) => (
+          {replies?.map((reply) => (
             <div key={reply?.commentId} className="mb-[30px] last:mb-0">
               <Comment
                 {...reply}
@@ -319,13 +221,13 @@ function Comment(props) {
   );
 }
 
-function CommentForm({ nameUser, onCancel = () => {}, label = 'comment' }) {
+function CommentForm({ nameUser, onCancel = () => {}, label = "comment" }) {
   return (
     <div>
       {!nameUser ? (
-           <h2 className=" font-bold  text-[24px] inline-block relative title-single-related-post mb-[45px]">
-           LEAVE A COMMENT
-         </h2>
+        <h2 className=" font-bold  text-[24px] inline-block relative title-single-related-post mb-[45px]">
+          LEAVE A COMMENT
+        </h2>
       ) : (
         <div className="flex items-center font-poppins text-dark-color">
           <h3 className="mb-[5px] text-[24px]    font-semibold">
@@ -346,7 +248,9 @@ function CommentForm({ nameUser, onCancel = () => {}, label = 'comment' }) {
           className="px-[15px] py-[10px] w-full border border-solid outline-none"
         ></textarea>
 
-        <div className="mb-4">{/* <Button label={"POST COMMENT"} /> */}</div>
+        <div className="mb-4">
+          <button className="button">Comment</button>
+        </div>
       </form>
     </div>
   );

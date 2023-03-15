@@ -1,47 +1,67 @@
-import jsonServer from 'json-server';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import jsonServer from "json-server";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+import bodyParser from "body-parser";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+const server = jsonServer.create();
+const routerV1 = jsonServer.router(__dirname + "/jsonDb/db.json");
 
-const server = jsonServer.create()
-const routerV1 = jsonServer.router(__dirname + '/jsonDb/db.json')
+const middlewares = jsonServer.defaults();
 
-const middlewares = jsonServer.defaults()
+const db = routerV1.db;
 
-const db = routerV1.db
+server.use(middlewares);
 
-
-server.use(middlewares)
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({ extended: true }));
 
 const getData = (key) => {
-  return JSON.parse(JSON.stringify(db.get(key)))
-}
+  return JSON.parse(JSON.stringify(db.get(key)));
+};
 
-server.get('/products', (req, res) => {
-    res.status(200).json(db.get('product'))
-})
-
-server.get('/products/search', (req, res) => {
-    const { q } = req.query; // Get the search query from the URL params
-    const products = JSON.parse(JSON.stringify(db.get("product"))).data.products.nodes.filter(product => {
-      return product.name.toLowerCase().includes(q.toLowerCase());
-    });
-
-    res.status(200).json(products);
+server.get("/products", (req, res) => {
+  res.status(200).json(db.get("product"));
 });
 
-// server.get('/blog/:id', (req, res) => {
+server.get("/products/search", (req, res) => {
+  const { q } = req.query; // Get the search query from the URL params
+  const products = getData("product").data.products.nodes.filter((product) => {
+    return product.name.toLowerCase().includes(q.toLowerCase());
+  });
 
-  
+  res.status(200).json(products);
+});
 
-//   res.status(200).json(data);
-// })
+server.post("/blog/comments", (req, res) => {
+  const { author, content, parentId, blogId } = req?.body;
 
-server.use(routerV1)
+  const comment = { id: Date.now(), author, content, date: new Date(), parentId};
+
+  if(content === "") return res.status(400).json({ error: "Content can't be empty"})
+
+  const blog = db.get("blog").find({ id: blogId }).value(); // Get the blog object from the database
+
+  if(parentId) {
+    const parentComment = db.get("blogs").find({ id: blogId }).get("comments").get("nodes").find({ id: parentId }).value(); // Get the parent comment from the database
+    parentComment.replies = { nodes: [...parentComment.replies.nodes, comment] }; // Update the parent comment with the new reply
+    db.write(); // Write the updated comment to the database
+  } else {
+    console.log(1);
+
+    db.get("blogs").find({ id: blogId }).get("comments").get("nodes").push(comment).write(); // Add the comment to the blog's comments array
+  }
+
+
+  res.status(200).json(blog);
+});
+
+
+
+server.use(routerV1);
 
 server.listen(4000, () => {
-    console.log('JSON Server is running')
-})
+  console.log("JSON Server is running");
+});

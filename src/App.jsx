@@ -20,6 +20,8 @@ function App() {
     return (
       <>
         {" "}
+      <Header />
+
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -33,7 +35,6 @@ function App() {
 
   return (
     <>
-      <Header />
 
       <button onClick={() => scrollToTop()} className={`scroll-top dark  ${showButton ? 'active' : ''}`}><i className="fa-solid fa-angle-up"></i></button>
       {Children}

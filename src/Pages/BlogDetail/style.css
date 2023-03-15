@@ -343,6 +343,31 @@ blockquote {
     font-size: 12px;
 }
 
+.comment-form .button {
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 1.6px;
+    background-color: rgb(245, 152, 164);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 0px 45px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 0px;
+    transition: all 0.4s ease-out 0s;
+}
+
+.comment-form .button:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(34, 34, 34);
+}
+
 .navi {
     color: #303030;
 }

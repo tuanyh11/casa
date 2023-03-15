@@ -8,30 +8,23 @@ import Sidebar from "./Component/Sidebar/Sidebar";
 import "./style.css";
 
 const BlogDetail = () => {
+
   const id = useParams()?.id;
+  const {data: blog, refetch} = useQuery({
+    queryKey: ["blog-detail", id],
+    queryFn: () => getBlogById(id),
+    staleTime: Infinity,
+    refetchOnWindowFocus: false,
+  })
 
-  // const { data } = useQuery({
-  //   queryKey: ["blog-detail", id],
-  //   refetchOnWindowFocus: false,
-  //   queryFn: () => getBlogById(id),
-  // });
 
-  const [{ data: blog }, { data: sidebar }] = useQueries({
-    queries: [
-      {
-        queryKey: ["blog-detail", id],
-        queryFn: () => getBlogById(id),
-        staleTime: Infinity,
-        refetchOnWindowFocus: false,
-      },
-      {
-        queryKey: ["sidebar-blog"],
-        queryFn: getSidebarBlogData,
-        staleTime: Infinity,
-        refetchOnWindowFocus: false,
-      },
-    ],
-  });
+  const {data: sidebar } = useQuery({
+    queryKey: ["sidebar-blog"],
+    queryFn: getSidebarBlogData,
+    staleTime: Infinity,
+    refetchOnWindowFocus: false,
+  },)
+
 
   return (
     <div>
@@ -41,7 +34,7 @@ const BlogDetail = () => {
         <div className="container">
           <div className="row">
             <div className="w-full md:w-8/12 screen-991:w-9/12 px-15">
-              <Content blog={blog} />
+              <Content blog={blog} refetch={refetch}/>
             </div>
             <div className="w-full md:w-4/12 screen-991:w-3/12 px-15 ">
               <div className="mt-[50px] md:mt-0">

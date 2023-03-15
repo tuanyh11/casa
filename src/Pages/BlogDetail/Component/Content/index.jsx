@@ -249,7 +249,7 @@ function CommentForm({ nameUser, onCancel = () => {}, label = "comment" }) {
         ></textarea>
 
         <div className="mb-4">
-          <button className="button">Comment</button>
+          <button className="button !bg-main !text-white !border-main">Comment</button>
         </div>
       </form>
     </div>

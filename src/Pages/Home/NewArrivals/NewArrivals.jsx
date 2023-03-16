@@ -1,99 +1,21 @@
-import React from 'react';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
+import React, { useEffect } from 'react';
+import { getProducts } from '../../../api';
 import { Product } from '../../../Components';
 
 
 
 function NewArrivals(props) {
-    const data = [
-        {
-            name: 'Runner red galbraith',
-            regular: '$35.00',
-            sale: '$35.00',
-            list: [
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/06//product-36-630x300.jpg'
-                },
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/06//product-36-630x300.jpg'
-                },
-            ]
-        },
-        {
-            name: 'Runner red galbraith',
-            regular: '$35.00',
-            sale: '$35.00',
-            list: [
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-14-360x360.jpg'
-                },
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-15-360x360.jpg'
-                },
-            ]
-        },
-        {
-            name: 'Runner red galbraith',
-            regular: '$35.00',
-            sale: '$35.00',
-            list: [
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-14-360x360.jpg'
-                },
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-15-360x360.jpg'
-                },
-            ]
-        }, {
-            name: 'Runner red galbraith',
-            regular: '$35.00',
-            sale: '$35.00',
-            list: [
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-14-360x360.jpg'
-                },
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-15-360x360.jpg'
-                },
-            ]
-        }, {
-            name: 'Runner red galbraith',
-            regular: '$35.00',
-            sale: '$35.00',
-            list: [
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-14-360x360.jpg'
-                },
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-15-360x360.jpg'
-                },
-            ]
-        }, {
-            name: 'Runner red galbraith',
-            regular: '$35.00',
-            sale: '$35.00',
-            list: [
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-14-360x360.jpg'
-                },
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-15-360x360.jpg'
-                },
-            ]
-        }, {
-            name: 'Runner red galbraith',
-            regular: '$35.00',
-            sale: '$35.00',
-            list: [
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-14-360x360.jpg'
-                },
-                {
-                    image: 'https://casa.7uptheme.net/wp-content/uploads/2019/05//product-15-360x360.jpg'
-                },
-            ]
-        },
+    const { data } = useQuery({
+        queryKey: ["product-arrivals"],
+        queryFn: getProducts
+    })
 
-    ]
+
+
+    console.log(data)
+
 
     return (
         <div className='new-arrivals relative mb-[130px]'>
@@ -105,7 +27,7 @@ function NewArrivals(props) {
             <div className='product-wrap'>
                 <div className='list-product-wrap'>
                     {
-                        data.map((item, index) => (
+                        [...new Array(7)].map((item, index) => (
                             <div className='list-col-item' key={index}>
                                 <Product data={item} />
                             </div>

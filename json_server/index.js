@@ -2,6 +2,7 @@ import jsonServer from "json-server";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import bodyParser from "body-parser";
+import cors from "cors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -14,7 +15,7 @@ const middlewares = jsonServer.defaults();
 const db = routerV1.db;
 
 server.use(middlewares);
-
+server.use(cors());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
@@ -22,9 +23,6 @@ const getData = (key) => {
   return JSON.parse(JSON.stringify(db.get(key)));
 };
 
-server.get("/products", (req, res) => {
-  res.status(200).json(db.get("product"));
-});
 
 server.get("/products/search", (req, res) => {
   const { q } = req.query; // Get the search query from the URL params

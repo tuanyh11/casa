@@ -56,7 +56,12 @@ server.post("/blog/comments", (req, res) => {
   res.status(200).json(blog);
 });
 
+server.post("/contact", (req, res) => {
+  const {name, email, sub, message} = req.body;
 
+  db.get("contact").push({ name, email, sub, message }).write();
+  res.status(200).json({ message: "Thank you for contacting us" });
+})
 
 server.use(routerV1);
 

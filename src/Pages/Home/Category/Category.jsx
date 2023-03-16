@@ -1,17 +1,18 @@
 import React from 'react';
 
-const Category = () => {
+const Category = (props) => {
+
     return (
         <div className='category-item'>
             <a href='#'>
-                <img src='https://casa.7uptheme.net/wp-content/uploads/2019/06//obc-deco-410x260.jpg' />
+                <img src={props.data.image} />
             </a>
             <div className="category-banner-info ">
-                <h4 className="text-[24px] font-bold uppercase ">
-                    LIGHT<br />
-                    LANTERN
+                <h4 className="text-[24px] font-bold uppercase "
+                    dangerouslySetInnerHTML={{ __html: props.data.name }}>
+
                 </h4>
-                <h5 className="text-[14px] uppercase obc-line">DECOR</h5>
+                <h5 className="text-[14px] uppercase obc-line">{props.data.category}</h5>
             </div>
         </div>
     );

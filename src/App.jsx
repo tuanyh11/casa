@@ -21,6 +21,7 @@ function App() {
       <>
         {" "}
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogList />} />
@@ -34,13 +35,13 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<BlogList />} />
       </Routes>
-      <Footer />
+      <Footer /> */}
 
       <button onClick={() => scrollToTop()} className={`scroll-top dark  ${showButton ? 'active' : ''}`}><i className="fa-solid fa-angle-up"></i></button>
       {Children}

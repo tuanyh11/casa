@@ -34,13 +34,13 @@ server.get("/products/search", (req, res) => {
 server.post("/blog/comments", (req, res) => {
   const { author, content, parentId, blogId } = req?.body;
 
-  const comment = { id: Date.now(), author, content, date: new Date(), parentId};
+  const comment = { id: Date.now(), author, content, date: new Date(), parentId };
 
-  if(content === "") return res.status(400).json({ error: "Content can't be empty"})
+  if (content === "") return res.status(400).json({ error: "Content can't be empty" })
 
   const blog = db.get("blog").find({ id: blogId }).value(); // Get the blog object from the database
 
-  if(parentId) {
+  if (parentId) {
     const parentComment = db.get("blogs").find({ id: blogId }).get("comments").get("nodes").find({ id: parentId }).value(); // Get the parent comment from the database
     parentComment.replies = { nodes: [...parentComment.replies.nodes, comment] }; // Update the parent comment with the new reply
     db.write(); // Write the updated comment to the database
@@ -54,10 +54,10 @@ server.post("/blog/comments", (req, res) => {
   res.status(200).json(blog);
 });
 
-server.post("/contact", (req, res) => {
-  const {name, email, sub, message} = req.body;
-
-  db.get("contact").push({ name, email, sub, message }).write();
+server.post("/contact", async (req, res) => {
+  const { name, email, subject, message } = req.body;
+  await new Promise((res, rej) => setTimeout(res, 5000))
+  db.get("contact").push({ name, email, subject, message }).write();
   res.status(200).json({ message: "Thank you for contacting us" });
 })
 

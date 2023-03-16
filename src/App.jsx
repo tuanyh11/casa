@@ -1,10 +1,6 @@
 import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
-<<<<<<< HEAD
-import { About, BlogDetail, BlogList, Contact, Home, Shop } from "./Pages";
-=======
-import { About, BlogDetail, BlogList, Contact, Home, ProductDetail } from "./Pages";
->>>>>>> 13760177a74c3edebcb206a4e01aff5e58861c8e
+import { About, BlogDetail, BlogList, Contact, Home, ProductDetail, Shop } from "./Pages";
 
 import { Footer, Header } from "./Components";
 import "reactjs-popup/dist/index.css";
@@ -40,7 +36,7 @@ function App() {
     );
   }, []);
 
-  console.log(1)
+  // console.log(1)
 
   return (
     <>

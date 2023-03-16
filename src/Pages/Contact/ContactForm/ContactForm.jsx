@@ -1,4 +1,6 @@
+import { useMutation } from '@tanstack/react-query';
 import React, { useState } from 'react';
+import { createContact } from '../../../api';
 
 function ContactForm(props) {
     const [name, setName] = useState('');
@@ -48,17 +50,19 @@ function ContactForm(props) {
         }
     };
 
+    const { mutate, isLoading } = useMutation(createContact)
+    console.log(isLoading);
     let content = {
         'name': name,
         'email': email,
-        'ssubject': subject,
+        'subject': subject,
         'message': message,
     }
 
     const handleSubmit = () => {
         if (content !== null && content.name !== '' && content.email !== '' && content.subject !== '' && content.message !== '') {
             console.log(content);
-
+            mutate(content)
         }
         else {
             console.log('error');
@@ -135,10 +139,8 @@ function ContactForm(props) {
                             type='submit'
                             value='Send Message'
                             onClick={handleSubmit}
-                        // disabled={!loading}
-
                         />
-                        <span className='loading '></span>
+                        <span className={`loading ${isLoading === true ? 'visible' : 'invisible'}`}></span>
                     </div>
                 </div>
             </div>

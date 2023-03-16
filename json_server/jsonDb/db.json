@@ -3114,7 +3114,7 @@
       }
     }
   ],
-  "product-tag":  [
+  "product-tag": [
     {
       "node": {
         "id": "dGVybToxNzI=",
@@ -3244,6 +3244,14 @@
         "name": "Plates",
         "slug": "plates"
       }
+    }
+  ],
+  "contact": [
+    {
+      "name": "cca",
+      "email": "acsc",
+      "subject": "casc",
+      "message": "csacas"
     }
   ]
 }

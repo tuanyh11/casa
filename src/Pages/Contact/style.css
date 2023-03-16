@@ -138,7 +138,7 @@
 }
 
 .contact-main .contact-form .contact-form-page .form-item-submit .loading {
-    visibility: hidden;
+    /* visibility: hidden; */
     /* visibility: visible; */
     display: inline-block;
     background-color: #23282d;

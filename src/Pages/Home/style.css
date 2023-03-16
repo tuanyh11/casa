@@ -362,3 +362,256 @@
 }
 
 /* ------ */
+
+/* ----DealOf---- */
+.deal-of-main .deal-of-banner-advs .adv-thumb-link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-out 0s;
+}
+
+.deal-of-main .deal-of-banner-advs .adv-thumb-link img {
+    transition: transform 1s;
+}
+
+.deal-of-main .deal-of-banner-advs:hover img {
+    transform: scale(1.05);
+}
+
+.deal-of-main .deal-of-banner-advs .deal-of-banner {
+    padding-left: 120px;
+    height: 260px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.deal-of-main .deal-of-banner-advs .deal-of-banner h3 {
+    margin-bottom: 25px;
+}
+
+.deal-of-main .deal-of-banner .obc-line {
+    position: relative;
+    padding-left: 65px;
+}
+
+.deal-of-main .deal-of-banner .obc-line::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    transform: rotate(45deg);
+    top: 50%;
+    left: -7px;
+    border-top: 1px solid;
+}
+
+.deal-of-main .obc-line .countdown .countdown-section {
+    width: auto !important;
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    color: #f598a4;
+}
+
+.deal-of-main .obc-line .countdown .countdown-section::after {
+    content: ':';
+    margin-left: 5px;
+}
+
+.deal-of-main .obc-line .countdown .countdown-section:last-child::after {
+    content: none;
+}
+
+.deal-of-main .deal-of-banner .banner-button {
+    margin-top: 38px;
+}
+
+.deal-of-main .deal-of-banner .banner-button a {
+    display: inline-block;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 45px;
+    height: 60px;
+    line-height: 60px;
+    border: none;
+    letter-spacing: 1.6px;
+    background-color: #f598a4;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0px;
+    transition: all 0.4s ease-out 0s;
+}
+
+.deal-of-main .deal-of-banner .banner-button a:hover {
+    background: #222;
+}
+
+/* ----- */
+
+/* -----Trending---- */
+
+/* ------- */
+/* -----OurTeam---- */
+.our-team-main {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+    background-image: url(http://casa.7uptheme.net/wp-content/uploads/2019/10/a13.jpg?id=2385) !important;
+    /* transition: opacity .5s ease; */
+    overflow: hidden;
+}
+
+.our-team-main .our-team-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.our-team-main .our-team-wrapper .content-info {
+    margin: -7px 0 54px;
+    text-align: center;
+}
+
+.our-team-main .our-team-wrapper .content-info h3 {
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.our-team-main .our-team-wrapper .content-info h3::before {
+    transform: translateX(-50%) rotate(45deg);
+    width: 60px;
+    left: 50%;
+    top: 50%;
+    margin-top: -1px;
+    content: "";
+    position: absolute;
+    border: 1px solid;
+}
+
+.our-team-main .our-team-wrapper .content-info .desc-block {
+    max-width: 630px;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
+.our-team-main .our-team-wrapper .banner-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-team-main .banner-slider .item-about-team .about-team-thumb {
+    transition: all 0.35s ease-out 0s;
+    position: relative;
+}
+
+.our-team-main .banner-slider .item-about-team {
+    transition: all 0.35s ease-out 0s;
+}
+
+.item-about-team .about-team-thumb .adv-thumb {
+    transition: all 0.35s ease-out 0s;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.item-about-team .about-team-thumb .adv-thumb::after {
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.4s ease-out 0s;
+}
+
+.item-about-team .about-team-info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+    transition: all 0.35s ease-out 0s;
+}
+
+.item-about-team .about-team-info h3 {
+    transform: translate3d(0, 40px, 0);
+    margin-bottom: 5px;
+}
+
+.item-about-team .about-team-info p {
+    transform: translate3d(0, 30px, 0);
+    margin-bottom: 35px;
+}
+
+.item-about-team .about-team-info .share-social-team {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.item-about-team .about-team-info .share-social-team a {
+    padding: 0px 10px;
+}
+
+.item-about-team .adv-thumb img {
+    transition: all 0.4s ease-out 0s;
+}
+
+.item-about-team:hover .adv-thumb img {
+    filter: blur(5px);
+}
+
+.item-about-team .about-team-thumb:hover .about-team-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item-about-team:hover .about-team-info h3 {
+    transform: translate3d(0, 0, 0);
+}
+
+.item-about-team:hover .about-team-info p {
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.12s;
+}
+
+.item-about-team:hover .share-social-team {
+    transition-delay: 0.18s;
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+.item-about-team .about-team-thumb:hover .adv-thumb::after {
+    opacity: 1;
+}
+
+.our-team-wrapper .banner-slider .slick-slide {
+    width: 300px !important;
+    margin-right: 30px;
+}
+
+.our-team-wrapper .banner-slider .slick-slide:last-child {
+    margin-right: 0px !important;
+}
+
+/* ------- */

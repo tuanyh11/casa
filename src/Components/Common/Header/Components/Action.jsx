@@ -63,11 +63,13 @@ const Action = () => {
                     maxWidth: "400px",
                     height: "auto",
                     top: 50,
-                    // position: "relative",
+                    position: "fixed",
+                    zIndex: 999999999999999,
                   }}
                   arrow={false}
                   overlayStyle={{
                     background: "rgba(0, 0, 0, 0.3)",
+                    zIndex: 99999999999999,
                   }}
                 >
                   {(close) => <LoginForm onClose={close} />}

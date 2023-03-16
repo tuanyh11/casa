@@ -10,6 +10,8 @@ export const searchProduct = async (text) => {
    return product.data
 }
 
+
+// blog
 export const getBlogById = async (id) => {
    const blog =  await instanceAxios.get(`http://localhost:4000/blogs?id=${id}`)
    return blog.data?.[0]
@@ -30,3 +32,9 @@ export const getSidebarBlogData = async () => {
    const data =  await Promise.all([getCategoryBlog(), getTagBlog()])
    return data
 }
+
+export const createBlogComment = async (data) => {
+   await instanceAxios.post(`http://localhost:4000/blog/comments`, data)
+}
+
+// end blog

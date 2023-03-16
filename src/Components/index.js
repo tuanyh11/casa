@@ -7,4 +7,6 @@ export { default as Product } from './Common/Product/Product'
 
 // Ui
 export { default as ImageHover } from './Ui/ImageHover/ImageHover';
+export { default as Comment } from './Ui/Blog/Comment';
+export { default as CommentForm } from './Ui/Blog/CommentForm';
 

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 const LoginForm = ({ onClose }) => {
-  console.log(onClose);
 
   return (
     <div>

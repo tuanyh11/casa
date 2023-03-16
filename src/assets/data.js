@@ -87,3 +87,31 @@ export const quickLinks = [
   { title: "FAQ Page", path: "/faq" },
   { title: "Contact Us", path: "/contact" },
 ];
+
+export const socialMediaIconsBlog = [
+  {
+    name: "Facebook",
+    link: "https://www.facebook.com/",
+    icon: "fa-brands fa-facebook-f",
+  },
+  {
+    name: "Twitter",
+    link: "https://twitter.com/",
+    icon: "fab fa-twitter",
+  },
+  {
+    name: "Google+",
+    link: "https://plus.google.com/",
+    icon: "fa-brands fa-google-plus-g",
+  },
+  {
+    name: "Pinterest",
+    link: "https://www.pinterest.com/",
+    icon: "fab fa-pinterest",
+  },
+  {
+    name: "Email",
+    link: "mailto:example@example.com",
+    icon: "fas fa-envelope",
+  },
+];

@@ -757,7 +757,6 @@
       ]
     }
   },
-
   "categories-blog": [
     {
       "id": "dGVybTox",
@@ -808,7 +807,6 @@
       "slug": "uncategorized"
     }
   ],
-
   "tags-blog": [
     {
       "id": "dGVybTozMTU=",
@@ -867,7 +865,6 @@
       "tagId": 337
     }
   ],
-
   "blogs": [
     {
       "databaseId": 569,
@@ -875,7 +872,6 @@
       "title": "The new arrivals: spring  colors and shapes",
       "slug": "the-new-arrivals-spring-colors-and-shapes",
       "commentCount": 4,
-      
       "author": {
         "node": {
           "databaseId": 1,
@@ -926,7 +922,9 @@
             },
             "replies": {
               "nodes": []
-            }
+            },
+            "parentId": null,
+            "id": "Y29tbWVudDo4"
           },
           {
             "commentId": 7,
@@ -943,7 +941,9 @@
             },
             "replies": {
               "nodes": []
-            }
+            },
+            "parentId": "Y29tbWVudDo1",
+            "id": "Y29tbWVudDo3"
           },
           {
             "commentId": 6,
@@ -959,8 +959,83 @@
               }
             },
             "replies": {
-              "nodes": []
-            }
+              "nodes": [
+                {
+                  "id": 1678854408050,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "asdsad",
+                  "date": "2023-03-15T04:26:48.050Z",
+                  "parentId": "Y29tbWVudDo2"
+                },
+                {
+                  "id": 1678854441825,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "asdsadasdasd",
+                  "date": "2023-03-15T04:27:21.825Z",
+                  "parentId": "Y29tbWVudDo2"
+                },
+                {
+                  "id": 1678854464108,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "asdsadasdasdasd",
+                  "date": "2023-03-15T04:27:44.108Z",
+                  "parentId": "Y29tbWVudDo2"
+                },
+                {
+                  "id": 1678854474936,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "test",
+                  "date": "2023-03-15T04:27:54.936Z",
+                  "parentId": "Y29tbWVudDo2"
+                }
+              ]
+            },
+            "parentId": "Y29tbWVudDo1",
+            "id": "Y29tbWVudDo2"
           },
           {
             "commentId": 5,
@@ -987,9 +1062,12 @@
                         "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
                       },
                       "email": null,
-                      "name": "casa"
+                      "name": "casa",
+                      "id": "dXNlcjox"
                     }
-                  }
+                  },
+                  "parentId": "Y29tbWVudDo1",
+                  "id": "cG9zdDo1MTE=1"
                 },
                 {
                   "commentId": 6,
@@ -1001,12 +1079,143 @@
                         "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
                       },
                       "email": null,
-                      "name": "casa"
+                      "name": "casa",
+                      "id": "dXNlcjox"
                     }
-                  }
+                  },
+                  "parentId": "Y29tbWVudDo1",
+                  "id": "cG9zdDo1MTE=23"
+                },
+                {
+                  "id": 1678853125871,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "123asdasdáda",
+                  "date": "2023-03-15T04:05:25.871Z",
+                  "parentId": "Y29tbWVudDo1"
+                },
+                {
+                  "id": 1678854347062,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "hey ",
+                  "date": "2023-03-15T04:25:47.062Z",
+                  "parentId": "Y29tbWVudDo1"
+                },
+                {
+                  "id": 1678854384415,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "hey sds",
+                  "date": "2023-03-15T04:26:24.415Z",
+                  "parentId": "Y29tbWVudDo1"
                 }
               ]
-            }
+            },
+            "parentId": null,
+            "id": "Y29tbWVudDo1"
+          },
+          {
+            "id": 1678855139391,
+            "author": {
+              "node": {
+                "databaseId": 1,
+                "id": "dXNlcjox",
+                "firstName": null,
+                "lastName": null,
+                "name": "casa",
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                }
+              }
+            },
+            "content": "testsds",
+            "date": "2023-03-15T04:38:59.391Z",
+            "parentId": null
+          },
+          {
+            "id": 1678855353143,
+            "author": {
+              "node": {
+                "databaseId": 1,
+                "id": "dXNlcjox",
+                "firstName": null,
+                "lastName": null,
+                "name": "casa",
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                }
+              }
+            },
+            "content": "testsdssdsd",
+            "date": "2023-03-15T04:42:33.143Z",
+            "parentId": null
+          },
+          {
+            "id": 1678855404274,
+            "author": {
+              "node": {
+                "databaseId": 1,
+                "id": "dXNlcjox",
+                "firstName": null,
+                "lastName": null,
+                "name": "casa",
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                }
+              }
+            },
+            "content": "test",
+            "date": "2023-03-15T04:43:24.274Z",
+            "parentId": null
+          },
+          {
+            "id": 1678855494207,
+            "author": {
+              "node": {
+                "databaseId": 1,
+                "id": "dXNlcjox",
+                "firstName": null,
+                "lastName": null,
+                "name": "casa",
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                }
+              }
+            },
+            "content": "sdsdssdsdsdsdsdsd",
+            "date": "2023-03-15T04:44:54.207Z",
+            "parentId": null
           }
         ]
       },
@@ -1852,5 +2061,4 @@
       }
     }
   ]
- 
 }

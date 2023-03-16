@@ -6,14 +6,37 @@ import instanceAxios from "./config"
 
 export const searchProduct = async (text) => {
    const product =  await instanceAxios.get(`/products/search?q=${text}`)
-    
    return product.data
 }
+
 
 export const getProduct = async (query) => {
    const product =  await instanceAxios.get(`/products?${new URLSearchParams(query).toString()}`)
     
    return product.data?.[0]
+}
+
+export const getProductCate = async (query) => {
+   const cate =  await instanceAxios.get(`/product-cate`)
+    
+   return cate.data
+}
+
+export const getProductTag = async (query) => {
+   const tag =  await instanceAxios.get(`/product-tag`)
+    
+   return tag.data
+}
+
+export const getSidebarProduct = async () => {
+
+   const data =  await Promise.all([getProductCate(), getProductTag()])
+   return data
+}
+
+export const getProducts = async (query) => {
+   const products =  await instanceAxios.get(`/products`)
+   return products.data
 }
 
 // end product

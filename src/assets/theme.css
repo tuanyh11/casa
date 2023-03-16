@@ -75,6 +75,10 @@
   color: #f598a4;
 }
 
-.content-page, .main-page-default {
+.content-page,
+.main-page-default {
   margin: 100px 0;
+}
+.widget {
+  margin-bottom: 60px;
 }

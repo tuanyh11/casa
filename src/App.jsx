@@ -1,11 +1,9 @@
-import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { About, BlogDetail, BlogList, Contact, Home, ProductDetail } from "./Pages";
-
+import { About, BlogDetail, BlogList, Contact, Home, ProductDetail, Shop } from "./Pages";
 import { Footer, Header } from "./Components";
-import "reactjs-popup/dist/index.css";
 import { useEffect, useMemo } from "react";
 import { useWindowScroll } from "./hooks";
+import "./App.css";
 
 function App() {
   const { scrollToTop, showButton } = useWindowScroll();
@@ -29,11 +27,14 @@ function App() {
           <Route path="/blog" element={<BlogList />} />
           <Route path="/product/:slug" element={<ProductDetail />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/shop" element={<Shop />} />
         </Routes>
         <Footer />
       </>
     );
   }, []);
+
+  console.log(1)
 
   return (
     <>

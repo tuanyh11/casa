@@ -1,8 +1,10 @@
 import React from 'react';
 import Category from './Category/Category';
+import DealOf from './DealOf/DealOf';
 import NewArrivals from './NewArrivals/NewArrivals';
 import SliderHome from './SliderHome/SliderHome';
 import './style.css';
+import Trending from './Trending/Trending';
 import WorkShop from './WorkShop/WorkShop';
 
 function Home(props) {
@@ -61,6 +63,8 @@ function Home(props) {
             <WorkShop />
             <div className='home-container max-w-[1320px] relative w-full px-[15px] m-auto '>
                 <NewArrivals />
+                <DealOf />
+                <Trending />
             </div>
         </>
     );

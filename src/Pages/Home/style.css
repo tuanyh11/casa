@@ -362,3 +362,97 @@
 }
 
 /* ------ */
+
+/* ----DealOf---- */
+.deal-of-main .deal-of-banner-advs .adv-thumb-link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-out 0s;
+}
+
+.deal-of-main .deal-of-banner-advs .adv-thumb-link img {
+    transition: transform 1s;
+}
+
+.deal-of-main .deal-of-banner-advs:hover img {
+    transform: scale(1.05);
+}
+
+.deal-of-main .deal-of-banner-advs .deal-of-banner {
+    padding-left: 120px;
+    height: 260px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.deal-of-main .deal-of-banner-advs .deal-of-banner h3 {
+    margin-bottom: 25px;
+}
+
+.deal-of-main .deal-of-banner .obc-line {
+    position: relative;
+    padding-left: 65px;
+}
+
+.deal-of-main .deal-of-banner .obc-line::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    transform: rotate(45deg);
+    top: 50%;
+    left: -7px;
+    border-top: 1px solid;
+}
+
+.deal-of-main .obc-line .countdown .countdown-section {
+    width: auto !important;
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    color: #f598a4;
+}
+
+.deal-of-main .obc-line .countdown .countdown-section::after {
+    content: ':';
+    margin-left: 5px;
+}
+
+.deal-of-main .obc-line .countdown .countdown-section:last-child::after {
+    content: none;
+}
+
+.deal-of-main .deal-of-banner .banner-button {
+    margin-top: 38px;
+}
+
+.deal-of-main .deal-of-banner .banner-button a {
+    display: inline-block;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 45px;
+    height: 60px;
+    line-height: 60px;
+    border: none;
+    letter-spacing: 1.6px;
+    background-color: #f598a4;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0px;
+    transition: all 0.4s ease-out 0s;
+}
+
+.deal-of-main .deal-of-banner .banner-button a:hover {
+    background: #222;
+}
+
+/* ----- */

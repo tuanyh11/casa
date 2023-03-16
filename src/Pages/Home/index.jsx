@@ -2,6 +2,7 @@ import React from 'react';
 import Category from './Category/Category';
 import DealOf from './DealOf/DealOf';
 import NewArrivals from './NewArrivals/NewArrivals';
+import OurTeam from './OurTeam/OurTeam';
 import SliderHome from './SliderHome/SliderHome';
 import './style.css';
 import Trending from './Trending/Trending';
@@ -66,6 +67,8 @@ function Home(props) {
                 <DealOf />
                 <Trending />
             </div>
+            <OurTeam />
+
         </>
     );
 }

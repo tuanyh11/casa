@@ -16,8 +16,8 @@ export const getProduct = async (query) => {
    return product.data
 }
 
-export const getProducts = async (query) => {
-   const product = await instanceAxios.get(`/products`)
+export const getProducts = async (limit = 7) => {
+   const product = await instanceAxios.get(`/products?_start=0&_limit=${limit}`)
    return product.data
 }
 
@@ -53,7 +53,6 @@ export const createBlogComment = async (data) => {
 // end blog
 
 // contact
-
 
 export const createContact = async (data) => {
    await instanceAxios.post(`http://localhost:4000/contact`, data)

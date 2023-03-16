@@ -9,14 +9,9 @@ import { Product } from '../../../Components';
 function NewArrivals(props) {
     const { data } = useQuery({
         queryKey: ["product-arrivals"],
-        queryFn: getProducts
+        queryFn: () => getProducts(7)
     })
-
-
-
-    console.log(data)
-
-
+    // console.log(data);
     return (
         <div className='new-arrivals relative mb-[130px]'>
             <div className='title-box'>
@@ -27,7 +22,7 @@ function NewArrivals(props) {
             <div className='product-wrap'>
                 <div className='list-product-wrap'>
                     {
-                        [...new Array(7)].map((item, index) => (
+                        data?.map((item, index) => (
                             <div className='list-col-item' key={index}>
                                 <Product data={item} />
                             </div>

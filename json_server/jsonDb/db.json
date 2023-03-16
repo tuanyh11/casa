@@ -3114,12 +3114,137 @@
       }
     }
   ],
-  "contact": [
+  "product-tag": [
     {
-      "name": "a",
-      "email": "a",
-      "subject": "a",
-      "message": "a"
+      "node": {
+        "id": "dGVybToxNzI=",
+        "databaseId": 172,
+        "name": "Casual",
+        "slug": "casual"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxODU=",
+        "databaseId": 185,
+        "name": "Classic",
+        "slug": "classic"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToyMDk=",
+        "databaseId": 209,
+        "name": "Creative",
+        "slug": "creative"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTo4Mg==",
+        "databaseId": 82,
+        "name": "Elegant",
+        "slug": "elegant"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxMzk=",
+        "databaseId": 139,
+        "name": "Gadgets",
+        "slug": "gadgets"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxMzI=",
+        "databaseId": 132,
+        "name": "Lifestyle",
+        "slug": "lifestyle"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTo4Ng==",
+        "databaseId": 86,
+        "name": "Minimal",
+        "slug": "minimal"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTo5OQ==",
+        "databaseId": 99,
+        "name": "Minimalistic",
+        "slug": "minimalistic"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTo4OQ==",
+        "databaseId": 89,
+        "name": "Modern",
+        "slug": "modern"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxNzU=",
+        "databaseId": 175,
+        "name": "Style",
+        "slug": "style"
+      }
     }
-  ]
+  ],
+  "product-cate": [
+    {
+      "node": {
+        "id": "dGVybToxMjY=",
+        "databaseId": 126,
+        "name": "Accessories",
+        "slug": "accessories"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxOTg=",
+        "databaseId": 198,
+        "name": "Bowls",
+        "slug": "bowls"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxNzg=",
+        "databaseId": 178,
+        "name": "Dinnerware Sets",
+        "slug": "dinnerware-sets"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTozMw==",
+        "databaseId": 33,
+        "name": "Explore Dinnerware",
+        "slug": "explore-dinnerware"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxNjk=",
+        "databaseId": 169,
+        "name": "Mugs & Cups",
+        "slug": "mugs-cups"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxMjk=",
+        "databaseId": 129,
+        "name": "Plates",
+        "slug": "plates"
+      }
+    }
+  ],
+  "contact": []
 }

@@ -19,14 +19,12 @@ server.use(cors());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
-const getData = (key) => {
-  return JSON.parse(JSON.stringify(db.get(key)));
-};
+
 
 
 server.get("/products/search", (req, res) => {
   const { q } = req.query; // Get the search query from the URL params
-  const products = getData("product").data.products.nodes.filter((product) => {
+  const products = db.get("products").filter((product) => {
     return product.name.toLowerCase().includes(q.toLowerCase());
   });
 

@@ -1,5 +1,5 @@
 {
-  "products":  [
+  "products": [
     {
       "id": "cHJvZHVjdDoyMDQ=",
       "name": "White leaf plate",
@@ -3112,6 +3112,12 @@
           }
         ]
       }
+    }
+  ],
+  "contact": [
+    {
+      "name": "sample",
+      "email": "Wed, 21 Oct 2015 18:27:50 GMT"
     }
   ]
 }

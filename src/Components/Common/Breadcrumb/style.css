@@ -42,15 +42,22 @@
     display: inline-block;
 }
 
-.wrap-bread-crumb .bread-crumb .bread-crunb-inner a:hover {
-    color: #f598a4;
-}
+
 
 .wrap-bread-crumb .bread-crumb .bread-crunb-inner a::after {
     content: "/";
     margin: 0 10px;
     font-size: 14px;
     color: #222;
+    transition: all 0.4s ease-out 0s;
+}
+
+.wrap-bread-crumb .bread-crumb .bread-crunb-inner a:hover {
+    color: #f598a4;
+}
+
+.wrap-bread-crumb .bread-crumb .bread-crunb-inner a:hover::after {
+    color: #f598a4;
 }
 
 @media screen and (max-width: 1200px) {

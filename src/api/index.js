@@ -11,9 +11,9 @@ export const searchProduct = async (text) => {
 }
 
 export const getProduct = async (query) => {
-   const product =  await instanceAxios.get(`/products?${new URLSearchParams({query}).toString()}`)
+   const product =  await instanceAxios.get(`/products?${new URLSearchParams(query).toString()}`)
     
-   return product.data
+   return product.data?.[0]
 }
 
 // end product

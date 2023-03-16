@@ -70,3 +70,11 @@
   display: table-cell;
   vertical-align: top;
 }
+
+.bread-crumb a:hover {
+  color: #f598a4;
+}
+
+.content-page, .main-page-default {
+  margin: 100px 0;
+}

@@ -2,6 +2,7 @@ import jsonServer from "json-server";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import bodyParser from "body-parser";
+import cors from "cors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -14,15 +15,12 @@ const middlewares = jsonServer.defaults();
 const db = routerV1.db;
 
 server.use(middlewares);
-
+server.use(cors());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-server.get("/products", (req, res) => {
-  res.status(200).json(db.get("products"));
-});
 
 server.get("/products/search", (req, res) => {
   const { q } = req.query; // Get the search query from the URL params
@@ -56,7 +54,12 @@ server.post("/blog/comments", (req, res) => {
   res.status(200).json(blog);
 });
 
+server.post("/contact", (req, res) => {
+  const {name, email, sub, message} = req.body;
 
+  db.get("contact").push({ name, email, sub, message }).write();
+  res.status(200).json({ message: "Thank you for contacting us" });
+})
 
 server.use(routerV1);
 

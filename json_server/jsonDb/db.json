@@ -1,1441 +1,4 @@
 {
-  
-  "categories-blog": [
-    {
-      "id": "dGVybTox",
-      "categoryId": 1,
-      "name": "Accessories",
-      "slug": "accessories"
-    },
-    {
-      "id": "dGVybToyOTQ=",
-      "categoryId": 294,
-      "name": "Art – Travel",
-      "slug": "art-travel"
-    },
-    {
-      "id": "dGVybToyOTc=",
-      "categoryId": 297,
-      "name": "Bowls",
-      "slug": "bowls"
-    },
-    {
-      "id": "dGVybTozMDA=",
-      "categoryId": 300,
-      "name": "Dinnerware Sets",
-      "slug": "dinnerware-sets"
-    },
-    {
-      "id": "dGVybTozMDM=",
-      "categoryId": 303,
-      "name": "Explore Dinnerware",
-      "slug": "explore-dinnerware"
-    },
-    {
-      "id": "dGVybTozMDY=",
-      "categoryId": 306,
-      "name": "Mugs & Cups",
-      "slug": "mugs-cups"
-    },
-    {
-      "id": "dGVybTozMDk=",
-      "categoryId": 309,
-      "name": "Plates",
-      "slug": "plates"
-    },
-    {
-      "id": "dGVybTozMTI=",
-      "categoryId": 312,
-      "name": "Uncategorized",
-      "slug": "uncategorized"
-    }
-  ],
-  "tags-blog": [
-    {
-      "id": "dGVybTozMTU=",
-      "databaseId": 315,
-      "name": "Casual",
-      "slug": "casual",
-      "tagId": 315
-    },
-    {
-      "id": "dGVybTozMTk=",
-      "databaseId": 319,
-      "name": "Classic",
-      "slug": "classic",
-      "tagId": 319
-    },
-    {
-      "id": "dGVybTozMjI=",
-      "databaseId": 322,
-      "name": "Creative",
-      "slug": "creative",
-      "tagId": 322
-    },
-    {
-      "id": "dGVybTozMjU=",
-      "databaseId": 325,
-      "name": "Elegant",
-      "slug": "elegant",
-      "tagId": 325
-    },
-    {
-      "id": "dGVybTozMjg=",
-      "databaseId": 328,
-      "name": "Lifestyle",
-      "slug": "lifestyle",
-      "tagId": 328
-    },
-    {
-      "id": "dGVybTozMzE=",
-      "databaseId": 331,
-      "name": "Minimal",
-      "slug": "minimal",
-      "tagId": 331
-    },
-    {
-      "id": "dGVybTozMzQ=",
-      "databaseId": 334,
-      "name": "Modern",
-      "slug": "modern",
-      "tagId": 334
-    },
-    {
-      "id": "dGVybTozMzc=",
-      "databaseId": 337,
-      "name": "Style",
-      "slug": "style",
-      "tagId": 337
-    }
-  ],
-  "blogs": [
-    {
-      "databaseId": 569,
-      "id": "cG9zdDo1Njk=",
-      "title": "The new arrivals: spring  colors and shapes",
-      "slug": "the-new-arrivals-spring-colors-and-shapes",
-      "commentCount": 4,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-10-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 300,
-            "id": "dGVybTozMDA=",
-            "name": "Dinnerware Sets",
-            "slug": "dinnerware-sets"
-          },
-          {
-            "categoryId": 309,
-            "id": "dGVybTozMDk=",
-            "name": "Plates",
-            "slug": "plates"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": [
-          {
-            "commentId": 8,
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilis</p>\n",
-            "date": "2023-03-14 10:19:21",
-            "author": {
-              "node": {
-                "avatar": {
-                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                },
-                "email": null,
-                "name": "casa"
-              }
-            },
-            "replies": {
-              "nodes": []
-            },
-            "parentId": null,
-            "id": "Y29tbWVudDo4"
-          },
-          {
-            "commentId": 7,
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. TEST</p>\n",
-            "date": "2023-03-14 10:19:01",
-            "author": {
-              "node": {
-                "avatar": {
-                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                },
-                "email": null,
-                "name": "casa"
-              }
-            },
-            "replies": {
-              "nodes": []
-            },
-            "parentId": "Y29tbWVudDo1",
-            "id": "Y29tbWVudDo3"
-          },
-          {
-            "commentId": 6,
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
-            "date": "2023-03-14 10:18:51",
-            "author": {
-              "node": {
-                "avatar": {
-                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                },
-                "email": null,
-                "name": "casa"
-              }
-            },
-            "replies": {
-              "nodes": [
-                {
-                  "id": 1678854408050,
-                  "author": {
-                    "node": {
-                      "databaseId": 1,
-                      "id": "dXNlcjox",
-                      "firstName": null,
-                      "lastName": null,
-                      "name": "casa",
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      }
-                    }
-                  },
-                  "content": "asdsad",
-                  "date": "2023-03-15T04:26:48.050Z",
-                  "parentId": "Y29tbWVudDo2"
-                },
-                {
-                  "id": 1678854441825,
-                  "author": {
-                    "node": {
-                      "databaseId": 1,
-                      "id": "dXNlcjox",
-                      "firstName": null,
-                      "lastName": null,
-                      "name": "casa",
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      }
-                    }
-                  },
-                  "content": "asdsadasdasd",
-                  "date": "2023-03-15T04:27:21.825Z",
-                  "parentId": "Y29tbWVudDo2"
-                },
-                {
-                  "id": 1678854464108,
-                  "author": {
-                    "node": {
-                      "databaseId": 1,
-                      "id": "dXNlcjox",
-                      "firstName": null,
-                      "lastName": null,
-                      "name": "casa",
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      }
-                    }
-                  },
-                  "content": "asdsadasdasdasd",
-                  "date": "2023-03-15T04:27:44.108Z",
-                  "parentId": "Y29tbWVudDo2"
-                },
-                {
-                  "id": 1678854474936,
-                  "author": {
-                    "node": {
-                      "databaseId": 1,
-                      "id": "dXNlcjox",
-                      "firstName": null,
-                      "lastName": null,
-                      "name": "casa",
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      }
-                    }
-                  },
-                  "content": "test",
-                  "date": "2023-03-15T04:27:54.936Z",
-                  "parentId": "Y29tbWVudDo2"
-                }
-              ]
-            },
-            "parentId": "Y29tbWVudDo1",
-            "id": "Y29tbWVudDo2"
-          },
-          {
-            "commentId": 5,
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
-            "date": "2023-03-14 10:18:41",
-            "author": {
-              "node": {
-                "avatar": {
-                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                },
-                "email": null,
-                "name": "casa"
-              }
-            },
-            "replies": {
-              "nodes": [
-                {
-                  "commentId": 7,
-                  "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. TEST</p>\n",
-                  "date": "2023-03-14 10:19:01",
-                  "author": {
-                    "node": {
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      },
-                      "email": null,
-                      "name": "casa",
-                      "id": "dXNlcjox"
-                    }
-                  },
-                  "parentId": "Y29tbWVudDo1",
-                  "id": "cG9zdDo1MTE=1"
-                },
-                {
-                  "commentId": 6,
-                  "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
-                  "date": "2023-03-14 10:18:51",
-                  "author": {
-                    "node": {
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      },
-                      "email": null,
-                      "name": "casa",
-                      "id": "dXNlcjox"
-                    }
-                  },
-                  "parentId": "Y29tbWVudDo1",
-                  "id": "cG9zdDo1MTE=23"
-                },
-                {
-                  "id": 1678853125871,
-                  "author": {
-                    "node": {
-                      "databaseId": 1,
-                      "id": "dXNlcjox",
-                      "firstName": null,
-                      "lastName": null,
-                      "name": "casa",
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      }
-                    }
-                  },
-                  "content": "123asdasdáda",
-                  "date": "2023-03-15T04:05:25.871Z",
-                  "parentId": "Y29tbWVudDo1"
-                },
-                {
-                  "id": 1678854347062,
-                  "author": {
-                    "node": {
-                      "databaseId": 1,
-                      "id": "dXNlcjox",
-                      "firstName": null,
-                      "lastName": null,
-                      "name": "casa",
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      }
-                    }
-                  },
-                  "content": "hey ",
-                  "date": "2023-03-15T04:25:47.062Z",
-                  "parentId": "Y29tbWVudDo1"
-                },
-                {
-                  "id": 1678854384415,
-                  "author": {
-                    "node": {
-                      "databaseId": 1,
-                      "id": "dXNlcjox",
-                      "firstName": null,
-                      "lastName": null,
-                      "name": "casa",
-                      "avatar": {
-                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                      }
-                    }
-                  },
-                  "content": "hey sds",
-                  "date": "2023-03-15T04:26:24.415Z",
-                  "parentId": "Y29tbWVudDo1"
-                }
-              ]
-            },
-            "parentId": null,
-            "id": "Y29tbWVudDo1"
-          },
-          {
-            "id": 1678855139391,
-            "author": {
-              "node": {
-                "databaseId": 1,
-                "id": "dXNlcjox",
-                "firstName": null,
-                "lastName": null,
-                "name": "casa",
-                "avatar": {
-                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                }
-              }
-            },
-            "content": "testsds",
-            "date": "2023-03-15T04:38:59.391Z",
-            "parentId": null
-          },
-          {
-            "id": 1678855353143,
-            "author": {
-              "node": {
-                "databaseId": 1,
-                "id": "dXNlcjox",
-                "firstName": null,
-                "lastName": null,
-                "name": "casa",
-                "avatar": {
-                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                }
-              }
-            },
-            "content": "testsdssdsd",
-            "date": "2023-03-15T04:42:33.143Z",
-            "parentId": null
-          },
-          {
-            "id": 1678855404274,
-            "author": {
-              "node": {
-                "databaseId": 1,
-                "id": "dXNlcjox",
-                "firstName": null,
-                "lastName": null,
-                "name": "casa",
-                "avatar": {
-                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                }
-              }
-            },
-            "content": "test",
-            "date": "2023-03-15T04:43:24.274Z",
-            "parentId": null
-          },
-          {
-            "id": 1678855494207,
-            "author": {
-              "node": {
-                "databaseId": 1,
-                "id": "dXNlcjox",
-                "firstName": null,
-                "lastName": null,
-                "name": "casa",
-                "avatar": {
-                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-                }
-              }
-            },
-            "content": "sdsdssdsdsdsdsdsd",
-            "date": "2023-03-15T04:44:54.207Z",
-            "parentId": null
-          }
-        ]
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 328,
-            "name": "Lifestyle",
-            "slug": "lifestyle"
-          },
-          {
-            "databaseId": 331,
-            "name": "Minimal",
-            "slug": "minimal"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-10-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 564,
-      "id": "cG9zdDo1NjQ=",
-      "title": "Perfect home decoration is  all about details",
-      "slug": "perfect-home-decoration-is-all-about-details",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Post-Default-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 294,
-            "id": "dGVybToyOTQ=",
-            "name": "Art – Travel",
-            "slug": "art-travel"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 315,
-            "name": "Casual",
-            "slug": "casual"
-          },
-          {
-            "databaseId": 331,
-            "name": "Minimal",
-            "slug": "minimal"
-          },
-          {
-            "databaseId": 334,
-            "name": "Modern",
-            "slug": "modern"
-          },
-          {
-            "databaseId": 337,
-            "name": "Style",
-            "slug": "style"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Post-Default-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 558,
-      "id": "cG9zdDo1NTg=",
-      "title": "5 ideas to decor your table",
-      "slug": "5-ideas-to-decor-your-table",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-9-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 300,
-            "id": "dGVybTozMDA=",
-            "name": "Dinnerware Sets",
-            "slug": "dinnerware-sets"
-          },
-          {
-            "categoryId": 303,
-            "id": "dGVybTozMDM=",
-            "name": "Explore Dinnerware",
-            "slug": "explore-dinnerware"
-          },
-          {
-            "categoryId": 309,
-            "id": "dGVybTozMDk=",
-            "name": "Plates",
-            "slug": "plates"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 328,
-            "name": "Lifestyle",
-            "slug": "lifestyle"
-          },
-          {
-            "databaseId": 331,
-            "name": "Minimal",
-            "slug": "minimal"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-9-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 553,
-      "id": "cG9zdDo1NTM=",
-      "title": "Furniture design basics",
-      "slug": "furniture-design-basics",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-8-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 297,
-            "id": "dGVybToyOTc=",
-            "name": "Bowls",
-            "slug": "bowls"
-          },
-          {
-            "categoryId": 309,
-            "id": "dGVybTozMDk=",
-            "name": "Plates",
-            "slug": "plates"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 328,
-            "name": "Lifestyle",
-            "slug": "lifestyle"
-          },
-          {
-            "databaseId": 331,
-            "name": "Minimal",
-            "slug": "minimal"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-8-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 548,
-      "id": "cG9zdDo1NDg=",
-      "title": "Designing a manager office",
-      "slug": "designing-a-manager-office",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-7-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 300,
-            "id": "dGVybTozMDA=",
-            "name": "Dinnerware Sets",
-            "slug": "dinnerware-sets"
-          },
-          {
-            "categoryId": 306,
-            "id": "dGVybTozMDY=",
-            "name": "Mugs & Cups",
-            "slug": "mugs-cups"
-          },
-          {
-            "categoryId": 309,
-            "id": "dGVybTozMDk=",
-            "name": "Plates",
-            "slug": "plates"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 315,
-            "name": "Casual",
-            "slug": "casual"
-          },
-          {
-            "databaseId": 322,
-            "name": "Creative",
-            "slug": "creative"
-          },
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 328,
-            "name": "Lifestyle",
-            "slug": "lifestyle"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-7-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 543,
-      "id": "cG9zdDo1NDM=",
-      "title": "The details are not the details.",
-      "slug": "the-details-are-not-the-details",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-6-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 300,
-            "id": "dGVybTozMDA=",
-            "name": "Dinnerware Sets",
-            "slug": "dinnerware-sets"
-          },
-          {
-            "categoryId": 306,
-            "id": "dGVybTozMDY=",
-            "name": "Mugs & Cups",
-            "slug": "mugs-cups"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 315,
-            "name": "Casual",
-            "slug": "casual"
-          },
-          {
-            "databaseId": 322,
-            "name": "Creative",
-            "slug": "creative"
-          },
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 328,
-            "name": "Lifestyle",
-            "slug": "lifestyle"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-6-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 538,
-      "id": "cG9zdDo1Mzg=",
-      "title": "A wooden cottage kitchen",
-      "slug": "a-wooden-cottage-kitchen",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-5-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 303,
-            "id": "dGVybTozMDM=",
-            "name": "Explore Dinnerware",
-            "slug": "explore-dinnerware"
-          },
-          {
-            "categoryId": 306,
-            "id": "dGVybTozMDY=",
-            "name": "Mugs & Cups",
-            "slug": "mugs-cups"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 322,
-            "name": "Creative",
-            "slug": "creative"
-          },
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 337,
-            "name": "Style",
-            "slug": "style"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-5-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 532,
-      "id": "cG9zdDo1MzI=",
-      "title": "Interview With Stephen Grudier",
-      "slug": "interview-with-stephen-grudier",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-4-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 303,
-            "id": "dGVybTozMDM=",
-            "name": "Explore Dinnerware",
-            "slug": "explore-dinnerware"
-          },
-          {
-            "categoryId": 306,
-            "id": "dGVybTozMDY=",
-            "name": "Mugs & Cups",
-            "slug": "mugs-cups"
-          },
-          {
-            "categoryId": 309,
-            "id": "dGVybTozMDk=",
-            "name": "Plates",
-            "slug": "plates"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 315,
-            "name": "Casual",
-            "slug": "casual"
-          },
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 337,
-            "name": "Style",
-            "slug": "style"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-4-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 525,
-      "id": "cG9zdDo1MjU=",
-      "title": "Expand Your Mind, Change Everything",
-      "slug": "expand-your-mind-change-everything",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-3-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 1,
-            "id": "dGVybTox",
-            "name": "Accessories",
-            "slug": "accessories"
-          },
-          {
-            "categoryId": 306,
-            "id": "dGVybTozMDY=",
-            "name": "Mugs & Cups",
-            "slug": "mugs-cups"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 322,
-            "name": "Creative",
-            "slug": "creative"
-          },
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 337,
-            "name": "Style",
-            "slug": "style"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-3-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "databaseId": 511,
-      "id": "cG9zdDo1MTE=",
-      "title": "Modern house remodel is all about details",
-      "slug": "modern-house-remodel-is-all-about-details",
-      "commentCount": null,
-      "author": {
-        "node": {
-          "databaseId": 1,
-          "id": "dXNlcjox",
-          "firstName": null,
-          "lastName": null,
-          "name": "casa",
-          "avatar": {
-            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
-          }
-        }
-      },
-      "featuredImage": {
-        "node": {
-          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-2-900x490-1.jpg"
-        }
-      },
-      "categories": {
-        "nodes": [
-          {
-            "categoryId": 300,
-            "id": "dGVybTozMDA=",
-            "name": "Dinnerware Sets",
-            "slug": "dinnerware-sets"
-          },
-          {
-            "categoryId": 306,
-            "id": "dGVybTozMDY=",
-            "name": "Mugs & Cups",
-            "slug": "mugs-cups"
-          },
-          {
-            "categoryId": 309,
-            "id": "dGVybTozMDk=",
-            "name": "Plates",
-            "slug": "plates"
-          }
-        ]
-      },
-      "comments": {
-        "nodes": []
-      },
-      "tags": {
-        "nodes": [
-          {
-            "databaseId": 315,
-            "name": "Casual",
-            "slug": "casual"
-          },
-          {
-            "databaseId": 325,
-            "name": "Elegant",
-            "slug": "elegant"
-          },
-          {
-            "databaseId": 337,
-            "name": "Style",
-            "slug": "style"
-          }
-        ]
-      },
-      "post": {
-        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-2-900x490.jpg",
-        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-        "content": [
-          {
-            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          },
-          {
-            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
-          }
-        ],
-        "image": [
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
-          },
-          {
-            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
-          }
-        ]
-      }
-    }
-  ],
-  "product-tag":  [
-    {
-      "node": {
-        "id": "dGVybToxNzI=",
-        "databaseId": 172,
-        "name": "Casual",
-        "slug": "casual"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToxODU=",
-        "databaseId": 185,
-        "name": "Classic",
-        "slug": "classic"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToyMDk=",
-        "databaseId": 209,
-        "name": "Creative",
-        "slug": "creative"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybTo4Mg==",
-        "databaseId": 82,
-        "name": "Elegant",
-        "slug": "elegant"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToxMzk=",
-        "databaseId": 139,
-        "name": "Gadgets",
-        "slug": "gadgets"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToxMzI=",
-        "databaseId": 132,
-        "name": "Lifestyle",
-        "slug": "lifestyle"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybTo4Ng==",
-        "databaseId": 86,
-        "name": "Minimal",
-        "slug": "minimal"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybTo5OQ==",
-        "databaseId": 99,
-        "name": "Minimalistic",
-        "slug": "minimalistic"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybTo4OQ==",
-        "databaseId": 89,
-        "name": "Modern",
-        "slug": "modern"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToxNzU=",
-        "databaseId": 175,
-        "name": "Style",
-        "slug": "style"
-      }
-    }
-  ],
-  "product-cate": [
-    {
-      "node": {
-        "id": "dGVybToxMjY=",
-        "databaseId": 126,
-        "name": "Accessories",
-        "slug": "accessories"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToxOTg=",
-        "databaseId": 198,
-        "name": "Bowls",
-        "slug": "bowls"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToxNzg=",
-        "databaseId": 178,
-        "name": "Dinnerware Sets",
-        "slug": "dinnerware-sets"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybTozMw==",
-        "databaseId": 33,
-        "name": "Explore Dinnerware",
-        "slug": "explore-dinnerware"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToxNjk=",
-        "databaseId": 169,
-        "name": "Mugs & Cups",
-        "slug": "mugs-cups"
-      }
-    },
-    {
-      "node": {
-        "id": "dGVybToxMjk=",
-        "databaseId": 129,
-        "name": "Plates",
-        "slug": "plates"
-      }
-    }
-  ],
   "products": [
     {
       "id": "cHJvZHVjdDoyMDQ=",
@@ -3244,6 +1807,1442 @@
       },
       "acf_product": {
         "imageProduct": null
+      }
+    }
+  ],
+  "categories-blog": [
+    {
+      "id": "dGVybTox",
+      "categoryId": 1,
+      "name": "Accessories",
+      "slug": "accessories"
+    },
+    {
+      "id": "dGVybToyOTQ=",
+      "categoryId": 294,
+      "name": "Art – Travel",
+      "slug": "art-travel"
+    },
+    {
+      "id": "dGVybToyOTc=",
+      "categoryId": 297,
+      "name": "Bowls",
+      "slug": "bowls"
+    },
+    {
+      "id": "dGVybTozMDA=",
+      "categoryId": 300,
+      "name": "Dinnerware Sets",
+      "slug": "dinnerware-sets"
+    },
+    {
+      "id": "dGVybTozMDM=",
+      "categoryId": 303,
+      "name": "Explore Dinnerware",
+      "slug": "explore-dinnerware"
+    },
+    {
+      "id": "dGVybTozMDY=",
+      "categoryId": 306,
+      "name": "Mugs & Cups",
+      "slug": "mugs-cups"
+    },
+    {
+      "id": "dGVybTozMDk=",
+      "categoryId": 309,
+      "name": "Plates",
+      "slug": "plates"
+    },
+    {
+      "id": "dGVybTozMTI=",
+      "categoryId": 312,
+      "name": "Uncategorized",
+      "slug": "uncategorized"
+    }
+  ],
+  "tags-blog": [
+    {
+      "id": "dGVybTozMTU=",
+      "databaseId": 315,
+      "name": "Casual",
+      "slug": "casual",
+      "tagId": 315
+    },
+    {
+      "id": "dGVybTozMTk=",
+      "databaseId": 319,
+      "name": "Classic",
+      "slug": "classic",
+      "tagId": 319
+    },
+    {
+      "id": "dGVybTozMjI=",
+      "databaseId": 322,
+      "name": "Creative",
+      "slug": "creative",
+      "tagId": 322
+    },
+    {
+      "id": "dGVybTozMjU=",
+      "databaseId": 325,
+      "name": "Elegant",
+      "slug": "elegant",
+      "tagId": 325
+    },
+    {
+      "id": "dGVybTozMjg=",
+      "databaseId": 328,
+      "name": "Lifestyle",
+      "slug": "lifestyle",
+      "tagId": 328
+    },
+    {
+      "id": "dGVybTozMzE=",
+      "databaseId": 331,
+      "name": "Minimal",
+      "slug": "minimal",
+      "tagId": 331
+    },
+    {
+      "id": "dGVybTozMzQ=",
+      "databaseId": 334,
+      "name": "Modern",
+      "slug": "modern",
+      "tagId": 334
+    },
+    {
+      "id": "dGVybTozMzc=",
+      "databaseId": 337,
+      "name": "Style",
+      "slug": "style",
+      "tagId": 337
+    }
+  ],
+  "blogs": [
+    {
+      "databaseId": 569,
+      "id": "cG9zdDo1Njk=",
+      "title": "The new arrivals: spring  colors and shapes",
+      "slug": "the-new-arrivals-spring-colors-and-shapes",
+      "commentCount": 4,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-10-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 300,
+            "id": "dGVybTozMDA=",
+            "name": "Dinnerware Sets",
+            "slug": "dinnerware-sets"
+          },
+          {
+            "categoryId": 309,
+            "id": "dGVybTozMDk=",
+            "name": "Plates",
+            "slug": "plates"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": [
+          {
+            "commentId": 8,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilis</p>\n",
+            "date": "2023-03-14 10:19:21",
+            "author": {
+              "node": {
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                },
+                "email": null,
+                "name": "casa"
+              }
+            },
+            "replies": {
+              "nodes": []
+            },
+            "parentId": null,
+            "id": "Y29tbWVudDo4"
+          },
+          {
+            "commentId": 7,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. TEST</p>\n",
+            "date": "2023-03-14 10:19:01",
+            "author": {
+              "node": {
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                },
+                "email": null,
+                "name": "casa"
+              }
+            },
+            "replies": {
+              "nodes": []
+            },
+            "parentId": "Y29tbWVudDo1",
+            "id": "Y29tbWVudDo3"
+          },
+          {
+            "commentId": 6,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
+            "date": "2023-03-14 10:18:51",
+            "author": {
+              "node": {
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                },
+                "email": null,
+                "name": "casa"
+              }
+            },
+            "replies": {
+              "nodes": [
+                {
+                  "id": 1678854408050,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "asdsad",
+                  "date": "2023-03-15T04:26:48.050Z",
+                  "parentId": "Y29tbWVudDo2"
+                },
+                {
+                  "id": 1678854441825,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "asdsadasdasd",
+                  "date": "2023-03-15T04:27:21.825Z",
+                  "parentId": "Y29tbWVudDo2"
+                },
+                {
+                  "id": 1678854464108,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "asdsadasdasdasd",
+                  "date": "2023-03-15T04:27:44.108Z",
+                  "parentId": "Y29tbWVudDo2"
+                },
+                {
+                  "id": 1678854474936,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "test",
+                  "date": "2023-03-15T04:27:54.936Z",
+                  "parentId": "Y29tbWVudDo2"
+                }
+              ]
+            },
+            "parentId": "Y29tbWVudDo1",
+            "id": "Y29tbWVudDo2"
+          },
+          {
+            "commentId": 5,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
+            "date": "2023-03-14 10:18:41",
+            "author": {
+              "node": {
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                },
+                "email": null,
+                "name": "casa"
+              }
+            },
+            "replies": {
+              "nodes": [
+                {
+                  "commentId": 7,
+                  "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. TEST</p>\n",
+                  "date": "2023-03-14 10:19:01",
+                  "author": {
+                    "node": {
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      },
+                      "email": null,
+                      "name": "casa",
+                      "id": "dXNlcjox"
+                    }
+                  },
+                  "parentId": "Y29tbWVudDo1",
+                  "id": "cG9zdDo1MTE=1"
+                },
+                {
+                  "commentId": 6,
+                  "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
+                  "date": "2023-03-14 10:18:51",
+                  "author": {
+                    "node": {
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      },
+                      "email": null,
+                      "name": "casa",
+                      "id": "dXNlcjox"
+                    }
+                  },
+                  "parentId": "Y29tbWVudDo1",
+                  "id": "cG9zdDo1MTE=23"
+                },
+                {
+                  "id": 1678853125871,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "123asdasdáda",
+                  "date": "2023-03-15T04:05:25.871Z",
+                  "parentId": "Y29tbWVudDo1"
+                },
+                {
+                  "id": 1678854347062,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "hey ",
+                  "date": "2023-03-15T04:25:47.062Z",
+                  "parentId": "Y29tbWVudDo1"
+                },
+                {
+                  "id": 1678854384415,
+                  "author": {
+                    "node": {
+                      "databaseId": 1,
+                      "id": "dXNlcjox",
+                      "firstName": null,
+                      "lastName": null,
+                      "name": "casa",
+                      "avatar": {
+                        "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                      }
+                    }
+                  },
+                  "content": "hey sds",
+                  "date": "2023-03-15T04:26:24.415Z",
+                  "parentId": "Y29tbWVudDo1"
+                }
+              ]
+            },
+            "parentId": null,
+            "id": "Y29tbWVudDo1"
+          },
+          {
+            "id": 1678855139391,
+            "author": {
+              "node": {
+                "databaseId": 1,
+                "id": "dXNlcjox",
+                "firstName": null,
+                "lastName": null,
+                "name": "casa",
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                }
+              }
+            },
+            "content": "testsds",
+            "date": "2023-03-15T04:38:59.391Z",
+            "parentId": null
+          },
+          {
+            "id": 1678855353143,
+            "author": {
+              "node": {
+                "databaseId": 1,
+                "id": "dXNlcjox",
+                "firstName": null,
+                "lastName": null,
+                "name": "casa",
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                }
+              }
+            },
+            "content": "testsdssdsd",
+            "date": "2023-03-15T04:42:33.143Z",
+            "parentId": null
+          },
+          {
+            "id": 1678855404274,
+            "author": {
+              "node": {
+                "databaseId": 1,
+                "id": "dXNlcjox",
+                "firstName": null,
+                "lastName": null,
+                "name": "casa",
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                }
+              }
+            },
+            "content": "test",
+            "date": "2023-03-15T04:43:24.274Z",
+            "parentId": null
+          },
+          {
+            "id": 1678855494207,
+            "author": {
+              "node": {
+                "databaseId": 1,
+                "id": "dXNlcjox",
+                "firstName": null,
+                "lastName": null,
+                "name": "casa",
+                "avatar": {
+                  "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+                }
+              }
+            },
+            "content": "sdsdssdsdsdsdsdsd",
+            "date": "2023-03-15T04:44:54.207Z",
+            "parentId": null
+          }
+        ]
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 328,
+            "name": "Lifestyle",
+            "slug": "lifestyle"
+          },
+          {
+            "databaseId": 331,
+            "name": "Minimal",
+            "slug": "minimal"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-10-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 564,
+      "id": "cG9zdDo1NjQ=",
+      "title": "Perfect home decoration is  all about details",
+      "slug": "perfect-home-decoration-is-all-about-details",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Obachan-Post-Default-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 294,
+            "id": "dGVybToyOTQ=",
+            "name": "Art – Travel",
+            "slug": "art-travel"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 315,
+            "name": "Casual",
+            "slug": "casual"
+          },
+          {
+            "databaseId": 331,
+            "name": "Minimal",
+            "slug": "minimal"
+          },
+          {
+            "databaseId": 334,
+            "name": "Modern",
+            "slug": "modern"
+          },
+          {
+            "databaseId": 337,
+            "name": "Style",
+            "slug": "style"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Post-Default-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 558,
+      "id": "cG9zdDo1NTg=",
+      "title": "5 ideas to decor your table",
+      "slug": "5-ideas-to-decor-your-table",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-9-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 300,
+            "id": "dGVybTozMDA=",
+            "name": "Dinnerware Sets",
+            "slug": "dinnerware-sets"
+          },
+          {
+            "categoryId": 303,
+            "id": "dGVybTozMDM=",
+            "name": "Explore Dinnerware",
+            "slug": "explore-dinnerware"
+          },
+          {
+            "categoryId": 309,
+            "id": "dGVybTozMDk=",
+            "name": "Plates",
+            "slug": "plates"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 328,
+            "name": "Lifestyle",
+            "slug": "lifestyle"
+          },
+          {
+            "databaseId": 331,
+            "name": "Minimal",
+            "slug": "minimal"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-9-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 553,
+      "id": "cG9zdDo1NTM=",
+      "title": "Furniture design basics",
+      "slug": "furniture-design-basics",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-8-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 297,
+            "id": "dGVybToyOTc=",
+            "name": "Bowls",
+            "slug": "bowls"
+          },
+          {
+            "categoryId": 309,
+            "id": "dGVybTozMDk=",
+            "name": "Plates",
+            "slug": "plates"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 328,
+            "name": "Lifestyle",
+            "slug": "lifestyle"
+          },
+          {
+            "databaseId": 331,
+            "name": "Minimal",
+            "slug": "minimal"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-8-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 548,
+      "id": "cG9zdDo1NDg=",
+      "title": "Designing a manager office",
+      "slug": "designing-a-manager-office",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-7-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 300,
+            "id": "dGVybTozMDA=",
+            "name": "Dinnerware Sets",
+            "slug": "dinnerware-sets"
+          },
+          {
+            "categoryId": 306,
+            "id": "dGVybTozMDY=",
+            "name": "Mugs & Cups",
+            "slug": "mugs-cups"
+          },
+          {
+            "categoryId": 309,
+            "id": "dGVybTozMDk=",
+            "name": "Plates",
+            "slug": "plates"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 315,
+            "name": "Casual",
+            "slug": "casual"
+          },
+          {
+            "databaseId": 322,
+            "name": "Creative",
+            "slug": "creative"
+          },
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 328,
+            "name": "Lifestyle",
+            "slug": "lifestyle"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-7-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 543,
+      "id": "cG9zdDo1NDM=",
+      "title": "The details are not the details.",
+      "slug": "the-details-are-not-the-details",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-6-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 300,
+            "id": "dGVybTozMDA=",
+            "name": "Dinnerware Sets",
+            "slug": "dinnerware-sets"
+          },
+          {
+            "categoryId": 306,
+            "id": "dGVybTozMDY=",
+            "name": "Mugs & Cups",
+            "slug": "mugs-cups"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 315,
+            "name": "Casual",
+            "slug": "casual"
+          },
+          {
+            "databaseId": 322,
+            "name": "Creative",
+            "slug": "creative"
+          },
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 328,
+            "name": "Lifestyle",
+            "slug": "lifestyle"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-6-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 538,
+      "id": "cG9zdDo1Mzg=",
+      "title": "A wooden cottage kitchen",
+      "slug": "a-wooden-cottage-kitchen",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-5-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 303,
+            "id": "dGVybTozMDM=",
+            "name": "Explore Dinnerware",
+            "slug": "explore-dinnerware"
+          },
+          {
+            "categoryId": 306,
+            "id": "dGVybTozMDY=",
+            "name": "Mugs & Cups",
+            "slug": "mugs-cups"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 322,
+            "name": "Creative",
+            "slug": "creative"
+          },
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 337,
+            "name": "Style",
+            "slug": "style"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-5-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 532,
+      "id": "cG9zdDo1MzI=",
+      "title": "Interview With Stephen Grudier",
+      "slug": "interview-with-stephen-grudier",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-4-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 303,
+            "id": "dGVybTozMDM=",
+            "name": "Explore Dinnerware",
+            "slug": "explore-dinnerware"
+          },
+          {
+            "categoryId": 306,
+            "id": "dGVybTozMDY=",
+            "name": "Mugs & Cups",
+            "slug": "mugs-cups"
+          },
+          {
+            "categoryId": 309,
+            "id": "dGVybTozMDk=",
+            "name": "Plates",
+            "slug": "plates"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 315,
+            "name": "Casual",
+            "slug": "casual"
+          },
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 337,
+            "name": "Style",
+            "slug": "style"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-4-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 525,
+      "id": "cG9zdDo1MjU=",
+      "title": "Expand Your Mind, Change Everything",
+      "slug": "expand-your-mind-change-everything",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-3-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 1,
+            "id": "dGVybTox",
+            "name": "Accessories",
+            "slug": "accessories"
+          },
+          {
+            "categoryId": 306,
+            "id": "dGVybTozMDY=",
+            "name": "Mugs & Cups",
+            "slug": "mugs-cups"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 322,
+            "name": "Creative",
+            "slug": "creative"
+          },
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 337,
+            "name": "Style",
+            "slug": "style"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-3-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "databaseId": 511,
+      "id": "cG9zdDo1MTE=",
+      "title": "Modern house remodel is all about details",
+      "slug": "modern-house-remodel-is-all-about-details",
+      "commentCount": null,
+      "author": {
+        "node": {
+          "databaseId": 1,
+          "id": "dXNlcjox",
+          "firstName": null,
+          "lastName": null,
+          "name": "casa",
+          "avatar": {
+            "url": "http://0.gravatar.com/avatar/92c2a5ef5dcbd564ed3bf66c4d978022?s=96&d=mm&r=g"
+          }
+        }
+      },
+      "featuredImage": {
+        "node": {
+          "mediaItemUrl": "http://localhost/casa/wp-content/uploads/2023/03/Blog-2-900x490-1.jpg"
+        }
+      },
+      "categories": {
+        "nodes": [
+          {
+            "categoryId": 300,
+            "id": "dGVybTozMDA=",
+            "name": "Dinnerware Sets",
+            "slug": "dinnerware-sets"
+          },
+          {
+            "categoryId": 306,
+            "id": "dGVybTozMDY=",
+            "name": "Mugs & Cups",
+            "slug": "mugs-cups"
+          },
+          {
+            "categoryId": 309,
+            "id": "dGVybTozMDk=",
+            "name": "Plates",
+            "slug": "plates"
+          }
+        ]
+      },
+      "comments": {
+        "nodes": []
+      },
+      "tags": {
+        "nodes": [
+          {
+            "databaseId": 315,
+            "name": "Casual",
+            "slug": "casual"
+          },
+          {
+            "databaseId": 325,
+            "name": "Elegant",
+            "slug": "elegant"
+          },
+          {
+            "databaseId": 337,
+            "name": "Style",
+            "slug": "style"
+          }
+        ]
+      },
+      "post": {
+        "imagePost": "https://casa.7uptheme.net/wp-content/uploads/2019/05//Blog-2-900x490.jpg",
+        "excerptPost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "content": [
+          {
+            "contentField": "<p class=\"desc\">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus musbulum ultricies aliquam. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. morbi accumsan ipsum velit nam.</p>\n<blockquote>\n<p>\n“Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no.<br />\nSoleat laoreet posidonium. “\n</p>\n</blockquote>\n<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          },
+          {
+            "contentField": "<p class=\"desc\">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet.</p>\n<p class=\"desc\">Duo inermis repudiandae an, harum mandamus qui in. No quo mazim doming facilisi, duo ea impetus suavitate interpretaris. No dictas scripta placerat per, ut graeco perfecto reprehendunt mea. Pri an reque postea scriptorem, audiam conclusionemque per eu. An enim oblique has, graecis deserunt has no. Soleat laoreet posidonium an vel, delenit pertinax appellantur an est.</p>\n"
+          }
+        ],
+        "image": [
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-01-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-02-280x420.jpg"
+          },
+          {
+            "urlImage": "https://casa.7uptheme.net/wp-content/uploads/2017/11//Obachan-Single-03-280x420.jpg"
+          }
+        ]
+      }
+    }
+  ],
+  "product-tag":  [
+    {
+      "node": {
+        "id": "dGVybToxNzI=",
+        "databaseId": 172,
+        "name": "Casual",
+        "slug": "casual"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxODU=",
+        "databaseId": 185,
+        "name": "Classic",
+        "slug": "classic"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToyMDk=",
+        "databaseId": 209,
+        "name": "Creative",
+        "slug": "creative"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTo4Mg==",
+        "databaseId": 82,
+        "name": "Elegant",
+        "slug": "elegant"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxMzk=",
+        "databaseId": 139,
+        "name": "Gadgets",
+        "slug": "gadgets"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxMzI=",
+        "databaseId": 132,
+        "name": "Lifestyle",
+        "slug": "lifestyle"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTo4Ng==",
+        "databaseId": 86,
+        "name": "Minimal",
+        "slug": "minimal"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTo5OQ==",
+        "databaseId": 99,
+        "name": "Minimalistic",
+        "slug": "minimalistic"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTo4OQ==",
+        "databaseId": 89,
+        "name": "Modern",
+        "slug": "modern"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxNzU=",
+        "databaseId": 175,
+        "name": "Style",
+        "slug": "style"
+      }
+    }
+  ],
+  "product-cate": [
+    {
+      "node": {
+        "id": "dGVybToxMjY=",
+        "databaseId": 126,
+        "name": "Accessories",
+        "slug": "accessories"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxOTg=",
+        "databaseId": 198,
+        "name": "Bowls",
+        "slug": "bowls"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxNzg=",
+        "databaseId": 178,
+        "name": "Dinnerware Sets",
+        "slug": "dinnerware-sets"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybTozMw==",
+        "databaseId": 33,
+        "name": "Explore Dinnerware",
+        "slug": "explore-dinnerware"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxNjk=",
+        "databaseId": 169,
+        "name": "Mugs & Cups",
+        "slug": "mugs-cups"
+      }
+    },
+    {
+      "node": {
+        "id": "dGVybToxMjk=",
+        "databaseId": 129,
+        "name": "Plates",
+        "slug": "plates"
       }
     }
   ]

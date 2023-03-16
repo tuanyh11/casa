@@ -456,3 +456,162 @@
 }
 
 /* ----- */
+
+/* -----Trending---- */
+
+/* ------- */
+/* -----OurTeam---- */
+.our-team-main {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+    background-image: url(http://casa.7uptheme.net/wp-content/uploads/2019/10/a13.jpg?id=2385) !important;
+    /* transition: opacity .5s ease; */
+    overflow: hidden;
+}
+
+.our-team-main .our-team-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.our-team-main .our-team-wrapper .content-info {
+    margin: -7px 0 54px;
+    text-align: center;
+}
+
+.our-team-main .our-team-wrapper .content-info h3 {
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.our-team-main .our-team-wrapper .content-info h3::before {
+    transform: translateX(-50%) rotate(45deg);
+    width: 60px;
+    left: 50%;
+    top: 50%;
+    margin-top: -1px;
+    content: "";
+    position: absolute;
+    border: 1px solid;
+}
+
+.our-team-main .our-team-wrapper .content-info .desc-block {
+    max-width: 630px;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
+.our-team-main .our-team-wrapper .banner-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-team-main .banner-slider .item-about-team .about-team-thumb {
+    transition: all 0.35s ease-out 0s;
+    position: relative;
+}
+
+.our-team-main .banner-slider .item-about-team {
+    transition: all 0.35s ease-out 0s;
+}
+
+.item-about-team .about-team-thumb .adv-thumb {
+    transition: all 0.35s ease-out 0s;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.item-about-team .about-team-thumb .adv-thumb::after {
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.4s ease-out 0s;
+}
+
+.item-about-team .about-team-info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+    transition: all 0.35s ease-out 0s;
+}
+
+.item-about-team .about-team-info h3 {
+    transform: translate3d(0, 40px, 0);
+    margin-bottom: 5px;
+}
+
+.item-about-team .about-team-info p {
+    transform: translate3d(0, 30px, 0);
+    margin-bottom: 35px;
+}
+
+.item-about-team .about-team-info .share-social-team {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.item-about-team .about-team-info .share-social-team a {
+    padding: 0px 10px;
+}
+
+.item-about-team .adv-thumb img {
+    transition: all 0.4s ease-out 0s;
+}
+
+.item-about-team:hover .adv-thumb img {
+    filter: blur(5px);
+}
+
+.item-about-team .about-team-thumb:hover .about-team-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item-about-team:hover .about-team-info h3 {
+    transform: translate3d(0, 0, 0);
+}
+
+.item-about-team:hover .about-team-info p {
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.12s;
+}
+
+.item-about-team:hover .share-social-team {
+    transition-delay: 0.18s;
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+.item-about-team .about-team-thumb:hover .adv-thumb::after {
+    opacity: 1;
+}
+
+.our-team-wrapper .banner-slider .slick-slide {
+    width: 300px !important;
+    margin-right: 30px;
+}
+
+.our-team-wrapper .banner-slider .slick-slide:last-child {
+    margin-right: 0px !important;
+}
+
+/* ------- */

@@ -1,5 +1,5 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useRef } from "react";
-import { useTransition, animated } from "react-spring";
 import { instagramImg, socialMedia } from "../../../../assets/data";
 import { useClickInsideOutside } from "../../../../hooks";
 import ImageHover from "../../../Ui/ImageHover/ImageHover";
@@ -7,12 +7,7 @@ import ImageHover from "../../../Ui/ImageHover/ImageHover";
 const Sidebar = ({ openSidebar, onOpenSidebar }) => {
 
   
-  const transition = useTransition(openSidebar, {
-    from: { opacity: 0, transform: "translate(100%)" },
-    enter: { opacity: 1, transform: "translate(0)" },
-    leave: { opacity: 1, x: 580 },
-  });
-  
+
   const containerRef = useRef()
   
   const handleClickInside = () => {
@@ -22,22 +17,22 @@ const Sidebar = ({ openSidebar, onOpenSidebar }) => {
 
   return (
     <>
-      {transition((style, item) =>
-        item ? (
-          <animated.div >
-            <animated.div
-              ref={containerRef}
-              style={{ ...style.opacity, transitionDuration: "0.6s" }}
-              className=" fixed inset-0 z-[999999] bg-[rgba(0,0,0,0.3)] "
-            ></animated.div>
 
-            <animated.div
-              style={{
-                ...style,
-                transitionTimingFunction: "cubic-bezier(0.77, 0, 0.175, 1)",
-                transitionDuration: "0.4s",
-              }}
-              className={`aside-box-content z-[999999999999] scrollbar-none `}
+      <AnimatePresence>
+        { openSidebar ? (
+          <div >
+            <motion.div
+              transition="all 0.4s ease-out 0s"
+              animate={{opacity: [0, 1]}}
+              exit={{opacity: 0}}
+              className=" fixed inset-0 z-[999999] bg-[rgba(0,0,0,0.3)] "
+            ></motion.div>
+
+            <motion.div
+              animate={{x: [660, 0]}}
+              transition={{duration: 0.6, ease: [0.77, 0, 0.175, 1]}}
+              className={`aside-box-content  z-[9999999]`}
+              exit={{x: 800}}
             >
               <button
                 onClick={() => onOpenSidebar(false)}
@@ -125,10 +120,10 @@ const Sidebar = ({ openSidebar, onOpenSidebar }) => {
                   </ul>
                 </div>
               </div>
-            </animated.div>
-          </animated.div>
-        ) : null
-      )}
+            </motion.div>
+          </div>
+        ) : null}
+      </AnimatePresence>
     </>
   );
 };

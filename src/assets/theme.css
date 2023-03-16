@@ -70,3 +70,7 @@
   display: table-cell;
   vertical-align: top;
 }
+
+.widget {
+  margin-bottom: 60px;
+}

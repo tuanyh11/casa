@@ -1,6 +1,6 @@
 import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { About, BlogDetail, BlogList, Contact, Home } from "./Pages";
+import { About, BlogDetail, BlogList, Contact, Home, Shop } from "./Pages";
 
 import { Footer, Header } from "./Components";
 import "reactjs-popup/dist/index.css";
@@ -27,11 +27,14 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/shop" element={<Shop />} />
         </Routes>
         <Footer />
       </>
     );
   }, []);
+
+  console.log(1)
 
   return (
     <>

@@ -10,6 +10,13 @@ export const searchProduct = async (text) => {
    return product.data
 }
 
+export const getProduct = async (query) => {
+   const product =  await instanceAxios.get(`/products?${new URLSearchParams({query}).toString()}`)
+    
+   return product.data
+}
+
+// end product
 
 // blog
 export const getBlogById = async (id) => {

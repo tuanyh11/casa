@@ -2,7 +2,14 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useQuery } from '@tanstack/react-query';
+import { getOurTeamHome } from '../../../api';
 function OurTeam(props) {
+    const { data } = useQuery({
+        queryKey: ["our-team-home"],
+        queryFn: () => getOurTeamHome()
+    })
+    // console.log(data);
     var settings = {
         dots: false,
         infinite: true,
@@ -28,18 +35,18 @@ function OurTeam(props) {
                         <div className='banner-slider'>
                             <Slider {...settings}>
                                 {
-                                    [...new Array(4)].map((item, index) => (
-                                        <div className='item-about-team text-center'>
+                                    data?.map((item, index) => (
+                                        <div className='item-about-team text-center' key={index}>
                                             <div className='about-team-thumb '>
                                                 <a href='#' className='adv-thumb'>
-                                                    <img src='https://casa.7uptheme.net/wp-content/uploads/2019/06/team01.jpg' alt='' />
+                                                    <img src={item.image} alt='' />
                                                 </a>
 
                                                 <div className="about-team-info">
                                                     <h3 className="text-[18px] font-semibold uppercase">
-                                                        <a href="#" className="color-title">Brian Woodard</a>
+                                                        <a href="#" className="color-title">{item.name}</a>
                                                     </h3>
-                                                    <p className="text-[14px]">SEO Marketing </p>
+                                                    <p className="text-[14px]">{item.location}</p>
                                                     <div className="share-social-team">
                                                         <a className="text-[#999] text-[18px]" href="#">
                                                             <i className="fa-brands fa-facebook-f"></i>
@@ -63,8 +70,6 @@ function OurTeam(props) {
                                     ))
                                 }
                             </Slider>
-
-
                         </div>
                     </div>
                 </div>

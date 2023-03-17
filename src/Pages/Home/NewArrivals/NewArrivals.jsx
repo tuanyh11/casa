@@ -8,7 +8,7 @@ import { Product } from '../../../Components';
 
 function NewArrivals(props) {
     const { data } = useQuery({
-        queryKey: ["product-arrivals"],
+        queryKey: ["products-new-arrivals"],
         queryFn: () => getProducts(7)
     })
     // console.log(data);

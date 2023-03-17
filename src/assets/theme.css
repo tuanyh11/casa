@@ -60,6 +60,10 @@
   font-size: 100px;
 }
 
+.black {
+  color: #333;
+}
+
 .table-custom {
   display: table;
   margin: 0;
@@ -81,4 +85,15 @@
 }
 .widget {
   margin-bottom: 60px;
+}
+
+
+.banner-advs {
+  position: relative;
+}
+
+.product-thumb-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
 }

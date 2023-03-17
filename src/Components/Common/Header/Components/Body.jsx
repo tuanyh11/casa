@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import Logo from "./Logo";
 import { useDebounce } from "../../../../hooks";
 import { searchProduct } from "../../../../api";
-import CardlistSmall from "../../../Ui/Product/CardlistSmall";
+import CardlistSmall from "../../../Ui/Product/CardlistSmallV1";
 import LoginForm from "../../../Ui/Form/LoginForm";
 import { socialMedia } from "../../../../assets/data";
 import Search from "./Search";

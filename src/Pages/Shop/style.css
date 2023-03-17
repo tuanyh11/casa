@@ -45,3 +45,47 @@
     -webkit-transition: all 0.4s ease-out 0s;
 }
  
+
+.woocommerce-product-search input[type=text] {
+    border: 1px solid #cccccc;
+    height: 60px;
+    line-height: 64px;
+    padding: 0 20px;
+    display: block;
+    width: 100%;
+    color: #303030;
+}
+
+.widget_product_search a {
+    position: absolute;
+    font-size: 20px;
+    padding: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60px;
+    background: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.widget-product-list .item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.widget-product-list .item .post-info .wrap-rating {
+    margin: 9px 0 10px;
+}
+.wrap-rating {
+    line-height: 12px;
+}
+
+.product-rate {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+}
+
+
+

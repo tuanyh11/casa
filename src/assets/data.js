@@ -115,3 +115,34 @@ export const socialMediaIconsBlog = [
     icon: "fas fa-envelope",
   },
 ];
+
+export const itemToShow = [
+  12, 16, 20, 24
+]
+
+export const sortTypes = [
+  {
+    name: 'Relevance',
+    key: 'relevance'
+  },
+  {
+    name: 'Popularity',
+    key: 'popularity'
+  },
+  {
+    name: 'Average Rating',
+    key: 'average_rating'
+  },
+  {
+    name: 'Newness',
+    key: 'newness'
+  },
+  {
+    name: 'Price: Low to High',
+    key: 'price_low_high'
+  },
+  {
+    name: 'Price: High to Low',
+    key: 'price_high_low'
+  }
+];

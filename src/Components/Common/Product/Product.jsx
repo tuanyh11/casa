@@ -11,8 +11,8 @@ const Product = ({ data }) => {
                     </a>
                 </div>
                 <a href='#' className='product-thumb-link'>
-                    <img src={data.acf_product.imageProduct[0].imageUrlProduct} alt='' />
-                    <img src={data.acf_product.imageProduct[1].imageUrlProduct} alt='' />
+                    <img src={data.acf_product?.imageProduct?.[0].imageUrlProduct} alt='' />
+                    <img src={data.acf_product?.imageProduct?.[1].imageUrlProduct} alt='' />
                 </a>
                 {
                     data.price ? (

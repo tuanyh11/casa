@@ -44,6 +44,13 @@ export const getProducts = async (limit) => {
   return product.data;
 };
 
+export const getProductsCate = async (limit) => {
+  const product = await instanceAxios.get(
+    `http://localhost:4000/product-cate?_start=0&_limit=${limit}`
+  );
+  return product.data;
+};
+
 // end product
 
 // blog
@@ -70,11 +77,34 @@ export const getSidebarBlogData = async () => {
 export const createBlogComment = async (data) => {
   await instanceAxios.post(`http://localhost:4000/blog/comments`, data);
 };
-
+export const getListBlog = async (limit = 7) => {
+  const blog = await instanceAxios.get(
+    `http://localhost:4000/blogs?_start=0&_limit=${limit}`
+  );
+  return blog.data;
+};
 // end blog
 
 // contact
 
 export const createContact = async (data) => {
   await instanceAxios.post(`http://localhost:4000/contact`, data);
+};
+
+// our-team-home
+export const getOurTeamHome = async () => {
+  const ourteam = await instanceAxios.get(
+    `http://localhost:4000/our-team-home`
+  );
+  return ourteam.data;
+};
+export const getLogoHome = async () => {
+  const logo = await instanceAxios.get(`http://localhost:4000/logo-home`);
+  return logo.data;
+};
+export const getCategoryHome = async () => {
+  const category = await instanceAxios.get(
+    `http://localhost:4000/category-home`
+  );
+  return category.data;
 };

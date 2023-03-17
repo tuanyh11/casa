@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-const CardListSmallV2 = ({ averageRating, acf_product, slug, name}) => {
+const CardListSmallV2 = ({ averageRating, acf_product, slug, name, price}) => {
   const generateStart = (rating = 0, className) => {
     const filledStars = Math.round(rating);
     const emptyStars = 5 - filledStars;
@@ -31,6 +31,8 @@ const CardListSmallV2 = ({ averageRating, acf_product, slug, name}) => {
   };
 
   const image = acf_product?.imageProduct?.[0]?.imageUrlProduct
+
+  
 
   return (
     <div className="item clearfix mb-[30px] flex">
@@ -68,7 +70,7 @@ const CardListSmallV2 = ({ averageRating, acf_product, slug, name}) => {
         <div className="product-price price simple mx-0">
           <span className="woocommerce-Price-amount amount">
             <bdi>
-              <span className="woocommerce-Price-currencySymbol">$</span>34.00
+              {price}
             </bdi>
           </span>
         </div>{" "}

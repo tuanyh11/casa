@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { itemToShow, sortTypes } from "../../../../assets/data";
 import { Pagination, Product, ProductList } from "../../../../Components";
 
-const index = ({ onSetMode, mode, products }) => {
+const index = ({
+  onSetMode,
+  mode,
+  products,
+  onPageChange,
+  currentPage,
+  onPageSize,
+  pageSize,
+  onFilter
+}) => {
+
+  const [filterMode, setFilterMode] = useState(sortTypes[0].name)
+
   return (
     <div>
       <div className="top-filter clearfix flex justify-between flex-wrap ">
@@ -30,12 +42,12 @@ const index = ({ onSetMode, mode, products }) => {
         <div className="pull-right sort-pagi-bar list-inline-block">
           <div className="dropdown-box show-by !hidden md:!inline-block">
             <button className="dropdown-link !flex justify-between">
-              <span>12</span>
+              <span>{pageSize}</span>
               <i className=" absolute right-6 top-1/2 -translate-y-1/2 fa-light fa-chevron-down"></i>
             </button>
             <ul className="dropdown-list list-none">
               {itemToShow.map((item) => (
-                <li key={item} className="">
+                <li onClick={() => onPageSize(item)} key={item} className="">
                   {item}
                 </li>
               ))}
@@ -45,12 +57,15 @@ const index = ({ onSetMode, mode, products }) => {
           <div className="dropdown-box show-by show-order">
             <button className="dropdown-link  ">
               <i className="fas fa-sort-alpha-down mr-3"></i>
-              Relevance{" "}
+              {filterMode}
               <i className=" absolute right-6 top-1/2 -translate-y-1/2 fa-light fa-chevron-down"></i>
             </button>
             <ul className="dropdown-list list-none">
               {sortTypes.map((item) => (
-                <li key={item.key}>{item.name}</li>
+                <li className={`${filterMode === item.name ? '!text-main' : ''}`} onClick={() => {
+                  onFilter(item.key)
+                  setFilterMode(item.name)
+                }} key={item.key}>{item.name}</li>
               ))}
             </ul>
           </div>
@@ -59,28 +74,33 @@ const index = ({ onSetMode, mode, products }) => {
 
       <div>
         <div className="row">
-          {/* {products?.map(product => {
-                    return <div key={product?.id} className="w-6/12 screen-991:w-4/12 px-15 mb-[30px]">
-                        <Product data={product}/>
-                    </div>
-                })} */}
-
-          {products?.map((product) => {
-            return (
-              <div key={product?.id} className="w-full px-15 mb-[30px]">
-                <ProductList data={product} />
-              </div>
-            );
-          })}
+          {mode === "grid"
+            ? products?.map((product) => {
+                return (
+                  <div
+                    key={product?.id}
+                    className="w-6/12 screen-991:w-4/12 px-15 mb-[30px]"
+                  >
+                    <Product data={product} />
+                  </div>
+                );
+              })
+            : products?.map((product) => {
+                return (
+                  <div key={product?.id} className="w-full px-15 mb-[30px]">
+                    <ProductList data={product} />
+                  </div>
+                );
+              })}
         </div>
       </div>
 
       <div className="mt-[95px]">
         <Pagination
           totalCount={30}
-          currentPage={1}
-          pageSize={12}
-          onPageChange={(item) => console.log(item)}
+          currentPage={currentPage + 1}
+          pageSize={pageSize}
+          onPageChange={(item) => onPageChange(item - 1)}
         />
       </div>
     </div>

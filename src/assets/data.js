@@ -122,27 +122,27 @@ export const itemToShow = [
 
 export const sortTypes = [
   {
-    name: 'Relevance',
-    key: 'relevance'
+    name: "Default sorting",
+    key: 'default',
   },
   {
-    name: 'Popularity',
+    name: 'Sort by Popularity',
     key: 'popularity'
   },
   {
-    name: 'Average Rating',
+    name: 'Sort by Average Rating',
     key: 'average_rating'
   },
   {
-    name: 'Newness',
+    name: 'Sort by Newness',
     key: 'newness'
   },
   {
-    name: 'Price: Low to High',
+    name: 'Sort by Price: Low to High',
     key: 'price_low_high'
   },
   {
-    name: 'Price: High to Low',
+    name: 'Sort by Price: High to Low',
     key: 'price_high_low'
   }
 ];

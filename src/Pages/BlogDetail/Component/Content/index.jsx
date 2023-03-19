@@ -7,7 +7,7 @@ import CommentSection from "./CommentSection";
 import Image from "./Image";
 import RelatedPost from "./RelatedBlog";
 
-const Content = ({ blog, refetch }) => {
+const Content = ({ blog, refetch, relatedBlog }) => {
   
 
   const getDate = useDate();
@@ -53,7 +53,7 @@ const Content = ({ blog, refetch }) => {
             </div>
             <span className=" meta-cats uppercase">{publishedDate}</span>
           </div>
-          <h2 className="text-[36px] font-bold mb-[19px] break-words uppercase">
+          <h2 className=" blog-title font-bold mb-[19px] break-words uppercase">
             {title}{" "}
           </h2>
 
@@ -65,10 +65,10 @@ const Content = ({ blog, refetch }) => {
           />
         </div>
 
-        <div className="pt-[9px] pb-[7px] mb-6">
+        <div className="pt-[9px] pb-[7px]">
           <div className="row">
             {images?.map((image, i) => (
-              <div key={i} className="w-4/12 px-15">
+              <div key={i} className="w-full md:mb-0 mb-[30px] screens-425:w-4/12 px-15">
                 <div className="line-scale zoom-image">
                   <Link to={"/contact"} className="adv-thumb-link ">
                     <img src={image?.urlImage} alt="" className="w-full" />
@@ -90,7 +90,7 @@ const Content = ({ blog, refetch }) => {
 
       {/* relate post */}
       <div className="mb-20">
-        <RelatedPost />
+        <RelatedPost data={relatedBlog} />
       </div>
 
       {/* end relate post */}

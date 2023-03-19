@@ -9,7 +9,7 @@ const Instagram = () => {
       <ul className="flex flex-wrap  relative -mx-[1px]">
         {instagramImg.map((item, index) => (
           <li key={index} className="w-4/12 pr-[1px] pb-[1px]">
-            <ImageHover link={item.link} url={item.image} />
+            <ImageHover link={item.link} url={item.image} iconStyle={{fontSize: '18px'}} />
           </li>
         ))}
       </ul>

@@ -175,3 +175,39 @@
   position: relative;
   z-index: 10;
 }
+
+.item-product-list .product-extra-link {
+  margin: 0 -5px;
+  margin-top: 33px;
+}
+
+.product-extra-link > button.addcart-link {
+  font-family: Poppins;
+  width: auto !important;
+  font-weight: 500;
+  padding: 0 20px;
+  border-radius: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.product-extra-link > button:hover {
+  color: #f598a4;
+  transition: all 0.4s ease-out 0s;
+}
+
+.product-extra-link > button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  border: 1px solid #222222;
+  margin: 5px;
+  text-align: center;
+  background: #fff;
+}
+

@@ -32,10 +32,10 @@ export const getSidebarProduct = async () => {
   return data;
 };
 
-export const getProducts = async (limit) => {
-  if (limit) {
+export const getProducts = async (paginate) => {
+  if (paginate) {
     const product = await instanceAxios.get(
-      `/products?_start=0&_limit=${limit}`
+      `/products?_start=${paginate?.start}&_limit=${paginate.end}`
     );
     return product.data;
   }
@@ -77,12 +77,19 @@ export const getSidebarBlogData = async () => {
 export const createBlogComment = async (data) => {
   await instanceAxios.post(`http://localhost:4000/blog/comments`, data);
 };
+
 export const getListBlog = async (limit = 7) => {
   const blog = await instanceAxios.get(
     `http://localhost:4000/blogs?_start=0&_limit=${limit}`
   );
   return blog.data;
 };
+
+export const getRelateBlog = async (id) => {
+  const relatedBlog = await instanceAxios.get(`/blogs/${id}/related`)
+  return relatedBlog.data;
+}
+
 // end blog
 
 // contact

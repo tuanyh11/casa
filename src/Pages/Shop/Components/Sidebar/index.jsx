@@ -14,10 +14,12 @@ const Sidebar = ({
   trendingProducts,
   search,
   onSearch,
+  priceRanges
+
 }) => {
   return (
     <div>
-      <Filter />
+      <Filter  data={priceRanges}/>
 
       <Category data={cateProduct}/>
 

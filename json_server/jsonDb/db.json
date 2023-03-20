@@ -405,8 +405,8 @@
       "excerpt": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>\n",
       "description": "<div class=\"col-md-4 col-sm-12 col-xs-12 obc-product obc-product-left\">\n<h3 class=\"title16 poppins-font font-medium\">Care Intructions</h3>\n<p class=\"desc\">Microwave and dishwasher safe. We recommend using gentle, environmentally-friendly detergents. Not suitable for use on an open flame or electric stove top. Avoid temperature shock by heating things slowly, evenly, and carefully</p>\n</div>\n<div class=\"col-md-4 col-sm-12 col-xs-12 obc-product obc-product-center\">\n<h3 class=\"title16 poppins-font font-medium\">PRODUCT SPECS</h3>\n<ul class=\"list-none\">\n<li>Material: Ceramic</li>\n<li>Size: 4″ dia.</li>\n<li>Capacity: 16 oz</li>\n<li>Designed and handcrafted in Sausalito, CA.</li>\n</ul>\n</div>\n<div class=\"col-md-4 col-sm-12 col-xs-12 obc-product obc-product-right\">\n<h3 class=\"title16 poppins-font font-medium\">DID YOU KNOW?</h3>\n<p class=\"desc\">Microwave and dishwasher safe. We recommend using gentle, environmentally-friendly detergents. Not suitable for use on an open flame or electric stove top. Avoid temperature shock by heating things slowly, evenly, and carefully</p>\n</div>\n",
       "averageRating": 0,
-      "regularPrice": null,
-      "price": null,
+      "regularPrice": "$20.00",
+      "price": "$10.00",
       "reviews": {
         "nodes": [
           {

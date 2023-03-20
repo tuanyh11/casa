@@ -1,3 +1,6 @@
+import currency from "currency.js";
+import { Link } from "react-router-dom";
+
 export function filterProductBySidebar(products, obj, setShowProducts) {
   return () => {
     if (products) {

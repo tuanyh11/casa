@@ -60,15 +60,32 @@ const Shop = () => {
     return [Math.min(...price), Math.max(...price)];
   }, [products, currentPage]);
 
-  const pathBreadCrumbs = getPathBreadcrumbs();
+  const pathBreadCrumbs = getPathBreadcrumbs(query);
 
   const handleFilter = (key) => {
     switch (key) {
       case "default":
         return setShowProducts([...showProducts]);
       case "average_rating":
-        return setShowProducts([...showProducts.sort((a, b) => a.averageRating - b.averageRating)]);
-
+        return setShowProducts([
+          ...showProducts.sort((a, b) => a.averageRating - b.averageRating),
+        ]);
+      case "price_low_high":
+        return setShowProducts([
+          ...showProducts.sort(
+            (a, b) =>
+              currency(a.price || a.regularPrice).value -
+              currency(b.price || b.regularPrice).value
+          ),
+        ]);
+      case "price_high_low":
+        return setShowProducts([
+          ...showProducts.sort(
+            (a, b) =>
+              currency(b.price || b.regularPrice).value -
+              currency(a.price || a.regularPrice).value
+          ),
+        ]);
       default:
         break;
     }

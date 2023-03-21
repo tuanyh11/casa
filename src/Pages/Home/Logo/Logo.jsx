@@ -14,14 +14,42 @@ function Logo(props) {
         dots: false,
         infinite: true,
         speed: 500,
-        // slidesToShow: 5,
-        slidesPerRow: 5,
+        slidesToShow: 5,
+        slidesPerRow: 1,
         rows: 2,
         slidesToScroll: 1,
         arrows: false,
         autoplay: false,
         autoplaySpeed: 2000,
-        className: 'a'
+        responsive: [
+            {
+                breakpoint: 1170,
+                settings: {
+                    slidesToShow: 4,
+                    slidesPerRow: 1,
+                    rows: 2,
+
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesPerRow: 1,
+                    rows: 2,
+
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesPerRow: 1,
+                    rows: 2,
+
+                }
+            },
+        ]
 
     }
     return (

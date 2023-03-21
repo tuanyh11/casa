@@ -35,6 +35,7 @@ const Pagination = (props) => {
     return (
         <ul
             className='pagination-container'
+            onClick={() => window.scrollTo(0, 0)}
         >
             {currentPage > 1 ? (
                 <li

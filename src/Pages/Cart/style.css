@@ -1,0 +1,265 @@
+    .cart-content .shop_table {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        border-collapse: collapse;
+        text-align: left;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .cart-content .shop_table thead {
+        display: none;
+
+    }
+
+    .cart-content .shop_table .cart_item a {
+        transition: all 0.4s ease-out 0s;
+    }
+
+    .cart-content .shop_table .cart_item {
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .cart-content .shop_table tr:first-child td {
+        padding-top: 0px !important;
+    }
+
+    .cart-content .shop_table td,
+    .cart-content .shop_table th {
+        padding: 18px 0;
+        border: none;
+        vertical-align: middle;
+        line-height: 1.5em;
+    }
+
+    .cart-content .shop_table .cart_item .product-remove {
+        width: 30px;
+    }
+
+    .cart-content .shop_table .product-remove a {
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px !important;
+        font-size: 0;
+        line-height: 14px !important;
+        border-radius: 50%;
+        position: relative;
+        background: #f44336;
+        margin: auto;
+        color: red !important;
+        text-decoration: none;
+        font-weight: 700;
+        border: 0;
+        color: red !important;
+        text-decoration: none;
+        font-weight: 700;
+        border: 0;
+        transition: all 0.4s ease-out 0s;
+    }
+
+
+
+    .cart-content .shop_table .product-remove a::after,
+    .cart-content .shop_table .product-remove a::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #fff;
+        width: 8px;
+        height: 2px;
+        transition: all 0.3s ease;
+        font-weight: 700;
+        color: red !important;
+    }
+
+    .woocommerce-cart-form .shop_table.cart tbody .product-remove a:not(:hover)::after,
+    .wishlist_table tbody .product-remove a:not(:hover)::after,
+    .product-remove a.remove:not(:hover)::after,
+    .remove-product:not(:hover)::after {
+        transform: rotate(45deg);
+    }
+
+    td.product-thumbnail {
+        min-width: 32px;
+    }
+
+    .cart-content .shop_table .cart_item .product-thumbnail {
+        max-width: 60px;
+        text-align: center;
+    }
+
+    .cart-content .shop_table .cart_item .product-thumbnail img {
+        display: unset;
+        width: 70px;
+        box-shadow: none;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cart-content .shop_table .cart_item .product-name,
+    .cart-content .shop_table .cart_item .product-price span,
+    .cart-content .shop_table .cart_item .product-quantity,
+    .cart-content .shop_table .cart_item .product-subtotal span {
+        font-weight: 500;
+        font-family: 'Poppins';
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .cart-content .shop_table .cart_item .product-price {
+        margin: 0 -6px 7px;
+    }
+
+    td.product-quantity {
+        min-width: 80px;
+    }
+
+    td.product-quantity label {
+        display: none;
+        font-family: 'Poppins';
+        color: #222;
+        margin: 0;
+        font-weight: 500 !important;
+        text-transform: uppercase;
+    }
+
+    .cart-content .shop_table .cart_item .product-quantity .detail-qty {
+        height: 46px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        width: 140px;
+        position: relative;
+        border: 1px solid #ebebeb;
+    }
+
+    .detail-qty a {
+        width: 40px;
+        height: 40px;
+        line-height: 42px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Poppins';
+    }
+
+    .detail-qty input {
+        height: 44px;
+        line-height: 44px;
+        margin: 0;
+        vertical-align: middle;
+        padding: 0;
+        border: none;
+        width: 80px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Poppins';
+
+    }
+
+    input,
+    input:focus,
+    input:hover {
+        outline: none;
+    }
+
+    .cart-content .shop_table tr:last-child {
+        border: none;
+    }
+
+    .cart-content .shop_table tr .actions .coupon {
+        float: left;
+    }
+
+    .cart-content .shop_table tr .actions .coupon label {
+        display: none;
+        font-weight: 600;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .cart-content .shop_table tr .actions .coupon .input-text {
+        min-width: 200px;
+        padding-left: 12px;
+        padding-right: 12px;
+        float: left;
+        box-sizing: border-box;
+        border: 1px solid #d3ced2;
+        padding: 6px 6px 5px;
+        margin: 0 4px 0 0;
+        outline: 0;
+        width: 80px;
+        vertical-align: middle;
+        height: 46px;
+        line-height: 46px;
+        color: #303030;
+    }
+
+    .cart-content .shop_table tr .actions .coupon button {
+        float: none;
+        font-family: "Poppins";
+        display: inline-block;
+        height: 46px;
+        line-height: 46px;
+        border: none;
+        padding: 0 25px;
+        text-align: center;
+        background-color: #f598a4;
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 0px;
+        text-transform: uppercase;
+        transition: all 0.4s ease-out 0s;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        overflow: visible;
+        left: auto;
+        background-image: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .cart-content .shop_table tr .actions .button {
+        font-family: "Poppins";
+        display: inline-block;
+        height: 46px;
+        line-height: 46px;
+        border: none;
+        padding: 0 25px;
+        text-align: center;
+        background-color: #f598a4;
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 0px;
+        text-transform: uppercase;
+        transition: all 0.4s ease-out 0s;
+        cursor: not-allowed;
+        opacity: .5;
+        float: right;
+        position: relative;
+        text-decoration: none;
+        overflow: visible;
+        /* left: auto; */
+        background-image: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .cart-content .shop_table tr .actions .button {
+        cursor: not-allowed;
+        opacity: .5;
+        /* float: none; */
+    }

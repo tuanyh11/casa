@@ -34,6 +34,9 @@ server.get('/blogs/:id/related', (req, res) => {
   res.status(200).json(relatedBlog)
 })  
 
+
+server.use(routerV1)
+
 router(server, db, routerV1)
 
 

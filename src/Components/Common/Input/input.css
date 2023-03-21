@@ -1,0 +1,23 @@
+.label-inputv1 {
+    display: block;
+    width: 100%;
+}
+
+.inputv1 {
+    height: 50px;
+    border: none;
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid #eaeaea;
+    outline: none;
+}
+
+.inputv2 {
+    height: 70px;
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 20px;
+    outline: none;
+    
+}

@@ -8,7 +8,7 @@ const TrendingProduct = ({data}) => {
       <div className="widget-inner">
         <div className="widget-product">
           <div className="widget-product-list">
-            {data.map((product) => (
+            {data?.map((product) => (
               <div key={product?.id} className="">
                 <CardListSmallV2 {...product} />
               </div>

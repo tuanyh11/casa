@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { About, BlogDetail, BlogList, Contact, Home, ProductDetail, Shop } from "./Pages";
+import { About, BlogDetail, BlogList, Checkout, Contact, Home, ProductDetail, Shop } from "./Pages";
 import { Footer, Header } from "./Components";
 import { useEffect, useMemo } from "react";
 import { useWindowScroll } from "./hooks";
@@ -23,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/product/:slug" element={<ProductDetail />} />

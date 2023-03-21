@@ -115,3 +115,5 @@ export const getCategoryHome = async () => {
   );
   return category.data;
 };
+
+export const getCountries = async () => (await instanceAxios.get("/countries")).data;

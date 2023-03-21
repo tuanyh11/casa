@@ -17,11 +17,14 @@ function Trending(props) {
 
     const { data: dataProduct } = useQuery({
         queryKey: ["products-trendings"],
-        queryFn: () => getProducts(999)
+        queryFn: () => getProducts()
     })
+
 
     const showProduct = dataProduct?.filter((product) => product.productCategories.nodes?.some(cate => cate.id === selectCate))
     // console.log(showProduct);
+
+    console.log(showProduct);
 
     var settings = {
         dots: false,

@@ -82,21 +82,20 @@ export const getSidebarBlogData = async () => {
 };
 
 export const createBlogComment = async (data) => {
-  await instanceAxios.post(`http://localhost:4000/blog/comments`, data);
-};
-
-export const getListBlog = async (limit = 7) => {
-  const blog = await instanceAxios.get(
-    `http://localhost:4000/blogs?_start=0&_limit=${limit}`
-  );
-  return blog.data;
-};
-
+  await instanceAxios.post(`http://localhost:4000/blog/comments`, data)
+}
+export const getListBlog = async (limit) => {
+  if (limit) {
+    const blog = await instanceAxios.get(`http://localhost:4000/blogs?_start=0&_limit=${limit}`)
+    return blog.data
+  }
+  const blog = await instanceAxios.get(`http://localhost:4000/blogs`)
+  return blog.data
+}
 export const getRelateBlog = async (id) => {
   const relatedBlog = await instanceAxios.get(`/blogs/${id}/related`)
   return relatedBlog.data;
 }
-
 // end blog
 
 // contact
@@ -124,3 +123,8 @@ export const getCategoryHome = async () => {
 };
 
 export const getCountries = async () => (await axios.get("https://countriesnow.space/api/v0.1/countries")).data?.data;
+ 
+export const getBannerHome = async () => {
+  const banner = await instanceAxios.get(`http://localhost:4000/banner-home`)
+  return banner.data
+}

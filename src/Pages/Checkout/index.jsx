@@ -209,6 +209,7 @@ const Checkout = () => {
                             <div className="">
                               <InputV1
                                 label={"Company name (optional)"}
+                                
                                 offRequired={true}
                               />
                             </div>

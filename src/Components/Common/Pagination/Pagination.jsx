@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { usePagination, DOTS } from "../../../hooks";
 import "./style.css";
 const Pagination = ({
-  onPageChange = () => {},
+  onPageChange = () => { },
   totalCount = 0,
   siblingCount = 1,
   currentPage = 0,
@@ -31,7 +31,9 @@ const Pagination = ({
 
   // console.log(lastPage);
   return (
-    <ul className="pagination-container">
+    <ul className="pagination-container"
+      onClick={() => window.scrollTo(0, 0)}
+    >
       {currentPage > 1 ? (
         <li className="pagination-item" onClick={onPrevious}>
           <i className="fa-regular fa-arrow-left-long"></i>
@@ -44,9 +46,8 @@ const Pagination = ({
 
         return (
           <li
-            className={`pagination-item ${
-              currentPage === pageNumber ? "active" : ""
-            }`}
+            className={`pagination-item ${currentPage === pageNumber ? "active" : ""
+              }`}
             onClick={() => onPageChange(pageNumber)}
           >
             {pageNumber}

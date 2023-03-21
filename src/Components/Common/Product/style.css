@@ -19,7 +19,7 @@
     z-index: 2;
 }
 
-.item-product .product-thumb .product-extra-link a {
+.item-product .product-thumb .product-extra-link .btn-add-cart {
     font-family: 'Poppins';
     width: auto !important;
     font-weight: 500;
@@ -42,9 +42,19 @@
     background: #fff;
 
     transition: all 0.4s ease-out 0s;
+    cursor: pointer;
 }
 
-.item-product .product-thumb .product-extra-link a::before {
+.item-product .product-thumb .product-extra-link .btn-add-cart span {
+    transition: all 0.4s ease-out 0s;
+
+}
+
+.item-product .product-thumb .product-extra-link .btn-add-cart:hover span {
+    color: #f598a4;
+}
+
+.item-product .product-thumb .product-extra-link .btn-add-cart .loading-product {
     animation: fa-spin 0.5s infinite steps(20);
     content: "";
     height: 22px;
@@ -61,6 +71,19 @@
     opacity: 0;
     visibility: hidden;
     z-index: 1;
+}
+
+.item-product .product-thumb .product-extra-link .loading .loading-product {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item-product .product-thumb .product-extra-link .btn-add-cart span {
+    display: block;
+}
+
+.item-product .product-thumb .product-extra-link .loading span {
+    display: none;
 }
 
 .item-product .product-thumb .product-thumb-link {
@@ -132,7 +155,7 @@
     opacity: 1;
 }
 
-.item-product .product-thumb:hover .product-extra-link a {
+.item-product .product-thumb:hover .product-extra-link .btn-add-cart {
     visibility: visible;
     opacity: 1;
 }

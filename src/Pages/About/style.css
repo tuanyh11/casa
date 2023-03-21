@@ -179,8 +179,8 @@
 }
 
 .vison-value-main {
-    margin-left: -15px;
-    margin-right: -15px;
+    /* margin-left: -15px;
+    margin-right: -15px; */
     background-repeat: no-repeat;
     background-position: right bottom;
     margin-bottom: 120px;
@@ -493,6 +493,7 @@
     max-width: 100%;
     vertical-align: top;
     width: 350px;
+    object-fit: cover;
 }
 
 .countup-figure a img:hover {
@@ -647,7 +648,7 @@
     .countup-main,
     .follow-main {
 
-        margin-bottom: 70px;
+        margin-bottom: 70px !important;
     }
 
     .banner-thumb {
@@ -663,6 +664,8 @@
         margin-left: 15px;
         margin-right: 15px;
     }
+
+
 }
 
 @media screen and (max-width:1024px) {
@@ -700,7 +703,7 @@
     .countup-main,
     .follow-main {
 
-        margin-bottom: 50px;
+        margin-bottom: 50px !important;
     }
 
     .wrap-item-slider .banner-info .slider-content-text .obc-desc {
@@ -763,6 +766,8 @@
         margin-bottom: 40px;
         text-align: center;
     }
+
+
 }
 
 @media screen and (max-width:600px) {
@@ -776,6 +781,7 @@
 
     .countup-main .counter-number .counter-inner .icon {
         font-size: 36px;
+        margin-bottom: 5px;
     }
 }
 
@@ -790,5 +796,9 @@
 
     .follow-inner .about-instagram .follow-instagram li {
         width: 50%;
+    }
+
+    .item-testimo .testimo-thumb .testimo-info {
+        margin-top: 20px;
     }
 }

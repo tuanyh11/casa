@@ -44,6 +44,12 @@ export const getProducts = async (paginate) => {
   return product.data;
 };
 
+export const  getSaleProducts = async () =>   {
+  const products = await instanceAxios.get("/products/sales")
+  console.log(products);
+  return products.data
+}
+
 export const getProductsCate = async (limit) => {
   const product = await instanceAxios.get(
     `http://localhost:4000/product-cate?_start=0&_limit=${limit}`

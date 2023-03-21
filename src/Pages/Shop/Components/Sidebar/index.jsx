@@ -14,16 +14,17 @@ const Sidebar = ({
   trendingProducts,
   search,
   onSearch,
-  priceRanges
-
+  priceRanges,
+  offFilter = false,
+  offColor = false
 }) => {
   return (
     <div>
-      <Filter  data={priceRanges}/>
+      {!offFilter && <Filter  data={priceRanges}/>}
 
       <Category data={cateProduct}/>
 
-      <Color/>
+      {!offColor && <Color/>}
 
       <Tags data={tagProduct}/>
 

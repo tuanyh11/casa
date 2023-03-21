@@ -371,3 +371,16 @@ blockquote {
 .navi {
     color: #303030;
 }
+
+.blog-title {
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 1199px) {
+.blog-title {
+    font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(34px + (62 - 34) * ((100vw - 320px) / (1199 - 320)));
+    margin-bottom: 14px;
+}}
+
+

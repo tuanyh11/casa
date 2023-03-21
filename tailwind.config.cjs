@@ -9,7 +9,9 @@ module.exports = {
         'screens-425': '425px',
         'screens-520': '520px',
         'screen-567': '567px',
+        'screen-600': '600px',
         'screen-991': '991px',
+        'screen-1170': '1170px',
         'screen-1200': '1200px',
         'screen-1300': '1320px'
       },

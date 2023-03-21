@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 const Product = ({ data }) => {
     // console.log(data);
@@ -10,10 +11,10 @@ const Product = ({ data }) => {
                         <span>Add to cart</span>
                     </a>
                 </div>
-                <a href='#' className='product-thumb-link'>
+                <Link to={`/product/${data.slug}`} className='product-thumb-link'>
                     <img src={data.acf_product?.imageProduct?.[0].imageUrlProduct} alt='' />
                     <img src={data.acf_product?.imageProduct?.[1].imageUrlProduct} alt='' />
-                </a>
+                </Link>
                 {
                     data.price ? (
                         <div className='product-label'>
@@ -27,7 +28,7 @@ const Product = ({ data }) => {
             </div>
             <div className='product-info'>
                 <h3 className='product-title text-[14px] font-medium uppercase '>
-                    <a href='#'>{data.name}</a>
+                    <Link to={`/product/${data.slug}`}>{data.name}</Link>
                 </h3>
                 {
                     data.price ? (

@@ -33,7 +33,7 @@ function Comment({
             isLastComment ? "" : "mb-[30px]"
           }`}
         >
-          <div className="comment-thumb vcard">
+          <div className="vcard w-[70px] min-w-[70px] pr-5 screen-1170:w-[100px]   screen-1170:pr-[30px]">
             <img
               alt=""
               src={authorAvatar}
@@ -87,7 +87,7 @@ function Comment({
           </div>
         </div>
 
-        <div className="pl-[130px]">
+        <div className=" screen-600:pl-[70px] screen-991:pl-[130px]">
           {replies?.map((reply) => (
             <div key={reply?.id} className="mb-[30px] last:mb-0">
               <Comment

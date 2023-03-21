@@ -1,11 +1,10 @@
-import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { About, BlogDetail, BlogList, Cart, Contact, Home, MyAccount, ProductDetail, Shop } from "./Pages";
 
 import { Footer, Header } from "./Components";
-import "reactjs-popup/dist/index.css";
 import { useEffect, useMemo } from "react";
 import { useWindowScroll } from "./hooks";
+import "./App.css";
 
 function App() {
   const { scrollToTop, showButton } = useWindowScroll();

@@ -17,7 +17,7 @@ const Sidebar = ({data}) => {
 
       <Tags data={data?.tags}/>
 
-      <RelateProduct/>
+      <RelateProduct data={data.relatedBlog}/>
 
       <Instagram/>
     </div>

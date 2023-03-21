@@ -60,6 +60,10 @@
   font-size: 100px;
 }
 
+.black {
+  color: #333;
+}
+
 .table-custom {
   display: table;
   margin: 0;
@@ -71,6 +75,26 @@
   vertical-align: top;
 }
 
+.bread-crumb a:hover {
+  color: #f598a4;
+}
+
+.content-page,
+.main-page-default {
+  margin: 100px 0;
+}
 .widget {
   margin-bottom: 60px;
 }
+
+
+.banner-advs {
+  position: relative;
+}
+
+.product-thumb-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+

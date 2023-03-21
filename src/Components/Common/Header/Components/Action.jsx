@@ -4,7 +4,7 @@ import Popup from 'reactjs-popup';
 import { searchProduct } from '../../../../api';
 import { useDebounce } from '../../../../hooks';
 import LoginForm from '../../../Ui/Form/LoginForm';
-import CardlistSmall from '../../../Ui/Product/CardlistSmall';
+import CardlistSmall from '../../../Ui/Product/CardlistSmallV1';
 import Cart from './Cart';
 import Search from './Search';
 import Sidebar from './Sidebar';
@@ -65,6 +65,7 @@ const Action = () => {
                     top: 50,
                     position: "fixed",
                     zIndex: 999999999999999,
+                    background: '#fff'
                   }}
                   arrow={false}
                   overlayStyle={{

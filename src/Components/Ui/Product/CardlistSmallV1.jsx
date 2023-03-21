@@ -5,9 +5,9 @@ const CardlistSmall = (props) => {
 
   console.log(props);
 
-  const {featuredImage, name, price, salePrice, slug  } = props;
+  const {acf_product, name, price, salePrice, slug  } = props;
 
-  const imageUrl = featuredImage.node?.featuredImage
+  const imageUrl = acf_product?.imageProduct?.[0]?.imageUrlProduct
 
   return (
     <div className="item-search-pro font-poppins row">

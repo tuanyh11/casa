@@ -83,3 +83,33 @@ export const getPathBreadcrumbs = (query) => {
   }
   return null;
 };
+
+
+export const handleFilter = (key, setShowProducts, showProducts) => {
+  switch (key) {
+    case "default":
+      return setShowProducts([...showProducts]);
+    case "average_rating":
+      return setShowProducts([
+        ...showProducts.sort((a, b) => a.averageRating - b.averageRating),
+      ]);
+    case "price_low_high":
+      return setShowProducts([
+        ...showProducts.sort(
+          (a, b) =>
+            currency(a.price || a.regularPrice).value -
+            currency(b.price || b.regularPrice).value
+        ),
+      ]);
+    case "price_high_low":
+      return setShowProducts([
+        ...showProducts.sort(
+          (a, b) =>
+            currency(b.price || b.regularPrice).value -
+            currency(a.price || a.regularPrice).value
+        ),
+      ]);
+    default:
+      break;
+  }
+};

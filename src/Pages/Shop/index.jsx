@@ -8,7 +8,7 @@ import { Link, useLocation } from "react-router-dom";
 import Sidebar from "./Components/Sidebar";
 import Content from "./Components/Content";
 import currency from "currency.js";
-import { filterProductBySidebar, getPathBreadcrumbs } from "./utils";
+import { filterProductBySidebar, getPathBreadcrumbs, handleFilter } from "./utils";
 
 const Shop = () => {
   const { data: sidebarData } = useQuery({
@@ -62,36 +62,8 @@ const Shop = () => {
 
   const pathBreadCrumbs = getPathBreadcrumbs(query);
 
-  const handleFilter = (key) => {
-    switch (key) {
-      case "default":
-        return setShowProducts([...showProducts]);
-      case "average_rating":
-        return setShowProducts([
-          ...showProducts.sort((a, b) => a.averageRating - b.averageRating),
-        ]);
-      case "price_low_high":
-        return setShowProducts([
-          ...showProducts.sort(
-            (a, b) =>
-              currency(a.price || a.regularPrice).value -
-              currency(b.price || b.regularPrice).value
-          ),
-        ]);
-      case "price_high_low":
-        return setShowProducts([
-          ...showProducts.sort(
-            (a, b) =>
-              currency(b.price || b.regularPrice).value -
-              currency(a.price || a.regularPrice).value
-          ),
-        ]);
-      default:
-        break;
-    }
-  };
+  
 
-  console.log(products);
 
   return (
     <div>
@@ -127,7 +99,7 @@ const Shop = () => {
                   onPageChange={setCurrentPage}
                   onPageSize={setPageSize}
                   pageSize={pageSize}
-                  onFilter={handleFilter}
+                  onFilter={(key) => handleFilter(key, setShowProducts, showProducts)}
                 />
               )}
             </div>

@@ -20,25 +20,33 @@ server.use(cors());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
-
-server.get('/blogs/:id/related', (req, res) => {
+server.get("/blogs/:id/related", (req, res) => {
   const blogId = req.params.id;
-  const blog = db.get("blogs").find({id: blogId}).value()
+  const blog = db.get("blogs").find({ id: blogId }).value();
 
-  if(!blog)  return res.status(200).json([])
+  if (!blog) return res.status(200).json([]);
 
   const authorId = blog.author.node.id;
 
-  const relatedBlog = db.get("blogs").filter(b => b.author.node.id === authorId).slice(0, 3)
+  const relatedBlog = db
+    .get("blogs")
+    .filter((b) => b.author.node.id === authorId)
+    .slice(0, 3);
 
-  res.status(200).json(relatedBlog)
-})  
+  res.status(200).json(relatedBlog);
+});
 
 
 server.use(routerV1)
 
 router(server, db, routerV1)
+server.get("/products/sales", (req, res) => {
+  console.log(123);
+  const products = db.get("products").filter(product => Boolean(product.price))
+  return res.status(200).json(products);
+})
 
+router(server, db, routerV1);
 
 server.listen(4000, () => {
   console.log("JSON Server is running");

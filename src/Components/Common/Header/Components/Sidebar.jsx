@@ -26,6 +26,7 @@ const Sidebar = ({ openSidebar, onOpenSidebar }) => {
               animate={{opacity: [0, 1]}}
               exit={{opacity: 0}}
               className=" fixed inset-0 z-[999999] bg-[rgba(0,0,0,0.3)] "
+              ref={containerRef}
             ></motion.div>
 
             <motion.div

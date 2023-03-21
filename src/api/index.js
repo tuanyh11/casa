@@ -1,5 +1,6 @@
 // product
 
+import axios from "axios";
 import instanceAxios from "./config";
 
 export const searchProduct = async (text) => {
@@ -43,6 +44,12 @@ export const getProducts = async (paginate) => {
   const product = await instanceAxios.get(`/products`);
   return product.data;
 };
+
+export const  getSaleProducts = async () =>   {
+  const products = await instanceAxios.get("/products/sales")
+  console.log(products);
+  return products.data
+}
 
 export const getProductsCate = async (limit) => {
   const product = await instanceAxios.get(
@@ -116,4 +123,4 @@ export const getCategoryHome = async () => {
   return category.data;
 };
 
-export const getCountries = async () => (await instanceAxios.get("/countries")).data;
+export const getCountries = async () => (await axios.get("https://countriesnow.space/api/v0.1/countries")).data?.data;

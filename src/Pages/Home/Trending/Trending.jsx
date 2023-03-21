@@ -24,7 +24,7 @@ function Trending(props) {
     const showProduct = dataProduct?.filter((product) => product.productCategories.nodes?.some(cate => cate.id === selectCate))
     // console.log(showProduct);
 
-    console.log(showProduct);
+    // console.log(showProduct);
 
     var settings = {
         dots: false,

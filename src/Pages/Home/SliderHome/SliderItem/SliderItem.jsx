@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SliderItem = ({ data }) => {
     // console.log(data);
@@ -20,9 +21,9 @@ const SliderItem = ({ data }) => {
                             {data.content}
                         </p>
                         <div className="slider-button">
-                            <a className="shop-button" href="#">
+                            <Link className="shop-button" to="/shop">
                                 Learn More
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

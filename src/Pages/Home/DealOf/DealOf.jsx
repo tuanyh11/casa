@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function DealOf(props) {
     const [timerDays, setTimerDays] = useState();
@@ -75,9 +76,9 @@ function DealOf(props) {
                         <span class="">From: <strong class="text-[#303030]">$20.00</strong></span>
                     </div>
                     <div class="banner-button">
-                        <a class="shop-button" href="#">
+                        <Link class="shop-button" to="/shop">
                             Learn More
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

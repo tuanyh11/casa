@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import { getListBlog } from '../../../api';
 
@@ -83,7 +84,7 @@ function LatestNew(props) {
                                                 </h3>
                                                 <p class="latest-new-desc text-[14px]">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                <a href="#" class="shop-button">Read more</a>
+                                                <Link to={`/blog/${item?.id}`} class="shop-button">Read more</Link>
                                             </div>
                                         </div>
                                     </div>

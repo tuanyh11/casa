@@ -192,6 +192,10 @@
         font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1199 - 320))) !important;
         line-height: calc(40px + (72 - 40) * ((100vw - 320px) / (1199 - 320))) !important;
     }
+
+    .contact-form {
+        margin-bottom: 70px;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -212,5 +216,13 @@
         height: 46px;
         line-height: 46px;
         font-size: 14px;
+    }
+
+    .contact-main .contact-map {
+        margin-bottom: 50px !important;
+    }
+
+    .contact-form {
+        margin-bottom: 50px;
     }
 }

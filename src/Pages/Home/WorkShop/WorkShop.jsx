@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
 function WorkShop(props) {
@@ -16,7 +17,7 @@ function WorkShop(props) {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <div class="banner-button mt-[53px]">
-                        <a class="shop-button" href="#">Learn More</a>
+                        <Link class="shop-button" to="/shop">Learn More</Link>
                     </div>
                 </div>
             </div>

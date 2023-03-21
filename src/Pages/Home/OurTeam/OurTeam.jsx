@@ -19,11 +19,28 @@ function OurTeam(props) {
         arrows: false,
         autoplay: false,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
 
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+
+                }
+            },
+        ]
     }
     return (
         <div className='our-team-main'>
-            <div className='our-team-main-container max-w-[1320px] w-full px-0 relative m-auto'>
+            <div className='our-team-main-container max-w-[1320px] w-full px-[15px] relative m-auto'>
                 <div className='our-team-inner'>
                     <div className='our-team-wrapper'>
                         <div className='content-info'>

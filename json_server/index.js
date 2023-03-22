@@ -37,16 +37,15 @@ server.get("/blogs/:id/related", (req, res) => {
 });
 
 
-server.use(routerV1)
 
-router(server, db, routerV1)
 server.get("/products/sales", (req, res) => {
   console.log(123);
-  const products = db.get("products").filter(product => Boolean(product.price))
+  const products = db.get("products").filter(product => Boolean(product.price)).slice(0, 8)
   return res.status(200).json(products);
 })
 
-router(server, db, routerV1);
+router(server, db, routerV1)
+
 
 server.listen(4000, () => {
   console.log("JSON Server is running");

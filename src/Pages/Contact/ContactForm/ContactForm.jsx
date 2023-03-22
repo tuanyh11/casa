@@ -1,12 +1,19 @@
 import { useMutation } from '@tanstack/react-query';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { buildErrorMessage } from 'vite';
 import { createContact } from '../../../api';
 
 function ContactForm(props) {
-    const { mutate, error } = useMutation(createContact)
-    // console.log(mutate());
+    // const [mess, setMess] = useState();
+    const [commentData, setCommentData] = useState('');
+    const { mutate } = useMutation(createContact, {
+        onSuccess: () => {
+            setCommentData('Thank you for your message. It has been sent.')
+        },
+        onError: () => {
+
+        }
+    })
     // const [loading, setLoading] = useState('')
     const {
         register,
@@ -20,19 +27,22 @@ function ContactForm(props) {
         return new Promise(resolve => {
             setTimeout(() => {
                 console.log(data);
+                setCommentData('Thank you for your message. It has been sent.')
                 resolve();
-                // mutate(data);
+                mutate(data);
             }, 3000);
         });
+
     };
-    // console.log(isSubmitted);
+    console.log(errors);
     return (
         <>
             <div className='contact-form-page'>
                 <div className='flex flex-wrap w-full'>
                     <div className='form-item w-1/3 relative px-[15px]'>
                         <span className='mb-[30px] block'>
-                            <input {...register("name", { required: true })} />
+                            <input placeholder='Your Name'
+                                {...register("name", { required: true })} />
                             {
                                 errors.name &&
                                 <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>
@@ -43,6 +53,7 @@ function ContactForm(props) {
                         <span className='mb-[30px] block'>
                             <input
                                 type='email'
+                                placeholder='Your Email'
                                 {...register("email", {
                                     required: true,
                                     pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i
@@ -61,7 +72,9 @@ function ContactForm(props) {
                     </div>
                     <div className='form-item w-1/3 relative px-[15px]'>
                         <span className='mb-[30px] block'>
-                            <input {...register("subject", { required: true })} />
+                            <input
+                                placeholder='Your Subject'
+                                {...register("subject", { required: true })} />
                             {
                                 errors.subject && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>
                             }
@@ -72,6 +85,7 @@ function ContactForm(props) {
                             <textarea
                                 cols={40}
                                 rows={10}
+                                placeholder='Your Message'
                                 {...register("message", { required: true })} />
                             {errors.message && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>}
                         </span>
@@ -86,14 +100,17 @@ function ContactForm(props) {
                     </div>
                 </div>
             </div>
-            {/* {
-                errors && (
-                    <div className='response-output'>
-                        One or more fields have an error. Please check and try again.
-                    </div>
+            {
+                errors.email || errors.name || errors.message || errors.subject ? (
+                    <div className='response-output'>One or more fields have an error. Please check and try again.</div>
+                ) : (
+                    null
                 )
+            }
+            {
+                commentData !== null ? (<div className='response-output !border-[#46b450]'>{commentData}</div>) : (null)
+            }
 
-            } */}
 
         </>
 

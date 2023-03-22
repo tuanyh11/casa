@@ -13,7 +13,7 @@ function SliderTestimo(props) {
                 style={{ ...style, display: 'block' }}
                 onClick={onClick}
             >
-                <i className="fa-solid fa-angle-right slider_iconbanner_next"></i>
+                <i className="las la-angle-right slider_iconbanner_next"></i>
                 {/* <i class="fa-solid fa-angle-left"></i> */}
             </div>
         );
@@ -26,7 +26,7 @@ function SliderTestimo(props) {
                 style={{ ...style, display: 'block' }}
                 onClick={onClick}
             >
-                <i className="fa-solid fa-angle-left slider_iconbanner_prev"></i>
+                <i className="las la-angle-left slider_iconbanner_prev"></i>
                 {/* <i class="fa-solid fa-angle-right"></i> */}
             </div>
         );

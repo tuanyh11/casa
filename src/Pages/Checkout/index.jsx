@@ -219,6 +219,7 @@ const Checkout = () => {
                             <div className="">
                               <InputV1
                                 label={"Street address"}
+                                error={errors?.streetAddress ? {color: '#a00'} : ''}
                                 placeholder="House number and street name"
                                 register={{
                                   ...register("streetAddress", {

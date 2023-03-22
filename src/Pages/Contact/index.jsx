@@ -22,7 +22,7 @@ function Contact(props) {
                     </h2>
                     <div className='service-contact-page flex flex-wrap w-full'>
                         <ContactItem
-                            icon={<i className="fa-light fa-location-dot"></i>}
+                            icon={<i className="la la-map-marker"></i>}
                             name='Address'
                             content={
                                 <p className='leading-[27px]'>
@@ -33,7 +33,7 @@ function Contact(props) {
                             }
                         />
                         <ContactItem
-                            icon={<i className="fa-light fa-phone"></i>}
+                            icon={<i className="la la-phone"></i>}
                             name='CONTACT US'
                             content={
                                 <p className='leading-[27px]'>
@@ -44,7 +44,7 @@ function Contact(props) {
                             }
                         />
                         <ContactItem
-                            icon={<i className="fa-light fa-envelope"></i>}
+                            icon={<i className="la la-envelope"></i>}
                             name='Email'
                             content={
                                 <p className='leading-[27px]'>

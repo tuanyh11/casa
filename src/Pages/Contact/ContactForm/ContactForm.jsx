@@ -1,90 +1,51 @@
 import { useMutation } from '@tanstack/react-query';
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { createContact } from '../../../api';
 
 function ContactForm(props) {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
-    const [errorName, setErrorName] = useState(false);
-    const [errorEmail, setErrorEmail] = useState(false);
-    const [errorSubject, setErrorSubject] = useState(false);
-    const [errorMessage, setErrorMessage] = useState(false);
-    const [error, setError] = useState(false)
+    // const [mess, setMess] = useState();
+    const [commentData, setCommentData] = useState('');
+    const { mutate } = useMutation(createContact, {
+        onSuccess: () => {
+            setCommentData('Thank you for your message. It has been sent.')
+        },
+        onError: () => {
 
-    const handleInputChangeName = (event) => {
-        const value = event.target.value;
-        setName(value);
-        if (!value) {
-            setErrorName(true);
-        } else {
-            setErrorName(false);
         }
-    };
-    const handleInputChangeEmail = (event) => {
-        const value = event.target.value;
-        setEmail(value);
-        if (!value) {
-            setErrorEmail(true);
-        } else {
-            setErrorEmail(false);
-        }
-    };
-    const handleInputChangeSubject = (event) => {
-        const value = event.target.value;
-        setSubject(value);
-        if (!value) {
-            setErrorSubject(true);
-        } else {
-            setErrorSubject(false);
-        }
-    };
-    const handleInputChangeMessage = (event) => {
-        const value = event.target.value;
-        setMessage(value);
-        if (!value) {
-            setErrorMessage(true);
-        } else {
-            setErrorMessage(false);
-        }
-    };
+    })
+    // const [loading, setLoading] = useState('')
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors, isSubmitting }
 
-    const { mutate, isLoading } = useMutation(createContact)
-    console.log(isLoading);
-    let content = {
-        'name': name,
-        'email': email,
-        'subject': subject,
-        'message': message,
-    }
+    } = useForm();
+    const onSubmit = (data) => {
 
-    const handleSubmit = () => {
-        if (content !== null && content.name !== '' && content.email !== '' && content.subject !== '' && content.message !== '') {
-            console.log(content);
-            mutate(content)
-        }
-        else {
-            console.log('error');
-            setError(true)
-        }
-    }
+        return new Promise(resolve => {
+            setTimeout(() => {
+                console.log(data);
+                setCommentData('Thank you for your message. It has been sent.')
+                resolve();
+                mutate(data);
+            }, 3000);
+        });
+
+    };
+    console.log(errors);
     return (
         <>
             <div className='contact-form-page'>
                 <div className='flex flex-wrap w-full'>
                     <div className='form-item w-1/3 relative px-[15px]'>
                         <span className='mb-[30px] block'>
-                            <input
-                                type='text'
-                                placeholder='Your Name'
-                                onChange={handleInputChangeName}
-                                value={name}
-                            />
-                            {errorName &&
-                                <span className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>
-                                    The field is required.
-                                </span>
+                            <input placeholder='Your Name'
+                                {...register("name", { required: true })} />
+                            {
+                                errors.name &&
+                                <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>
                             }
                         </span>
                     </div>
@@ -93,28 +54,29 @@ function ContactForm(props) {
                             <input
                                 type='email'
                                 placeholder='Your Email'
-                                onChange={handleInputChangeEmail}
-                                value={email}
+                                {...register("email", {
+                                    required: true,
+                                    pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i
+                                })}
                             />
-                            {errorEmail &&
-                                <span className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>
-                                    The field is required.
-                                </span>
-                            }
+                            {errors.email ? (
+                                errors.email.type === "pattern" ? (
+                                    <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>The e-mail address entered is invalid.</p>
+                                ) : (
+
+                                    <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>
+                                )
+                            ) : (null)}
+
                         </span>
                     </div>
                     <div className='form-item w-1/3 relative px-[15px]'>
                         <span className='mb-[30px] block'>
                             <input
-                                type='text'
                                 placeholder='Your Subject'
-                                onChange={handleInputChangeSubject}
-                                value={subject}
-                            />
-                            {errorSubject &&
-                                <span className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>
-                                    The field is required.
-                                </span>
+                                {...register("subject", { required: true })} />
+                            {
+                                errors.subject && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>
                             }
                         </span>
                     </div>
@@ -124,31 +86,31 @@ function ContactForm(props) {
                                 cols={40}
                                 rows={10}
                                 placeholder='Your Message'
-                                onChange={handleInputChangeMessage}
-                                value={message}
-                            />
-                            {errorMessage &&
-                                <span className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>
-                                    The field is required.
-                                </span>
-                            }
+                                {...register("message", { required: true })} />
+                            {errors.message && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>}
                         </span>
                     </div>
                     <div className='form-item-submit w-full relative px-[15px] text-center'>
                         <input
                             type='submit'
                             value='Send Message'
-                            onClick={handleSubmit}
+                            onClick={handleSubmit(onSubmit)}
                         />
-                        <span className={`loading ${isLoading === true ? 'visible' : 'invisible'}`}></span>
+                        <span className={`loading ${isSubmitting === true ? 'visible' : 'invisible'}`}></span>
                     </div>
                 </div>
             </div>
             {
-                error && <div className='response-output'>
-                    One or more fields have an error. Please check and try again.
-                </div>
+                errors.email || errors.name || errors.message || errors.subject ? (
+                    <div className='response-output'>One or more fields have an error. Please check and try again.</div>
+                ) : (
+                    null
+                )
             }
+            {
+                commentData !== null ? (<div className='response-output !border-[#46b450]'>{commentData}</div>) : (null)
+            }
+
 
         </>
 

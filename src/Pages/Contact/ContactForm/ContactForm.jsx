@@ -1,40 +1,64 @@
 import { useMutation } from '@tanstack/react-query';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { createContact } from '../../../api';
 
 function ContactForm(props) {
     // const [mess, setMess] = useState();
     const [commentData, setCommentData] = useState('');
-    const { mutate } = useMutation(createContact, {
+  
+    // const [loading, setLoading] = useState('')
+
+    const defaultValues = {
+        email: '',
+        name: '',
+        subject: '',
+        message: ''
+    }
+
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState,
+        reset,
+        setValue,
+        unregister
+    } = useForm({
+        defaultValues
+    });
+
+    const { mutate, data } = useMutation(createContact, {
         onSuccess: () => {
             setCommentData('Thank you for your message. It has been sent.')
+            reset(defaultValues)
         },
         onError: () => {
 
         }
     })
-    // const [loading, setLoading] = useState('')
-    const {
-        register,
-        handleSubmit,
-        watch,
-        formState: { errors, isSubmitting }
 
-    } = useForm();
+    const   { errors, isSubmitting } = formState
+
+    console.log(formState.defaultValues)
+
     const onSubmit = (data) => {
 
         return new Promise(resolve => {
             setTimeout(() => {
                 console.log(data);
-                setCommentData('Thank you for your message. It has been sent.')
+                // setCommentData('Thank you for your message. It has been sent.')
                 resolve();
                 mutate(data);
             }, 3000);
         });
 
     };
-    console.log(errors);
+    const isError = Object.keys(errors).length > 0 
+    useEffect(() => {
+        if(!isError) setCommentData(null)
+    }, [isError])
+
     return (
         <>
             <div className='contact-form-page'>
@@ -101,15 +125,13 @@ function ContactForm(props) {
                 </div>
             </div>
             {
-                errors.email || errors.name || errors.message || errors.subject ? (
+                isError ? (
                     <div className='response-output'>One or more fields have an error. Please check and try again.</div>
                 ) : (
-                    null
+                    commentData !== null ? (<div className='response-output !border-[#46b450]'>{commentData}</div>) : (null)
                 )
             }
-            {
-                commentData !== null ? (<div className='response-output !border-[#46b450]'>{commentData}</div>) : (null)
-            }
+           
 
 
         </>

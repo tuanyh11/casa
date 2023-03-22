@@ -12,6 +12,7 @@ function SelectorV3({
   label,
   isSelected = () => false,
   onSearch = () => {},
+  errors
 }) {
   const [isOpening, setIsOpening] = useState(false);
 

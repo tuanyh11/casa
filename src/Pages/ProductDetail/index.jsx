@@ -36,6 +36,34 @@ function PrevArrow(props) {
   );
 }
 
+function NextSaleArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={
+        "absolute top-1/2 -translate-y-[60%]  right-[15px] group-hover:right-2 group-hover:opacity-100 transition-all duration-[0.4s] ease-out opacity-0 "
+      }
+      onClick={onClick}
+    >
+      <button className="fas fa-chevron-right  w-[60px] h-[60px] text-[36px] w-10 h-10 text-[#111] text-xl z-[9999] "></button>
+    </div>
+  );
+}
+
+function PrevSaleArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={
+        "absolute top-1/2 -translate-y-[60%]  z-[9999] left-[15px]  group-hover:left-0 group-hover:opacity-100 transition-all duration-[0.4s] ease-out opacity-0"
+      }
+      onClick={onClick}
+    >
+      <button className="fas fa-chevron-left w-[60px] h-[60px] text-[36px] text-[#111] text-xl"></button>
+    </div>
+  );
+}
+
 const ProductDetail = () => {
   const loc = useLocation();
 
@@ -43,7 +71,7 @@ const ProductDetail = () => {
 
   const pathname = loc.pathname.substring(1).split("/");
 
-  console.log(pathname?.[1]);
+  const [quantity, setQuantity] = useState(1);
 
   const params = new URLSearchParams(loc.search);
 
@@ -90,9 +118,58 @@ const ProductDetail = () => {
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
+    initialSlide: 4,
     arrow: true,
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PrevArrow />,
+    nextArrow: <NextSaleArrow />,
+    prevArrow: <PrevSaleArrow />,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          arrow: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrow: false,
+        },
+      },
+    ],
+  };
+
+  const handleQuantityChange = (event) => {
+    const input = event.target.value;
+    console.log(isNaN(input));
+    if (!isNaN(input)) {
+      const newQuantity = Number(input);
+      setQuantity(newQuantity);
+    } else {
+      setQuantity(0);
+    }
+  };
+
+  const handleIncrement = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const handleDecrement = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1);
+    }
   };
 
   const categories = productDetail?.productCategories?.nodes;
@@ -115,10 +192,10 @@ const ProductDetail = () => {
         label={"product"}
       />
 
-      <div className="content-page product-detail">
+      <div className="content-page product-detail  my-[50px] md:!my-[70px]  screen-1200:!my-[100px]">
         <div className="container">
-          <div className="row">
-            <div className=" screen-991:w-6/12 px-15">
+          <div className="row mb-[100px]">
+            <div className="w-full screen-991:w-6/12 px-15">
               <div>
                 <div>
                   <img
@@ -161,19 +238,19 @@ const ProductDetail = () => {
                 </div>
               </div>
             </div>
-            <div className=" screen-991:w-6/12 px-15">
-              <div className="pl-[30px]">
-                <div className="summary entry-summary detail-info">
+            <div className="w-full screen-991:w-6/12 px-15">
+              <div className="screen-991:pl-[30px]">
+                <div className="summary entry-summary detail-info !mt-10 screen-991:!mt-0 ">
                   <h2 className="title36 font-bold uppercase text-black-#303030 mb-[22px]">
                     {productDetail?.name}
                   </h2>
                   <div className="product-price price simple ">
-                    <span className="text-[#ccc] !text-[24px] mx-[13px]">
+                    <del className="text-[#ccc] mx-[5px] md:mx-[13px] font-poppins font-medium">
                       {productDetail?.regularPrice}
-                    </span>
-                    <span className="mx-[13px] text-main !text-[30px]">
+                    </del>
+                    <ins className="mx-[5px] md:mx-[13px] text-main  ">
                       {productDetail?.price}
-                    </span>
+                    </ins>
                   </div>
                   <div className="woocommerce-product-details__short-description">
                     <div
@@ -200,21 +277,25 @@ const ProductDetail = () => {
                   <div className="cart flex items-center mb-[2em] ">
                     <label className="qty-label ">Qty</label>
                     <div className="detail-qty info-qty flex items-center  ">
-                      <button className="qty-down text-center">
+                      <button
+                        onClick={handleDecrement}
+                        className="qty-down text-center "
+                      >
                         <i className="fa-solid fa-minus"></i>
                       </button>
                       <input
                         type="text"
-                        step="1"
-                        min="1"
-                        max=""
-                        name="quantity"
-                        value="1"
-                        title="Qty"
+                        pattern="[0-9]*"
+                        min={1}
+                        inputMode="numeric"
+                        value={quantity}
+                        onChange={handleQuantityChange}
                         className="input-text text qty qty-val text-center"
-                        size="4"
                       />
-                      <button className="qty-down text-center">
+                      <button
+                        onClick={handleIncrement}
+                        className="qty-down text-center"
+                      >
                         <i className="fa-solid fa-plus"></i>
                       </button>
                     </div>
@@ -223,7 +304,7 @@ const ProductDetail = () => {
                       type="submit"
                       name="add-to-cart"
                       value="1030"
-                      className="single_add_to_cart_button button alt wp-element-button"
+                      className="single_add_to_cart_button button alt wp-element-button !p-[12.5px_20px] screen-991:!p-[17.5px_20px]"
                     >
                       Add to cart
                     </button>
@@ -293,7 +374,7 @@ const ProductDetail = () => {
             </div>
           </div>
 
-          <div >
+          <div>
             <div className="detail-tabs tab-horizontal mt-[-10px]">
               <div className="detail-tab-title font-poppins">
                 <ul
@@ -315,39 +396,53 @@ const ProductDetail = () => {
                       <div className="detail-tab-desc">
                         <div className="single-product-detail">
                           <div className="row mx-[-60px] ">
-                            <div className=" screen-991:w-4/12 px-[60px] obc-product obc-product-left relative">
+                            <div className="w-full mb-[40px] screen-991:mb-0 screen-991:w-4/12 px-[60px] obc-product obc-product-left relative">
                               <h3 className="title16 poppins-font font-medium">
                                 Care Intructions
                               </h3>
                               <p className="desc">
-                                Microwave and dishwasher safe. We recommend using
-                                gentle, environmentally-friendly detergents. Not
-                                suitable for use on an open flame or electric stove
-                                top. Avoid temperature shock by heating things
-                                slowly, evenly, and carefully
+                                Microwave and dishwasher safe. We recommend
+                                using gentle, environmentally-friendly
+                                detergents. Not suitable for use on an open
+                                flame or electric stove top. Avoid temperature
+                                shock by heating things slowly, evenly, and
+                                carefully
                               </p>
                             </div>
-                            <div className="screen-991:w-4/12 px-[60px] obc-product obc-product-center relative">
+                            <div className="w-full mb-[40px] screen-991:mb-0 screen-991:w-4/12 px-[60px] obc-product obc-product-center relative">
                               <h3 className="title16 poppins-font font-medium">
                                 PRODUCT SPECS
                               </h3>
                               <ul className="list-none">
-                                <li>Material: Ceramic</li>
-                                <li>Size: 4″ dia.</li>
-                                <li>Capacity: 16 oz</li>
-                                <li>Designed and handcrafted in Sausalito, CA.</li>
+                                <li className="mb-[6px]">
+                                  <i className=" font-medium mr-[10px] fa-thin fa-chevron-right"></i>{" "}
+                                  Material: Ceramic
+                                </li>
+                                <li className="mb-[6px]">
+                                  <i className=" font-medium mr-[10px] fa-thin fa-chevron-right"></i>{" "}
+                                  Size: 4″ dia.
+                                </li>
+                                <li className="mb-[6px]">
+                                  <i className=" font-medium mr-[10px] fa-thin fa-chevron-right"></i>{" "}
+                                  Capacity: 16 oz
+                                </li>
+                                <li className="mb-[6px]">
+                                  <i className=" font-medium mr-[10px] fa-thin fa-chevron-right"></i>{" "}
+                                  Designed and handcrafted in Sausalito, CA.
+                                </li>
                               </ul>
                             </div>
-                            <div className=" screen-991:w-4/12 px-[60px] obc-product obc-product-right relative">
+                            <div className="w-full mb-[40px] screen-991:mb-0 screen-991:w-4/12 px-[60px] obc-product obc-product-right relative">
                               <h3 className="title16 poppins-font font-medium">
                                 DID YOU KNOW?
                               </h3>
                               <p className="desc">
-                                Microwave and dishwasher safe. We recommend using
-                                gentle, environmentally-friendly detergents. Not
-                                suitable for use on an open flame or electric stove
-                                top. Avoid temperature shock by heating things
-                                slowly, evenly, and carefully
+                                Microwave and dishwasher safe. We recommend
+                                using gentle, environmentally-friendly
+                                detergents. Not suitable for use on an open
+                                flame or electric stove top. Avoid temperature
+                                shock by heating things slowly, evenly, and
+                                carefully
                               </p>
                             </div>
                           </div>
@@ -403,7 +498,7 @@ const ProductDetail = () => {
             </div>
           </div>
 
-          <div >
+          <div>
             <div className="mt-[90px]">
               <div className="title-related-product flex items-center justify-between">
                 <h2 className="title36 font-bold text-uppercase single-title  relative mb-[60px]">
@@ -419,13 +514,15 @@ const ProductDetail = () => {
             </div>
 
             <div className="-mx-[15px]">
-              <Slider {...productSaleSetting}>
+              <Slider
+                {...productSaleSetting}
+                className="product-detail-slider group"
+              >
                 {saleProducts?.map((product) => {
                   return (
-                    <div key={product.id} >
+                    <div key={product.id}>
                       <div className=" mx-[15px] mb-[30px]">
-
-                        <Product data={...product} />
+                        <Product data={{ ...product }} />
                       </div>
                     </div>
                   );

@@ -237,7 +237,7 @@ const Checkout = () => {
                                 }}
                               />
  
-                              <InputV1  error={errors?.streetAddress ? {color: '#6dc22e'} : ''} placeholder="Apartment, suite, unit, etc. (optional)" />
+                              <InputV1  {...register("")} placeholder="Apartment, suite, unit, etc. (optional)" />
                             </div>
 
                             <div className="">

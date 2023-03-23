@@ -8,11 +8,11 @@ const ContactItem = (props) => {
                 <a href='#' className='icon-link'>
                     {props.icon}
                 </a>
-                <div class="info-service">
+                <div className="info-service">
                     <h3 className='mt-[30px] relative mb-[50px] uppercase leading-[1.1]'>
                         <a href="#">{props.name}</a>
                     </h3>
-                    <div class="item-service-description ">
+                    <div className="item-service-description ">
                         {props.content}
                     </div>
 

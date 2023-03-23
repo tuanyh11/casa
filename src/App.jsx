@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { About, BlogDetail, BlogList, Cart, Contact, Home, MyAccount, Page404, ProductDetail, Shop, Checkout } from "./Pages";
+import { About, BlogDetail, BlogList, Cart, Contact, Home, MyAccount, Page404, ProductDetail, Shop, Checkout, WishList } from "./Pages";
 
 import { Footer, Header } from "./Components";
 import { useEffect, useMemo } from "react";
@@ -33,6 +33,7 @@ function App() {
           <Route path="/my-account" element={<MyAccount />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/404" element={<Page404 />} />
+          <Route path="/wishlist" element={<WishList />} />
         </Routes>
         <Footer />
       </>

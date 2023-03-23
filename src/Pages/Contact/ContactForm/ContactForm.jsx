@@ -6,7 +6,7 @@ import { createContact } from '../../../api';
 function ContactForm(props) {
     // const [mess, setMess] = useState();
     const [commentData, setCommentData] = useState('');
-  
+
     // const [loading, setLoading] = useState('')
 
     const defaultValues = {
@@ -38,7 +38,7 @@ function ContactForm(props) {
         }
     })
 
-    const   { errors, isSubmitting } = formState
+    const { errors, isSubmitting } = formState
 
     console.log(formState.defaultValues)
 
@@ -54,9 +54,9 @@ function ContactForm(props) {
         });
 
     };
-    const isError = Object.keys(errors).length > 0 
+    const isError = Object.keys(errors).length > 0
     useEffect(() => {
-        if(!isError) setCommentData(null)
+        if (!isError) setCommentData(null)
     }, [isError])
 
     return (
@@ -131,7 +131,7 @@ function ContactForm(props) {
                     commentData !== null ? (<div className='response-output !border-[#46b450]'>{commentData}</div>) : (null)
                 )
             }
-           
+
 
 
         </>

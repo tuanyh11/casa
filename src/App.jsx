@@ -5,6 +5,7 @@ import { Footer, Header } from "./Components";
 import { useEffect, useMemo } from "react";
 import { useWindowScroll } from "./hooks";
 import "./App.css";
+import ThankYou from "./Pages/ThankYou/ThankYou";
 
 function App() {
   const { scrollToTop, showButton } = useWindowScroll();
@@ -33,6 +34,7 @@ function App() {
           <Route path="/my-account" element={<MyAccount />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/404" element={<Page404 />} />
+          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
         <Footer />
       </>

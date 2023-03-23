@@ -28,7 +28,7 @@ function CountupNumberWrap(props) {
                                 <div className='counter-number'>
                                     <div className='counter-inner'>
                                         <div className='icon'>
-                                            <i className="fa-sharp fa-regular fa-house"></i>
+                                            <i className="las la-home"></i>
                                         </div>
                                         <div className='run-value'>
                                             <Number n={103} />
@@ -38,7 +38,7 @@ function CountupNumberWrap(props) {
 
                                     <div className='counter-inner'>
                                         <div className='icon'>
-                                            <i className="fa-solid fa-earth-americas"></i>
+                                            <i className="las la-globe"></i>
                                         </div>
                                         <div className='run-value'>
                                             <Number n={50} />
@@ -49,7 +49,7 @@ function CountupNumberWrap(props) {
 
                                     <div className='counter-inner'>
                                         <div className='icon'>
-                                            <i className="fa-sharp fa-regular fa-star"></i>
+                                            <i className="la la-star-o"></i>
                                         </div>
                                         <div className='run-value'>
                                             <Number n={223} />
@@ -60,7 +60,7 @@ function CountupNumberWrap(props) {
 
                                     <div className='counter-inner'>
                                         <div className='icon'>
-                                            <i className="fa-light fa-user-group"></i>
+                                            <i className="las la-user-friends"></i>
                                         </div>
                                         <div className='run-value'>
                                             <Number n={868} />

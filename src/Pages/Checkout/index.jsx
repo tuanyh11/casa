@@ -55,7 +55,6 @@ const Checkout = () => {
 
   const SelectCountry = useMemo(() => {
     const countries = Country.getAllCountries();
-
     return (
       <div className="">
         <SelectorV3
@@ -66,14 +65,14 @@ const Checkout = () => {
             setStates([...handleGetState(item)]);
             setValue("state", "");
           }}
-          title={watch("country")?.name || countries?.[0]?.name}
+          title={selectedCountry?.name || countries?.[0]?.name}
           label="Country / Region"
           onSearch={(e) => handleFilterCountries(e, countries)}
           isSelected={(item) => selectedCountry?.name === item?.name}
         />
       </div>
     );
-  }, [selectedCountry]);
+  }, [selectedCountry, errors]);
 
   const errorMessage = Object.entries(errors).map(([k, v]) => v);
 
@@ -219,6 +218,7 @@ const Checkout = () => {
                             <div className="">
                               <InputV1
                                 label={"Street address"}
+                                error={errors?.streetAddress ? {color: '#a00'} : ''}
                                 placeholder="House number and street name"
                                 register={{
                                   ...register("streetAddress", {
@@ -236,13 +236,14 @@ const Checkout = () => {
                                   }),
                                 }}
                               />
-
-                              <InputV1 placeholder="Apartment, suite, unit, etc. (optional)" />
+ 
+                              <InputV1  error={errors?.streetAddress ? {color: '#6dc22e'} : ''} placeholder="Apartment, suite, unit, etc. (optional)" />
                             </div>
 
                             <div className="">
                               <InputV1
                                 label={"Town / City"}
+                                error={errors?.townAndCity ? {color: '#a00'} : ''}
                                 register={{
                                   ...register("townAndCity", {
                                     required: {
@@ -288,6 +289,7 @@ const Checkout = () => {
                             <InputV1
                               label={"Postcode / ZIP"}
                               placeholder="House number and street name"
+                              error={errors?.postcode ? {color: '#a00'} : ''}
                               register={{
                                 ...register("postcode", {
                                   required: {
@@ -305,6 +307,7 @@ const Checkout = () => {
 
                             <InputV1
                               label={"Phone"}
+                              error={errors?.phone ? {color: '#a00'} : ''}
                               placeholder="House number and street name"
                               register={{
                                 ...register("phone", {
@@ -324,6 +327,7 @@ const Checkout = () => {
                             <InputV1
                               label={"Email address"}
                               placeholder="House number and street name"
+                              error={errors?.email ? {color: '#a00'} : ''}
                               register={{
                                 ...register("email", {
                                   required: {

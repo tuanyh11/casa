@@ -399,7 +399,7 @@
     font-size: 36px;
     color: #303030;
     cursor: pointer;
-    font-weight: 400;
+    /* font-weight: 400; */
     opacity: 1;
     visibility: visible;
     z-index: 9;
@@ -494,6 +494,7 @@
     vertical-align: top;
     width: 350px;
     object-fit: cover;
+    transition: all 0.4s ease-out 0s;
 }
 
 .countup-figure a img:hover {

@@ -1,16 +1,16 @@
 import React from "react";
 
-const InputV1 = ({ label, register = {},  offRequired, error, className, ...rest }) => {
+const InputV1 = ({ label, register = {},  offRequired, validate={color: '', labelColor: false}, className, ...rest }) => {
   return (
     <div className={`flex flex-wrap mb-[15px] ${className || ''}`}>
       {label && (
-        <label className={`block w-full mb-[5px] capitalize font-semibold leading-[2]`} style={{color: error?.color}}>
+        <label className={`block w-full mb-[5px] capitalize font-semibold leading-[2]`} style={{color: validate?.labelColor &&  validate?.color}}>
           {label}  {!offRequired && <abbr className="text-[red] font-bold">*</abbr>}{" "}
         </label>
       )}
       <input
         style={{
-          borderColor: error?.color
+          borderColor: validate?.color
         }}
         {...register}
         {...rest}

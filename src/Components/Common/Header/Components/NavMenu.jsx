@@ -23,8 +23,8 @@ const NavMenu = () => {
     <div>
       <div
         className={`px-[15px] ${
-          showButton ? "py-0" : " py-[10px]"
-        } screen-1200:px-[50px]  border-t border-[#e5e5e5] screen-991:border-none relative fixed-header ${
+          showButton ? "py-0" : " "
+        } screen-1200:px-[50px]  border-t screen-991:py-0 py-[10px] border-[#e5e5e5] screen-991:border-none relative fixed-header ${
           showButton ? "active-menu" : ""
         }`}
       >

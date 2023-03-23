@@ -16,8 +16,11 @@ const Checkout = () => {
     setValue,
     getValues,
     watch,
-    reset,
-  } = useForm();
+    setError,
+    reset
+  } = useForm({
+    mode: 'onBlur'
+  });
 
   const {
     productsTrending: { data: products },
@@ -31,7 +34,7 @@ const Checkout = () => {
       },
     },
   });
-
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [search, setSearch] = useState("");
 
   const [openCoupon, setOpenCoupon] = useState(false);
@@ -75,6 +78,8 @@ const Checkout = () => {
   }, [selectedCountry, errors]);
 
   const errorMessage = Object.entries(errors).map(([k, v]) => v);
+
+  console.log(errorMessage);
 
   return (
     <div>
@@ -122,11 +127,10 @@ const Checkout = () => {
                     <p className="form-row form-row-first !mb-[15px] w-[47%]">
                       <input
                         type="text"
-                        name="coupon_code"
-                        className="input-text px-15 leading-[46px] h-[46px] w-full"
+                        className="  px-15 leading-[46px] !h-[46px] w-full !rounded-none !py-0 !px-[15px] "
                         placeholder="Coupon code"
                         id="coupon_code"
-                        value=""
+                        {...register("coupon_code")}
                       />
                     </p>
 
@@ -148,7 +152,11 @@ const Checkout = () => {
                 <div className="woocommerce">
                   <form
                     className="checkout_form "
-                    onSubmit={handleSubmit((data) => console.log(data))}
+                    onSubmit={(e) => {
+                      setIsSubmitted(true)
+                      setError("company", null)
+                      handleSubmit((data) => console.log(data))(e)
+                    }}
                   >
                     {errorMessage.length > 0 && (
                       <ul class="woocommerce-error" role="alert">
@@ -168,9 +176,16 @@ const Checkout = () => {
                               <div className="col-span-2 screens-525:col-span-1">
                                 <InputV1
                                   label={"First name"}
-                                  error={errors?.firstName ? {color: '#a00'} : ''}
+                                  name="firstName"
+                                  validate={errors?.firstName ? {color: '#a00', labelColor: true} :  watch("startChecked.firstName") ? {color: "#6dc22e"} : null}
                                   register={{
                                     ...register("firstName", {
+                                      onBlur: () => {
+                                        setValue("startChecked.firstName", true)
+                                      },
+                                      onChange: () => {
+                                        setValue("startChecked.firstName", false)
+                                      },
                                       required: {
                                         value: true,
                                         message: (
@@ -187,9 +202,15 @@ const Checkout = () => {
                               <div className="col-span-2 screens-525:col-span-1">
                                 <InputV1
                                   label={"Last name"}
-                                  error={errors?.lastName ? {color: '#a00'} : ''}
+                                  validate={errors?.lastName ? {color: '#a00', labelColor: true} : watch("startChecked.lastName")  ? {color: '#6dc22e'} : ''}
                                   register={{
                                     ...register("lastName", {
+                                      onBlur: () => {
+                                        setValue("startChecked.lastName", true)
+                                      },
+                                      onChange: () => {
+                                        setValue("startChecked.lastName", false)
+                                      },
                                       required: {
                                         value: true,
                                         message: (
@@ -200,7 +221,7 @@ const Checkout = () => {
                                         ),
                                       },
                                     }),
-                                  }}
+                                  }} 
                                 />
                               </div>
                             </div>
@@ -208,7 +229,8 @@ const Checkout = () => {
                             <div className="">
                               <InputV1
                                 label={"Company name (optional)"}
-                                
+                                validate={!errors?.company ? {color: '#6dc22e'} : ''  }
+                                register={...register("company")}
                                 offRequired={true}
                               />
                             </div>
@@ -218,7 +240,7 @@ const Checkout = () => {
                             <div className="">
                               <InputV1
                                 label={"Street address"}
-                                error={errors?.streetAddress ? {color: '#a00'} : ''}
+                                validate={errors?.streetAddress ? {color: '#a00'} : ''}
                                 placeholder="House number and street name"
                                 register={{
                                   ...register("streetAddress", {
@@ -237,7 +259,7 @@ const Checkout = () => {
                                 }}
                               />
  
-                              <InputV1  {...register("")} placeholder="Apartment, suite, unit, etc. (optional)" />
+                              <InputV1  placeholder="Apartment, suite, unit, etc. (optional)" />
                             </div>
 
                             <div className="">

@@ -47,7 +47,7 @@ const Product = ({ data }) => {
                 </h3>
                 {
                     data.price ? (
-                        <div className='product-price'>
+                        <div className='product-price !mb-[7px]'>
                             <span className='regular-price'>
                                 {data.regularPrice}
                             </span>
@@ -56,7 +56,7 @@ const Product = ({ data }) => {
                             </span>
                         </div>
                     ) : (
-                        <div className='product-price'>
+                        <div className='product-price !mb-[7px]'>
                             <span className='sale-price'>
                                 {data.regularPrice}
                             </span>

@@ -35,7 +35,7 @@ const CardListSmallV2 = ({ averageRating, acf_product, slug, name, price}) => {
   
 
   return (
-    <div className="item clearfix mb-[30px] flex">
+    <div className="item clearfix flex">
       <div className="banner-advs zoom-image overlay-image">
         <Link
           to={`/product/${slug}`}

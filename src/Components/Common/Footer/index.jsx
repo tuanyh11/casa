@@ -32,10 +32,10 @@ const Footer = () => {
                     name="EMAIL"
                     placeholder="ENTER YOUR EMAIL"
                     required=""
-                    className="w-full placeholder:text-white"
+                    className="w-full placeholder:text-white !h-[44px] !leading-[44px]  md:!h-[60px] md:!leading-[60px]"
                   />
                   <div className="submit-form">
-                    <button type="submit">SUBCRIBE</button>
+                    <button type="submit" className="!h-[44px] !leading-[44px] !px-[35px]  md:!h-[60px] md:!leading-[60px] md:!px-[6px]">SUBCRIBE</button>
                   </div>
                 </div>
               </form>
@@ -104,17 +104,17 @@ const Footer = () => {
                 </h3>
                 <div className="text-[#999]">
                   <div className="mb-[11px]">
-                    <i class="fa-regular fa-location-dot mr-[7px]"></i>
+                    <i class="la la-map-marker mr-[7px]"></i>
                     Hemlock, Brooklyn, NY 11208
                   </div>
 
                   <div className="mb-[11px]">
-                    <i class="fa-regular fa-location-dot mr-[7px]"></i>5 Bridge,
+                    <i class="la la-map-marker mr-[7px]"></i>5 Bridge,
                     Brooklyn, NY 11201
                   </div>
 
                   <div className="mb-[11px]">
-                    <i class="fa-light fa-phone mr-[7px]"></i>
+                    <i class="la la-phone mr-[7px]"></i>
                     +101329621999
                   </div>
                 </div>
@@ -130,11 +130,11 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-6/12  mb-10 lg:mb-0 lg:w-3/12 px-15">
+            <div className="w-full md:w-6/12  lg:mb-0 lg:w-3/12 px-15">
               <div className="flex flex-wrap -mx-[0.5px] max-w-[300px] ">
                 {instagramImg.concat(instagramImg.slice(0, 2)).map((item, index) => (
                   <div key={index} className="w-4/12 p-[0.5px]">
-                    <ImageHover link={item.link} url={item.image} />
+                    <ImageHover iconStyle={{fontSize: '18px'}} link={item.link} url={item.image} />
                   </div>
                 ))}
               </div>

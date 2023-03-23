@@ -37,12 +37,12 @@ const Search = ({
         {isOpenSearch ? (
           <i
             onClick={() => onOpenSearch(false)}
-            className="fa-sharp fa-regular fa-xmark !transition transition-main hover:text-main text-[22px] cursor-pointer "
+            className="la la-close icon-close  text-[26px] text-black-#303030 !transition transition-main hover:text-main cursor-pointer "
           ></i>
         ) : (
           <i
             onClick={() => onOpenSearch(true)}
-            className="fa-light transition-main !transition hover:text-main  fa-magnifying-glass cursor-pointer"
+            className=" transition-main !transition hover:text-main  la la-search icon-search cursor-pointer text-[26px] text-black-#303030"
           ></i>
         )}
       </div>
@@ -68,7 +68,7 @@ const Search = ({
           <div className=" submit-form ">
             <button
               type="button"
-              className="fa-light submit-form fa-magnifying-glass  !text-xl !text-black-#303030"
+              className="submit-form la la-search icon-search   !text-black-#303030 text-[26px] "
             />
           </div>
           <div className="list-product-search ">

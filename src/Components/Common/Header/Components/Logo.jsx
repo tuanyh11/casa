@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const Logo = () => {
   return (
     <div>
-      <Link to={"/"}>
+      <Link to={"/"} className=" ">
         <img
           src="https://casa.7uptheme.net/wp-content/uploads/2019/10/logo2.jpg"
           alt="logo"
-          className="inline-block"
+          className=" screens-375:inline-block m-auto  "
         />
-        <span className=" text-black-#303030 font-bold align-middle ml-[7px] font-poppins text-[36px] uppercase">
+        <span className=" leading-[1.1] text-black-#303030 font-bold align-middle ml-[7px] font-poppins text-[36px] uppercase">
           Casa
         </span>
       </Link>

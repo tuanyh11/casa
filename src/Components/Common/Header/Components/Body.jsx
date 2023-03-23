@@ -30,7 +30,7 @@ const Body = () => {
               ></a>
             ))}
           </div>
-          <div className="py-[10px] col-span-6 screen-567:col-span-4 flex justify-center ">
+          <div className=" py-[13px] screen-991:py-[10px] col-span-6 screen-567:col-span-4 flex justify-center ">
             <Logo />
           </div>
           <div className="mx-[-10px]  col-span-6 screen-567:col-span-4 ">

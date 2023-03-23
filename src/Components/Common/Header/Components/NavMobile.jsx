@@ -38,8 +38,10 @@ const NavMobile = ({ menuItems = [] }) => {
             >
               <button
                 onClick={() => closeNav(false)}
-                className="fa-sharp fa-solid fa-xmark close-mobile-menu  "
-              ></button>
+                className=" close-mobile-menu text-xl  "
+              >
+                <i className="fa-sharp fa-solid fa-xmark"></i>
+              </button>
               <ul>
                 {menuItems.map((item) => (
                   <li className="block" key={item.name}>

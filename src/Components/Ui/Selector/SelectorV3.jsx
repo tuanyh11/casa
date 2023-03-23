@@ -12,7 +12,7 @@ function SelectorV3({
   label,
   isSelected = () => false,
   onSearch = () => {},
-  errors
+  error,
 }) {
   const [isOpening, setIsOpening] = useState(false);
 
@@ -68,6 +68,7 @@ function SelectorV3({
           <div className="font-normal relative">
             <div>
               <label
+                style={{color: error?.color}}
                 className="block w-full mb-[5px] capitalize font-semibold leading-[2]"
                 htmlFor=""
               >
@@ -76,6 +77,9 @@ function SelectorV3({
               </label>
               <div
                 type="button"
+                style={{
+                  borderColor: error?.color,
+                }}
                 className={`w-full relative border-[1px] cursor-pointer  leading-[46px] ${
                   isOpening ? " border-b-0" : ""
                 } border-[#ccc] h-[46px] px-[20px]  focus:outline-none text-[#666]`}

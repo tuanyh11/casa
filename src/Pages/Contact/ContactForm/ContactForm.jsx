@@ -114,7 +114,7 @@ function ContactForm(props) {
                             {errors.message && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>}
                         </span>
                     </div>
-                    <div className='form-item-submit w-full relative px-[15px] text-center'>
+                    <div className='form-item-submit w-full relative px-[15px] text-center '>
                         <input
                             type='submit'
                             value='Send Message'

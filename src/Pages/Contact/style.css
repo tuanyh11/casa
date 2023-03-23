@@ -130,7 +130,8 @@
     outline: none !important;
     border: none;
     letter-spacing: 1.6px;
-    transition: all 0.4s ease-out 0s
+    transition: all 0.4s ease-out 0s;
+    cursor: pointer;
 }
 
 .contact-main .contact-form .contact-form-page .form-item-submit input:hover {

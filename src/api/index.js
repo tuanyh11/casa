@@ -12,7 +12,6 @@ export const getProduct = async (query) => {
   const product = await instanceAxios.get(
     `/products?${new URLSearchParams(query).toString()}`
   );
-
   return product.data?.[0];
 };
 
@@ -57,6 +56,10 @@ export const getProductsCate = async (limit) => {
   );
   return product.data;
 };
+
+export const createProductComment = async (data) => {
+  await instanceAxios.post(`http://localhost:4000/products/comments`, data)
+}
 
 // end product
 

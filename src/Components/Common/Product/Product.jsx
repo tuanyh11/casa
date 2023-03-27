@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { generateStart } from '../../../utils';
 import { useCartStore } from '../../Store';
 import './style.css';
-const Product = ({ data }) => {
+const Product = ({ data, rating = false }) => {
     // console.log(data);
     const [loading, setLoading] = useState()
     const { addItem, items } = useCartStore();
@@ -30,6 +31,8 @@ const Product = ({ data }) => {
                     <img src={data.acf_product?.imageProduct?.[0].imageUrlProduct} alt='' />
                     <img src={data.acf_product?.imageProduct?.[1].imageUrlProduct} alt='' />
                 </Link>
+
+               
                 {
                     data.price ? (
                         <div className='product-label'>
@@ -41,10 +44,13 @@ const Product = ({ data }) => {
                 }
 
             </div>
-            <div className='product-info'>
+            <div className='product-info '>
                 <h3 className='product-title text-[14px] font-medium uppercase '>
                     <Link to={`/product/${data.slug}`}>{data.name}</Link>
                 </h3>
+                {rating && <div className="my-2">
+                    {generateStart(data.averageRating)}
+                </div>}
                 {
                     data.price ? (
                         <div className='product-price !mb-[7px]'>

@@ -44,6 +44,28 @@ server.get("/products/sales", (req, res) => {
   return res.status(200).json(products);
 })
 
+server.post("/products/comments", (req, res) => {
+  const { author, content, parentId, id } = req?.body;
+
+  const comment = { id: Date.now(), author, content, date: new Date(), parentId };
+
+  if (content === "") return res.status(400).json({ error: "Content can't be empty" })
+
+  const blog = db.get("products").find({ id: id }).value(); // Get the blog object from the database
+
+  if (parentId) {
+    const parentComment = db.get("products").find({ id: id }).get("reviews").get("nodes").find({ id: parentId }).value(); // Get the parent comment from the database
+    parentComment.replies = { nodes: [...parentComment.replies.nodes, comment] }; // Update the parent comment with the new reply
+    db.write(); // Write the updated comment to the database
+  } else {
+    console.log(1);
+
+    db.get("products").find({ id: id }).get("reviews").get("nodes").push(comment).write(); // Add the comment to the blog's comments array
+  }
+  res.status(200).json(blog);
+});
+
+
 router(server, db, routerV1)
 
 

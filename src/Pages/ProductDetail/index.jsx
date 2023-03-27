@@ -6,22 +6,17 @@ import Slider from "react-slick";
 import { getProduct, getSaleProducts } from "../../api";
 import { socialMediaIconsBlog } from "../../assets/data";
 import { Breadcrumb, Product } from "../../Components";
+import { useCartStore } from "../../Components/Store";
 import ContentLeft from "./Components/Content/ContentLeft";
 import ContentRight from "./Components/Content/ContentRight";
 import ProductRelated from "./Components/Content/ProductRelated";
 import TabContent from "./Components/Content/TabContent";
 import "./style.css";
 
-
-
-
-
 const ProductDetail = () => {
   const loc = useLocation();
 
-
   const pathname = loc.pathname.substring(1).split("/");
-
 
   const params = new URLSearchParams(loc.search);
 
@@ -55,11 +50,9 @@ const ProductDetail = () => {
 
   const images = productDetail?.acf_product?.imageProduct;
 
+  const { items, addItem } = useCartStore();
 
-
-
-
-
+  const isInCartStore = items?.find((item) => item.id === productDetail?.id);
 
   return (
     <div>
@@ -80,18 +73,42 @@ const ProductDetail = () => {
 
       <div className="content-page product-detail  my-[50px] md:!my-[70px]  screen-1200:!my-[100px]">
         <div className="container">
+          {isInCartStore && (
+            <div
+              className=" mb-7 py-[18px] pl-[65px] pr-[30px] border-l-[2px] bg-[rgba(76,175,80,0.1)] border-[#4CAF50] relative flex  justify-between "
+              role="alert"
+            >
+              <div>
+                <button className="w-5 h-5 left-8 top-5 rounded-full bg-[#4CAF50] text-white absolute ">
+                  <i className="fa-duotone fa-check"></i>
+                </button>
+                “{productDetail?.name}” has been added to your cart.{" "}
+              </div>
+              <Link
+                to={`/cart`}
+                tabindex="1"
+                className="leading-[46px] h-[46px] px-[25px] bg-main text-white font-poppins text-[14px] uppercase font-medium tracking-[1.6px] hover:bg-black-#222222 hover:text-white "
+              >
+                View cart
+              </Link>{" "}
+            </div>
+          )}
           <div className="row mb-[100px]">
             <div className="w-full screen-991:w-6/12 px-15">
-              <ContentLeft onSetPreviewImage={setPreviewImage} previewImage={previewImage} data={images} />
+              <ContentLeft
+                onSetPreviewImage={setPreviewImage}
+                previewImage={previewImage}
+                data={images}
+              />
             </div>
             <div className="w-full screen-991:w-6/12 px-15">
-              <ContentRight data={productDetail} />
+              <ContentRight data={productDetail} onAddToCart={() => addItem(productDetail)} />
             </div>
           </div>
 
           <div>
             <div className="detail-tabs tab-horizontal mt-[-10px]">
-              <TabContent />
+              <TabContent data={productDetail} />
             </div>
           </div>
 
@@ -110,7 +127,7 @@ const ProductDetail = () => {
               </div>
             </div>
 
-            <ProductRelated data={saleProducts}/>
+            <ProductRelated data={saleProducts} />
           </div>
         </div>
       </div>

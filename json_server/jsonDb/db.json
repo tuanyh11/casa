@@ -106,7 +106,14 @@
       "regularPrice": "$17.00",
       "price": "$12.00",
       "reviews": {
-        "nodes": []
+        "nodes": [
+          {
+            "id": 1679910747774,
+            "content": "asdasd",
+            "date": "2023-03-27T09:52:27.774Z",
+            "parentId": null
+          }
+        ]
       },
       "reviewCount": 0,
       "productCategories": {

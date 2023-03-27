@@ -2,52 +2,73 @@ import React, { useEffect, useRef, useState } from 'react'
 import Slider from 'react-slick';
 
 const ContentLeft = ({ previewImage = '', onSetPreviewImage = () => { }, data = [] }) => {
-    const [{x, y}, setMousePosition] = useState({ x: 0, y: 0 });
+    const [{ x, y }, setMousePosition] = useState({ x: 0, y: 0 });
+    const [backgroundPosition, setBackgroundPosition] = useState("0% 0%");
     const settings = {
-        dots: false,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrow: true,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
+      dots: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrow: true,
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />,
+    };
+  
+    const ref = useRef();
+    const innerRef = useRef();
+  
+    const [isZoomed, setIsZoomed] = useState(false);
+  
+
+
+    const handleMouseMove = (e) => {
+        const { left, top, width: w, height: h } = ref.current.getBoundingClientRect();
+       if(innerRef.current) {
+        const { width, height } = innerRef.current.getBoundingClientRect();
+        setMousePosition({ x: e.pageX - left - width / 2, y: e.clientY - top - height / 2 });
+        const x = (e.clientX - left) ;
+        const y = (e.clientY - top);
+        const backgroundPosX = ((x / w) * 100);
+        const backgroundPosY = ((y / h) * 100);
+        setBackgroundPosition(`${backgroundPosX}% ${backgroundPosY}%`);
+       }
+      };
+  
+  
+    const handleZoomIn = () => {
+      setIsZoomed(true);
+    };
+  
+    const handleZoomOut = () => {
+      setIsZoomed(false);
     };
 
-    const ref = useRef()
-    const innerRef = useRef()
-
-    const [isZoomed, setIsZoomed] = useState(false)
-
-    useEffect(() => {
-        const handleMouseMove = (e) => {
-            const {left, top} = ref.current.getBoundingClientRect()
-            const {width, height} = innerRef.current.getBoundingClientRect()
-            console.log(e.pageX );
-            setMousePosition({x: e.pageX  -left - (width / 2) , y: e.clientY - top - (height / 2) });
-        }
-    
-        window.addEventListener("mousemove", handleMouseMove)
-        return () => window.removeEventListener("mousemove", handleMouseMove)
-    }, [isZoomed])
-
-
+  
     return (
+      <div>
         <div>
-            <div>
-                <div ref={ref} onMouseLeave={() => setIsZoomed(false)} onMouseOver={() => setIsZoomed(true)} className='relative'>
-                    <img
-                        src={previewImage}
-                        alt=""
-                        className="w-full block"
-                        loading="lazy"
-                        decoding="async"
-                    />
+          <div
+            ref={ref}
+            onMouseLeave={handleZoomOut}
+            onMouseEnter={handleZoomIn}
+            onMouseMove={handleMouseMove}
+            className="relative  overflow-hidden"
+          >
+            <img src={previewImage} alt="" className="w-full block" loading="lazy" decoding="async" />
+            {isZoomed && (
+              <div
+                ref={innerRef}
+                className="image-magnifying z-[99]"
+                style={{
+                  backgroundImage: `url(${previewImage})`,
+                  backgroundPosition,
+                  left: `${x}px`,
+                  top: `${y}px`,
+                }}
+              ></div>
+            )}
+          </div>
 
-                    {isZoomed && <div ref={innerRef} className="image-magnifying" style={{backgroundImage: `url(${previewImage})`, backgroundPosition: `${x}px ${y}px`, left: `${x}px`, top: `${y}px`}}>
-
-                    </div> }
-                </div>
-
-                {/* <div className="mx-[-5px] mt-[10px]">
+          <div className="mx-[-5px] mt-[10px]">
                     <Slider {...settings} className="product-detail-slider group">
                         {data?.map((item) => {
                             return (
@@ -74,11 +95,11 @@ const ContentLeft = ({ previewImage = '', onSetPreviewImage = () => { }, data = 
                             );
                         })}
                     </Slider>
-                </div> */}
-            </div>
+                </div>
         </div>
-    )
-}
+      </div>
+    );
+  };
 
 function NextArrow(props) {
     const { className, style, onClick } = props;
@@ -89,7 +110,9 @@ function NextArrow(props) {
             }
             onClick={onClick}
         >
-            <button className="fas fa-chevron-right w-10 h-10 text-[#111] text-xl z-[9999] "></button>
+            <button className=" w-10 h-10 text-[#111] text-xl z-[9999] ">
+            <i className="lni lni-chevron-right"></i>
+            </button>
         </div>
     );
 }
@@ -103,7 +126,9 @@ function PrevArrow(props) {
             }
             onClick={onClick}
         >
-            <button className="fas fa-chevron-left w-10 h-10 text-[#111] text-xl"></button>
+            <button className=" w-10 h-10 text-[#111] text-xl">
+            <i className="lni lni-chevron-left"></i>
+            </button>
         </div>
     );
 }

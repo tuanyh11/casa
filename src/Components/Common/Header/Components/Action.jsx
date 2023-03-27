@@ -36,7 +36,7 @@ const Action = () => {
   }, [data]);
 
   const { length } = useCartStore();
-  console.log(length);
+  // console.log(length);
   return (
     <div>
       <div className="flex justify-end">
@@ -62,6 +62,7 @@ const Action = () => {
               </button>
             }
             position="center center"
+            className='login-popup'
             contentStyle={{
               width: "100%",
               maxWidth: "400px",
@@ -81,7 +82,7 @@ const Action = () => {
           </Popup>
         </div>
 
-        <Link to='/cart' className=" text-[18px] py-[15px] px-[5px] screens-375:px-3 screens-375:pt-5 screens-375:pb-[15px]  text-black  mini-cart-box  mini-cart1 dropdown-box  relative">
+        <Link to='/cart' className=" text-[18px] cart-header py-[15px] px-[5px] screens-375:px-3 screens-375:pt-5 screens-375:pb-[15px]  text-black  mini-cart-box  mini-cart1 dropdown-box  relative">
           <p className=" relative  ">
             <button className="la la-shopping-cart transition-main hover:text-main  fa-cart-shopping text-[26px]"></button>
             <span className="mini-cart-number screen-567:block hidden">

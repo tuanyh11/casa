@@ -20,6 +20,7 @@
     transition: all 0.4s ease-out 0s
 }
 
+
 .scroll-top.active {
     opacity: 1;
     right: 15px;

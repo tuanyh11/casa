@@ -1,0 +1,282 @@
+.wish-content .wishlist_table {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.wish-content .wishlist_table thead {
+    display: none;
+}
+
+.wish-content .wishlist_table tbody .wish-item {
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+
+.wish-content .wishlist_table tbody .wish-item:last-child {
+    border: none;
+}
+
+.wish-content .wishlist_table tbody .wish-item td {
+    padding: 18px 0;
+    vertical-align: middle;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.wishlist_table .wish-item .product-remove {
+    text-align: center;
+    width: 30px;
+}
+
+.wishlist_table .wish-item .product-remove .remove_from_wishlist {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px !important;
+    font-size: 0;
+    line-height: 14px !important;
+    border-radius: 50%;
+    position: relative;
+    background: #f44336;
+    margin: auto;
+    color: red !important;
+    text-decoration: none;
+    font-weight: 700;
+    border: 0;
+    text-align: center;
+    transition: all 0.4s ease-out 0s;
+}
+
+.wishlist_table .wish-item .product-remove .remove_from_wishlist::before,
+.wishlist_table .wish-item .product-remove .remove_from_wishlist::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    width: 8px;
+    height: 2px;
+    transition: all 0.3s ease;
+}
+
+.wishlist_table .wish-item .product-remove .remove_from_wishlist:not(:hover)::before,
+.wishlist_table .wish-item .product-remove .remove_from_wishlist:not(:hover)::after {
+    transform: rotate(45deg);
+}
+
+.wishlist_table .wish-item .product-thumbnail {
+    text-align: left;
+    max-width: 60px;
+}
+
+.wishlist_table .wish-item .product-thumbnail a {
+    display: block;
+    border: none;
+    max-width: 80px;
+}
+
+.wishlist_table .wish-item .product-thumbnail a img {
+    width: 100%;
+    height: auto;
+}
+
+.wishlist_table .wish-item .product-name a:hover {
+    color: #f598a4;
+}
+
+.wishlist_table .wish-item .product-name,
+.wishlist_table .wish-item .product-price-wish .product-price {
+    font-weight: 500;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+.wishlist_table .wish-item .product-price-wish {
+
+    text-align: left !important;
+}
+
+.wishlist_table .wish-item .product-price-wish .product-price {
+    margin: 0 !important;
+}
+
+.wishlist_table .wish-item .product-price-wish .product-price span {
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+.wishlist_table .wish-item .product-stock-status span {
+    color: #297e29;
+}
+
+.wishlist_table .wish-item .product-add-to-cart .add-cart-wish {
+    display: table !important;
+    margin: 0 auto 5px !important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+}
+
+.wishlist_table .wish-item .product-add-to-cart .add-cart-wish:hover {
+    color: #f598a4;
+
+}
+
+.wishlist_table .wish-item .product-remove-mobile {
+    display: none;
+}
+
+.wishlist_table .wish-item .product-name,
+.wishlist_table .wish-item .product-stock-status {
+
+    text-align: left !important;
+}
+
+.wish-content .wish-share h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.wish-content .wish-share .list-wish-share {
+    display: inline-flex;
+    column-gap: 3px;
+}
+
+.wish-content .mess-wish {
+    border-color: #4CAF50 !important;
+    background: rgba(76, 175, 80, 0.1);
+    border: none;
+    border-left: 3px solid #000;
+    padding: 18px 30px 18px 65px;
+    list-style: none outside;
+    width: auto;
+    word-wrap: break-word;
+    color: #515151;
+    margin: 0 0 2em;
+    position: relative;
+}
+
+.wish-content .mess-wish::before {
+    content: '\f058';
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    left: 1.5em;
+    font-size: 20px;
+    top: 16px;
+    color: #4CAF50;
+}
+
+.wish-content .wishlist-empty {
+    padding: 18px 0;
+    vertical-align: middle;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+@media screen and (max-width:1366px) {
+    .wish-container {
+        max-width: 1200px !important;
+    }
+
+    .wish-row {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .wish-content {
+        margin: 70px 0 !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .wish-content {
+        margin: 50px 0 !important;
+    }
+
+    /* .wishlist_table .wish-item .product-remove */
+    .wish-content .wishlist_table tbody .wish-item {
+        display: flex;
+        padding-left: 40px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .wish-content .wishlist_table tbody .wish-item td {
+        padding: 8px 0 !important;
+    }
+
+    .wishlist_table .wish-item .product-remove {
+        order: 6;
+    }
+
+    .wishlist_table .wish-item .product-remove {
+        width: 100%;
+    }
+
+    .wishlist_table .wish-item .product-thumbnail {
+        width: 20%;
+    }
+
+    .wishlist_table .wish-item .product-name {
+        width: 80%;
+        text-align: left !important;
+        margin: auto 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.1 !important;
+    }
+
+    .wishlist_table .wish-item .product-price-wish {
+        width: 100%;
+        text-align: right !important;
+        margin-right: 30px;
+    }
+
+    .wishlist_table .wish-item .product-stock-status {
+        width: 100%;
+        text-align: right !important;
+    }
+
+    .wishlist_table .wish-item .product-stock-status span {
+        font-size: .7em;
+        color: #303030;
+    }
+
+    .wishlist_table .wish-item .product-add-to-cart {
+        width: 100%;
+    }
+
+    .wishlist_table .wish-item .product-remove .remove_from_wishlist {
+        display: none;
+    }
+
+    .wishlist_table .wish-item .product-remove-mobile {
+        display: block;
+        text-align: right !important;
+    }
+
+    .wishlist_table .wish-item .product-remove-mobile i:hover {
+        color: #f598a4;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .wishlist_table .wish-item .product-name {
+        width: 70% !important;
+    }
+}

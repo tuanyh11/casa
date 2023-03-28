@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Breadcrumb = ({ image, label, customPathname }) => {
   const loc = useLocation();
@@ -23,7 +23,7 @@ const Breadcrumb = ({ image, label, customPathname }) => {
               </div>
             ) : (
               <div>
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
                 <span className="relative text-[14px] text-[#222] capitalize">
                   {pathname}
                 </span>

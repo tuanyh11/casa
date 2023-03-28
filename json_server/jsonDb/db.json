@@ -3655,5 +3655,31 @@
       "content": "A set of three platforms, with varying legs heights, that rest and nest on the floor, as one piece of furniture.",
       "image": "https://casa.7uptheme.net/wp-content/uploads/2019/06/slider43.jpg"
     }
+  ],
+  "account": [
+    {
+      "email": "a",
+      "password": "a",
+      "confirmPassword": "a",
+      "id": 1
+    },
+    {
+      "email": "a",
+      "password": "a",
+      "confirmPassword": "a",
+      "id": 2
+    },
+    {
+      "email": "vava",
+      "password": "vav",
+      "confirmPassword": "vava",
+      "id": 3
+    },
+    {
+      "email": "b",
+      "password": "b",
+      "confirmPassword": "b",
+      "id": 4
+    }
   ]
 }

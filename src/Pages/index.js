@@ -10,3 +10,4 @@ export { default as MyAccount } from './MyAccount';
 export { default as Cart } from './Cart';
 export { default as Page404 } from './404';
 export { default as WishList } from './WishList';
+export { default as Register } from './MyAccount/Login/Register/Content';

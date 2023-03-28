@@ -495,6 +495,7 @@
     width: 350px;
     object-fit: cover;
     transition: all 0.4s ease-out 0s;
+    filter: contrast(110%) brightness(110%);
 }
 
 .countup-figure a img:hover {

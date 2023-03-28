@@ -66,10 +66,12 @@ function ContactForm(props) {
                     <div className='form-item w-1/3 relative px-[15px]'>
                         <span className='mb-[30px] block'>
                             <input placeholder='Your Name'
-                                {...register("name", { required: true })} />
+                                {...register("name", { required: true })}
+                            // autoComplete='off'
+                            />
                             {
                                 errors.name &&
-                                <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>
+                                <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required.</p>
                             }
                         </span>
                     </div>
@@ -78,6 +80,7 @@ function ContactForm(props) {
                             <input
                                 type='email'
                                 placeholder='Your Email'
+                                // autoComplete='off'
                                 {...register("email", {
                                     required: true,
                                     pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i
@@ -88,7 +91,7 @@ function ContactForm(props) {
                                     <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>The e-mail address entered is invalid.</p>
                                 ) : (
 
-                                    <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>
+                                    <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required.</p>
                                 )
                             ) : (null)}
 
@@ -98,9 +101,10 @@ function ContactForm(props) {
                         <span className='mb-[30px] block'>
                             <input
                                 placeholder='Your Subject'
+                                // autoComplete='off'
                                 {...register("subject", { required: true })} />
                             {
-                                errors.subject && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>
+                                errors.subject && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required.</p>
                             }
                         </span>
                     </div>
@@ -110,8 +114,9 @@ function ContactForm(props) {
                                 cols={40}
                                 rows={10}
                                 placeholder='Your Message'
+                                autoComplete='off'
                                 {...register("message", { required: true })} />
-                            {errors.message && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required</p>}
+                            {errors.message && <p className='text-[#dc3232] text-[14px] font-normal leading-[24px] block'>This field is required.</p>}
                         </span>
                     </div>
                     <div className='form-item-submit w-full relative px-[15px] text-center '>

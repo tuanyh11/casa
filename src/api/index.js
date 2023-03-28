@@ -45,7 +45,7 @@ export const getProducts = async (paginate) => {
   return product.data;
 };
 
-export const  getSaleProducts = async () =>   {
+export const getSaleProducts = async () => {
   const products = await instanceAxios.get("/products/sales")
   console.log(products);
   return products.data
@@ -123,8 +123,16 @@ export const getCategoryHome = async () => {
 };
 
 export const getCountries = async () => (await axios.get("https://countriesnow.space/api/v0.1/countries")).data?.data;
- 
+
 export const getBannerHome = async () => {
   const banner = await instanceAxios.get(`http://localhost:4000/banner-home`)
   return banner.data
 }
+// acccount
+export const createAccount = async (data) => {
+  await instanceAxios.post(`http://localhost:4000/account`, data);
+};
+export const getUser = async () => {
+  const user = await instanceAxios.get(`http://localhost:4000/account`);
+  return user.data
+};

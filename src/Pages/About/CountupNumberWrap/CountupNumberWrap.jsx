@@ -24,7 +24,7 @@ function CountupNumberWrap(props) {
                             </div>
                         </div>
                         <div className='content-editor'>
-                            <div className='content-countup py-[120px]'>
+                            <div className='content-countup py-[112px]'>
                                 <div className='counter-number'>
                                     <div className='counter-inner'>
                                         <div className='icon'>

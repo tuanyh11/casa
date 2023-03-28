@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { getProduct, getSaleProducts } from "../../api";
 import { socialMediaIconsBlog } from "../../assets/data";
 import { Breadcrumb, Product } from "../../Components";
+import { useCartStore } from "../../Components/Store";
 import "./style.css";
 
 function NextArrow(props) {
@@ -65,6 +66,8 @@ function PrevSaleArrow(props) {
 }
 
 const ProductDetail = () => {
+  const { addToWishlistItems } = useCartStore();
+
   const loc = useLocation();
 
   const [tab, setTab] = useState(false);
@@ -175,6 +178,9 @@ const ProductDetail = () => {
   const categories = productDetail?.productCategories?.nodes;
   const tags = productDetail?.productTags?.nodes;
 
+  const handleAddtoWish = (data) => {
+    addToWishlistItems(data)
+  }
   return (
     <div>
       <Breadcrumb
@@ -224,11 +230,10 @@ const ProductDetail = () => {
                               alt=""
                               srcset=""
                               decoding="async"
-                              className={`${
-                                previewImage === item.imageUrlProduct
-                                  ? "active"
-                                  : ""
-                              }`}
+                              className={`${previewImage === item.imageUrlProduct
+                                ? "active"
+                                : ""
+                                }`}
                             />
                           </div>
                         </div>
@@ -311,7 +316,8 @@ const ProductDetail = () => {
                   </div>
 
                   <div className=" flex action ">
-                    <button className="add_to_wishlist single_add_to_wishlist w-1/2 text-center underline capitalize transition-main">
+                    <button className="add_to_wishlist single_add_to_wishlist w-1/2 text-center underline capitalize transition-main"
+                      onClick={() => handleAddtoWish(productDetail)}>
                       <i className="fa-light fa-heart mr-[10px]"></i>
                       <span>Add to wishlist</span>
                     </button>

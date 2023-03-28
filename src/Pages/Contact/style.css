@@ -205,6 +205,10 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    .contact-main .contact-form .contact-form-page .form-item textarea {
+        padding-left: 25px !important;
+    }
 }
 
 @media screen and (max-width: 768px) {

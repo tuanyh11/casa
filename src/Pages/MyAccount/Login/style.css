@@ -1,0 +1,168 @@
+.login-content h2 {
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 30px;
+}
+
+.login-content form {
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+    padding: 20px;
+    margin: 2em 0;
+    text-align: left;
+    padding: 20px;
+    margin: 2em 0;
+    text-align: left;
+}
+
+.login-content form .login-email,
+.login-content form .form-row-list,
+.login-content form .login-pass {
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+.login-content form .login-email label,
+.login-content form .login-pass label {
+    line-height: 2;
+    display: block;
+    font-weight: 600;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.login-content form .login-email label .required,
+.login-content form .login-pass label .required {
+    visibility: visible;
+    color: red;
+    font-weight: 700;
+    border: 0 !important;
+    text-decoration: none;
+}
+
+.login-content form .login-email input,
+.login-content form .login-pass input {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 46px;
+    line-height: 44px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+}
+
+.login-content .password-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.login-content .password-input span {
+    position: absolute;
+    right: 0.7em;
+    top: 0.7em;
+    cursor: pointer;
+}
+
+.login-content form .form-row-list .remember {
+
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+}
+
+.login-content form .form-row-list .remember input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+}
+
+.login-content form .form-row-list .remember input:checked~.checkmark {
+    background-color: #eee;
+}
+
+.checkmark::after {
+    content: '\f00c';
+    font-family: 'Line Awesome Free';
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    font-weight: 400;
+    border-color: mediumseagreen !important;
+    z-index: 10;
+
+}
+
+.login-content form .form-row-list .remember input:checked~.checkmark::after {
+    display: block;
+}
+
+.form-row-list .btn-login {
+    margin: 15px 0 10px;
+    font-family: "Poppins";
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    border: none;
+    padding: 0 25px;
+    text-align: center;
+    background-color: #f598a4;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 0px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-out 0s;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    left: auto;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.form-row-list .btn-login:hover {
+    background-color: #222222;
+}
+
+.login-content form .lost-password {
+    margin-bottom: 25px !important;
+    line-height: 1.75em;
+    margin: 0 0 10px;
+}
+
+.login-content form .register {
+    margin-bottom: 15px !important;
+}
+
+.login-content form .lost-password a,
+.login-content form .register a {
+    transition: all 0.4s ease-out 0s;
+}

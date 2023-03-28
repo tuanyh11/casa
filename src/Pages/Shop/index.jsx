@@ -74,7 +74,7 @@ const Shop = () => {
       <div className="my-[50px] md:my-[100px]">
         <div className="container">
           <div className="row">
-            <div className="w-full mt-[50px] md:mt-0 order-1 screen-991:order-1 md:w-4/12 screen-991:w-3/12 px-15">
+            <div className="w-full mt-[50px] md:mt-0 order-2 md:order-1 md:w-4/12 screen-991:w-3/12 px-15">
               <Sidebar
                 cateProduct={cateProduct}
                 tagProduct={tagProduct}
@@ -84,7 +84,7 @@ const Shop = () => {
                 priceRanges={priceRanges}
               />
             </div>
-            <div className="w-full order-2 screen-991:order-2 md:w-8/12 screen-991:w-9/12 px-15">
+            <div className="w-full order-1 md:order-2 md:w-8/12 screen-991:w-9/12 px-15">
               {showProducts.length === 0 ? (
                 <p className=" border-l-[3px] border-l-[#5aa1e3] bg-[rgba(90,161,227,0.1)] p-[18px_30px_18px_65px] relative text-[#515151]">
                   <i className="fa-regular fa-calendar text-[#5aa1e3] text-2xl absolute top-1/2 -translate-y-1/2 left-7"></i>

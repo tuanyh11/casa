@@ -10,21 +10,23 @@ import RelatedPost from "./RelatedBlog";
 const Content = ({ blog, refetch, relatedBlog }) => {
   
 
-  const getDate = useDate();
-
+  
   const featureImage = blog?.post?.imagePost;
-
+  
   const categories = blog?.categories?.nodes;
-
-  const publishedDate = getDate(blog?.date);
-
+  
+  
   const title = blog?.title;
   const firstContent = blog?.post?.content?.[0]?.contentField;
   const secondContent = blog?.post?.content?.[1]?.contentField;
-
+  
   const images = blog?.post?.image;
   const comments = blog?.comments?.nodes;
 
+  const getDate = useDate();
+  
+  const publishedDate = getDate(blog?.date);
+  
   const commentCount = blog?.commentCount;
 
   const tags = blog?.tags?.nodes;

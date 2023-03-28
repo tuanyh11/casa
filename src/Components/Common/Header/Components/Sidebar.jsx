@@ -32,14 +32,14 @@ const Sidebar = ({ openSidebar, onOpenSidebar }) => {
             <motion.div
               animate={{x: [660, 0]}}
               transition={{duration: 0.6, ease: [0.77, 0, 0.175, 1]}}
-              className={`aside-box-content  z-[9999999]`}
+              className={`aside-box-content  z-[9999999] scrollbar-none`}
               exit={{x: 800}}
             >
               <button
                 onClick={() => onOpenSidebar(false)}
-                className="close-login-form transition-main  font-light text-black-#303030 w-[30px] h-[30px] transition-main hover:text-main "
+                className="close-login-form transition-main absolute top-6 right-6 flex justify-center items-center font-bold w-[30px] !text-black-#303030 h-[30px] transition-main hover:text-main "
               >
-                ×
+              <i class="lni lni-close text-base font-bold flex-1 "></i>
               </button>
               <div className="md:-mx-[17px]">
                 <div className="mb-[54px]">

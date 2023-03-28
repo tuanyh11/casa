@@ -311,12 +311,12 @@
 }
 
 .detail-info .product-desc {
-    margin: 24px 0 30px;
-    margin-top: 24px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    line-height: 24px;
+  margin: 24px 0 30px;
+  margin-top: 24px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -329,4 +329,30 @@
   .product-detail .product-price {
     margin: 0 -5px 14px;
   }
+}
+
+.compare-popup-content {
+  top: 62px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+#cboxClose {
+  bottom: -30px;
+  width: 24px;
+  height: 24px;
+  background-position: initial;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 0px;
+  text-transform: uppercase;
+  right: 0;
+  background: url(https://casa.7uptheme.net/wp-content/themes/casa/assets/image/close.png);
 }

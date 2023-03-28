@@ -27,7 +27,7 @@ const Cart = () => {
   });
   return (
     <>
-      <div className="mini-cart-content z-[999999999] dropdown-list">
+      <div className="mini-cart-content z-[999999999] dropdown-list !cursor-default">
         <div className="cart-header hidden">
           <h4 className="cart-heading ">Shopping Cart</h4>
           <a className="close-aside">

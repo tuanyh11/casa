@@ -15,3 +15,4 @@ export { default as CommentForm } from './Ui/Blog/CommentForm';
 export { default as CardListSmallV2 } from './Ui/Product/CardListSmallV2';
 export {default as SelectorV2} from './Ui/Selector/SelectorV2'
 export {default as SelectorV3} from './Ui/Selector/SelectorV3' 
+export {default as CommentSection} from './Ui/Comment/CommentSection'
